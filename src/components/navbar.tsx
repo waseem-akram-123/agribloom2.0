@@ -8,7 +8,15 @@ import { motion, AnimatePresence } from "framer-motion";
 import axios from "axios";
 
 import { Button } from "@/components/ui/button";
-import { LogOut, User, BookOpen, ChevronDown } from "lucide-react";
+import {
+  LogOut,
+  User,
+  BookOpen,
+  ChevronDown,
+  ClipboardList,
+  PieChart,
+  TrendingUp,
+} from "lucide-react";
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -17,9 +25,11 @@ export default function Navbar() {
   const [loading, setLoading] = useState(true);
 
   const [showStudyDropdown, setShowStudyDropdown] = useState(false);
+  const [showFarmerDropdown, setShowFarmerDropdown] = useState(false);
   const [showUserDropdown, setShowUserDropdown] = useState(false);
 
   const studyRef = useRef<HTMLDivElement>(null);
+  const farmerRef = useRef<HTMLDivElement>(null);
   const userRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -31,7 +41,6 @@ export default function Navbar() {
         withCredentials: true,
       })
       .then((res) => {
-        console.log("User info:", res.data); // 👈
         setIsAuthenticated(res.data.authenticated);
         setUsername(res.data.user?.username || "");
       })
@@ -50,7 +59,16 @@ export default function Navbar() {
       ) {
         setShowStudyDropdown(false);
       }
-      if (userRef.current && !userRef.current.contains(event.target as Node)) {
+      if (
+        farmerRef.current &&
+        !farmerRef.current.contains(event.target as Node)
+      ) {
+        setShowFarmerDropdown(false);
+      }
+      if (
+        userRef.current &&
+        !userRef.current.contains(event.target as Node)
+      ) {
         setShowUserDropdown(false);
       }
     };
@@ -109,16 +127,90 @@ export default function Navbar() {
               <>
                 <HoveredLink href="/agrilens">AgriLens</HoveredLink>
                 <HoveredLink href="/insect">Insect</HoveredLink>
-                <HoveredLink href="/healthandbenifits">
+                <HoveredLink href="/healthandbenefits">
                   Health Benefits
                 </HoveredLink>
-                <HoveredLink href="/agri-prices">Current Rate</HoveredLink>
                 <HoveredLink href="/contactus">Contact Us</HoveredLink>
 
-                {/* Study Click Dropdown */}
+                {/* Farmer Dropdown */}
+                <div className="relative" ref={farmerRef}>
+                  <button
+                    onClick={() => {
+                      setShowFarmerDropdown((prev) => !prev);
+                      setShowStudyDropdown(false);
+                    }}
+                    className={`flex items-center gap-1 text-base transition-all font-medium cursor-pointer ${
+                      pathname.startsWith("/farmer")
+                        ? "text-green-600 font-semibold"
+                        : "text-gray-700"
+                    } hover:text-green-700`}
+                  >
+                    Farmer
+                    <ChevronDown
+                      className={`h-4 w-4 transition-transform ${
+                        showFarmerDropdown ? "rotate-180" : ""
+                      }`}
+                    />
+                  </button>
+                  <AnimatePresence>
+                    {showFarmerDropdown && (
+                      <motion.div
+                        initial={{ opacity: 0, y: -10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -10 }}
+                        transition={{ duration: 0.2 }}
+                        className="absolute left-0 mt-2 bg-white p-3 rounded-lg shadow-xl z-50 min-w-[220px] border border-green-100"
+                      >
+                        <div className="flex flex-col gap-2">
+                          <Link
+                            href="/farmer/crop-entry"
+                            className="flex items-center gap-3 p-2 rounded-md hover:bg-green-50 transition-colors"
+                            onClick={() => setShowFarmerDropdown(false)}
+                          >
+                            <div className="bg-green-100 p-2 rounded-full">
+                              <ClipboardList className="h-4 w-4 text-green-600" />
+                            </div>
+                            <p className="font-medium text-gray-800">
+                              Crop Entry
+                            </p>
+                          </Link>
+                          <Link
+                            href="/farmer/dashboard"
+                            className="flex items-center gap-3 p-2 rounded-md hover:bg-green-50 transition-colors"
+                            onClick={() => setShowFarmerDropdown(false)}
+                          >
+                            <div className="bg-green-100 p-2 rounded-full">
+                              <PieChart className="h-4 w-4 text-green-600" />
+                            </div>
+                            <p className="font-medium text-gray-800">
+                              Dashboard
+                            </p>
+                          </Link>
+                          <Link
+                            href="/farmer/trends"
+                            className="flex items-center gap-3 p-2 rounded-md hover:bg-green-50 transition-colors"
+                            onClick={() => setShowFarmerDropdown(false)}
+                          >
+                            <div className="bg-green-100 p-2 rounded-full">
+                              <TrendingUp className="h-4 w-4 text-green-600" />
+                            </div>
+                            <p className="font-medium text-gray-800">
+                              Trends
+                            </p>
+                          </Link>
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </div>
+
+                {/* Study Dropdown */}
                 <div className="relative" ref={studyRef}>
                   <button
-                    onClick={() => setShowStudyDropdown((prev) => !prev)}
+                    onClick={() => {
+                      setShowStudyDropdown((prev) => !prev);
+                      setShowFarmerDropdown(false);
+                    }}
                     className={`flex items-center gap-1 text-base transition-all font-medium cursor-pointer ${
                       pathname.startsWith("/study")
                         ? "text-green-600 font-semibold"
@@ -206,8 +298,7 @@ export default function Navbar() {
                                 Medicinal and Poisonous Plants
                               </p>
                               <p className="text-xs text-gray-500">
-                                Explore different tree Medicinal trees and
-                                poisonous plants
+                                Explore different tree Medicinal trees and poisonous plants
                               </p>
                             </div>
                           </Link>
@@ -217,7 +308,7 @@ export default function Navbar() {
                   </AnimatePresence>
                 </div>
 
-                {/* Username Dropdown */}
+                {/* User Dropdown */}
                 <div className="relative" ref={userRef}>
                   <button
                     onClick={() => setShowUserDropdown((prev) => !prev)}

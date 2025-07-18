@@ -69,65 +69,67 @@ export default function CropEntryPage() {
   };
 
   return (
-    <form
-      onSubmit={handleSubmit}
-      className="bg-white p-6 rounded-lg shadow-md max-w-xl mx-auto mt-8"
-    >
-      <h2 className="text-xl font-bold mb-4">Enter Crop Details</h2>
-
-      <input
-        name="crop"
-        placeholder="Crop Name"
-        value={form.crop}
-        onChange={handleChange}
-        className="w-full mb-3 p-2 border rounded"
-      />
-      <input
-        name="district"
-        placeholder="District"
-        value={form.district}
-        onChange={handleChange}
-        className="w-full mb-3 p-2 border rounded"
-      />
-      <input
-        name="village"
-        placeholder="Village"
-        value={form.village}
-        onChange={handleChange}
-        className="w-full mb-3 p-2 border rounded"
-      />
-      <input
-        type="date"
-        name="sowingDate"
-        value={form.sowingDate}
-        onChange={handleChange}
-        className="w-full mb-3 p-2 border rounded"
-      />
-      <input
-        type="number"
-        name="area"
-        placeholder="Area in acres"
-        value={form.area}
-        onChange={handleChange}
-        className="w-full mb-3 p-2 border rounded"
-      />
-      <select
-        name="season"
-        value={form.season}
-        onChange={handleChange}
-        className="w-full mb-4 p-2 border rounded"
+    <div className="pt-20 bg-green-50 min-h-screen">
+      <form
+        onSubmit={handleSubmit}
+        className="bg-white p-6 rounded-lg shadow-md max-w-xl mx-auto"
       >
-        <option value="kharif">Kharif</option>
-        <option value="rabi">Rabi</option>
-        <option value="zaid">Zaid</option>
-      </select>
+        <h2 className="text-xl font-bold mb-4">Enter Crop Details</h2>
 
-      <button
-        type="submit"
-        className="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700"
-      >
-        Submit
-      </button>
-    </form>
+        <input
+          name="crop"
+          placeholder="Crop Name"
+          value={form.crop}
+          onChange={handleChange}
+          className="w-full mb-3 p-2 border rounded"
+        />
+        <input
+          name="district"
+          placeholder="District"
+          value={form.district}
+          onChange={handleChange}
+          className="w-full mb-3 p-2 border rounded"
+        />
+        <input
+          name="village"
+          placeholder="Village"
+          value={form.village}
+          onChange={handleChange}
+          className="w-full mb-3 p-2 border rounded"
+        />
+        <input
+          type="date"
+          name="sowingDate"
+          value={form.sowingDate}
+          onChange={handleChange}
+          className="w-full mb-3 p-2 border rounded"
+        />
+        <input
+          type="number"
+          name="area"
+          placeholder="Area in acres"
+          value={form.area}
+          onChange={handleChange}
+          className="w-full mb-3 p-2 border rounded"
+        />
+        <select
+          name="season"
+          value={form.season}
+          onChange={handleChange}
+          className="w-full mb-4 p-2 border rounded"
+        >
+          <option value="kharif">Kharif</option>
+          <option value="rabi">Rabi</option>
+          <option value="zaid">Zaid</option>
+        </select>
+
+        <button
+          type="submit"
+          className="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
   );
 }
