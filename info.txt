@@ -1,0 +1,11 @@
+npm i mongoose
+npm i jsonwebtoken
+npm i bcrytjs
+npm i nodemailer
+npm i axios
+// install the types for jsonwebtoken
+npm install resend
+
+npx shadcn@latest init
+npx shadcn@latest add input button label card
+npm install lucide-react framer-motion clsx  

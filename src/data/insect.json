@@ -1,0 +1,2483 @@
+[
+  {
+    "id": 1,
+    "commonName": "Potato",
+    "insects": [
+      {
+        "name": "Colorado Potato Beetle",
+        "effect": "Larvae and adults defoliate foliage, reducing yield by 30–50% if unmanaged."
+      },
+      {
+        "name": "Potato Tuber Moth",
+        "effect": "Larvae mine leaves, stems, and tubers; in storage, can cause up to 100% tuber loss."
+      },
+      {
+        "name": "Potato Leafhopper",
+        "effect": "Sap‑sucking causes 'hopperburn'—leaf curling, necrosis, and up to 75% yield loss."
+      }
+    ],
+    "solution": [
+      "Rotate with non‑host crops to reduce Colorado potato beetle pressure :contentReference[oaicite:1]{index=1}.",
+      "Hand‑destroy egg masses and larvae; apply systemic/contact insecticides when thresholds reached :contentReference[oaicite:2]{index=2}.",
+      "Monitor for leafhoppers with sweep nets and spray insecticides (e.g. carbaryl) when hopperburn appears :contentReference[oaicite:3]{index=3}."
+    ]
+  },
+  {
+    "id": 2,
+    "commonName": "Maize",
+    "insects": [
+      {
+        "name": "Western Corn Rootworm",
+        "effect": "Larvae feed on roots, causing lodging and reduced yield; adults feed on silks, impacting pollination."
+      },
+      {
+        "name": "Corn Leaf Aphid",
+        "effect": "Dense colonies suck sap, produce honeydew impairing pollination and can reduce yields up to 90%."
+      },
+      {
+        "name": "Maize Stalk Borer",
+        "effect": "Larvae damage leaf funnels and stalks; tunneling can lead to fungal infection and major yields loss (20–100%)."
+      }
+    ],
+    "solution": [
+      "Rotate crops and delay planting to disrupt western corn rootworm cycle :contentReference[oaicite:4]{index=4}.",
+      "Scout aphids in tassels; control outbreaks early to prevent honeydew buildup :contentReference[oaicite:5]{index=5}.",
+      "Apply push–pull cultural strategy or biological control agents against stalk borer :contentReference[oaicite:6]{index=6}."
+    ]
+  },
+  {
+    "id": 3,
+    "commonName": "Rice",
+    "insects": [
+      {
+        "name": "Rice Water Weevil",
+        "effect": "Larvae feed on roots, reducing stand vigor and yield."
+      },
+      {
+        "name": "Rice Gall Midge",
+        "effect": "Larvae cause 'silver shoots' (galls), stunting tiller growth and preventing panicle formation."
+      },
+      {
+        "name": "Brown Planthopper",
+        "effect": "Sucks sap, causing hopperburn and transmitting grassy stunt and ragged stunt viruses."
+      }
+    ],
+    "solution": [
+      "Implement water‐management (periodic mid‑season drainage) to reduce water weevil populations.",
+      "Plant resistant or tolerant varieties (e.g., IR64) to manage brown planthopper outbreaks :contentReference[oaicite:1]{index=1}.",
+      "Use integrated pest management tactics (monitoring, biological control, judicious insecticide use) to suppress gall midge :contentReference[oaicite:2]{index=2}."
+    ]
+  },
+  {
+    "id": 4,
+    "commonName": "Wheat",
+    "insects": [
+      {
+        "name": "Wheat Stem Sawfly",
+        "effect": "Larvae tunnel stems causing lodging, reduced grain fill, and yield losses up to 25%."
+      },
+      {
+        "name": "Russian Wheat Aphid",
+        "effect": "Sap‑sucking causes leaf rolling, bleaching, stunted growth, and reduced yield."
+      },
+      {
+        "name": "Armyworm",
+        "effect": "Chews foliage and heads, reducing biomass and grain quality."
+      }
+    ],
+    "solution": [
+      "Plant resistant varieties (solid-stem) to reduce stem sawfly damage :contentReference[oaicite:3]{index=3}.",
+      "Monitor aphid populations and apply insecticide only if economic thresholds are exceeded :contentReference[oaicite:4]{index=4}.",
+      "Scout regularly for armyworm; treat with foliar insecticides if defoliation threatens crop health :contentReference[oaicite:5]{index=5}."
+    ]
+  },
+  {
+    "id": 5,
+    "commonName": "Soybean",
+    "insects": [
+      {
+        "name": "Soybean Aphid",
+        "effect": "Colonies suck sap, causing yellowing and reduced pod set; can spread plant diseases."
+      },
+      {
+        "name": "Bean Leaf Beetle",
+        "effect": "Chews foliage and pods, reducing yield and allowing entry for pathogens."
+      },
+      {
+        "name": "Stink Bug Complex",
+        "effect": "Feeds on pods causing discoloration, shriveled seeds, and yield loss."
+      }
+    ],
+    "solution": [
+      "Scout weekly with drop cloth during bloom/pod-fill; apply insecticide if aphid thresholds are exceeded :contentReference[oaicite:6]{index=6}.",
+      "Monitor for beetle feeding; target insecticide applications when defoliation or pod feeding is observed :contentReference[oaicite:7]{index=7}.",
+      "Treat stink bugs when counts exceed 1 per row-foot during pod-fill stage :contentReference[oaicite:8]{index=8}."
+    ]
+  },
+  {
+    "id": 6,
+    "commonName": "Cotton",
+    "insects": [
+      { "name": "Bollworm", "effect": "Larvae bore into bolls, damaging fibers and reducing lint quality." },
+      { "name": "Aphids", "effect": "Sap-sucking causes curled leaves and transmits viral diseases." },
+      { "name": "Whitefly", "effect": "Feeds on underside of leaves, excreting honeydew leading to sooty mold." }
+    ],
+    "solution": [
+      "Deploy Bt cotton varieties to control bollworm larvae.",
+      "Release natural enemies like ladybird beetles and parasitic wasps against aphids and whiteflies.",
+      "Monitor with pheromone traps and apply selective insecticides only at economic thresholds."
+    ]
+  },
+  {
+    "id": 7,
+    "commonName": "Citrus",
+    "insects": [
+      { "name": "Asian Citrus Psyllid", "effect": "Vectors Huanglongbing (citrus greening), causing yellow shoots and dieback." },
+      { "name": "Citrus Leafminer", "effect": "Larvae mine leaf tissue, causing curling and reduced photosynthesis." },
+      { "name": "Citrus Thrips", "effect": "Damages fruit surface and causes scarring reducing marketability." }
+    ],
+    "solution": [
+      "Control psyllids with foliar insecticides timed to flush cycles and remove symptomatic trees.",
+      "Use horticultural oils to suppress leafminer eggs and larvae.",
+      "Encourage predatory mites and lacewings to manage thrips populations."
+    ]
+  },
+  {
+    "id": 8,
+    "commonName": "Grapes",
+    "insects": [
+      { "name": "Grape Berry Moth", "effect": "Larvae feed inside berries causing fruit rot and yield loss." },
+      { "name": "Mealybugs", "effect": "Fom honeydew, leading to sooty mold and reducing vine vigor." },
+      { "name": "Phylloxera", "effect": "Root-feeding forms stunt vines and cause yellowing." }
+    ],
+    "solution": [
+      "Use mating disruption pheromones or targeted insecticides timed to egg hatch.",
+      "Introduce natural parasitoids (e.g., Anagyrus pseudococci) to suppress mealybugs.",
+      "Plant phylloxera-resistant rootstocks and maintain clean planting material."
+    ]
+  },
+  {
+    "id": 9,
+    "commonName": "Apple",
+    "insects": [
+      { "name": "Codling Moth", "effect": "Larvae burrow into fruit, causing wormy apples." },
+      { "name": "Apple Maggot", "effect": "Tunnels through fruit, making it unmarketable." },
+      { "name": "Aphids", "effect": "Distortion of leaves and shoots, and honeydew leads to sooty mold." }
+    ],
+    "solution": [
+      "Deploy pheromone traps and spray insecticide at biofix and peak flight.",
+      "Hang sticky traps and timely sprays before egg hatch for apple maggot.",
+      "Encourage predatory insects and treat aphid outbreaks with horticultural oils."
+    ]
+  },
+  {
+    "id": 10,
+    "commonName": "Tomato",
+    "insects": [
+      { "name": "Hornworm", "effect": "Large caterpillars defoliate plants and eat fruits." },
+      { "name": "Whitefly", "effect": "Sap-feeding leads to honeydew and virus transmission." },
+      { "name": "Aphids", "effect": "Distort new growth and vector plant viruses." }
+    ],
+    "solution": [
+      "Handpick hornworms or use Bt sprays.",
+      "Apply yellow sticky traps and introduce Encarsia parasitoids for whitefly control.",
+      "Use insecticidal soap or oils early for aphid outbreaks and support beneficial insects."
+    ]
+  },
+  {
+    "id": 11,
+    "commonName": "Onion",
+    "insects": [
+      { "name": "Onion Thrips", "effect": "Scarring on leaves reduces photosynthesis and bulb size." },
+      { "name": "Leek Moth", "effect": "Larvae damage leaves and bulbs causing rot." },
+      { "name": "Bulb Mites", "effect": "Feed on bulbs leading to decay and yield loss." }
+    ],
+    "solution": [
+      "Monitor thrips and apply reflective mulch and insecticides at threshold.",
+      "Remove crop residues to disrupt leek moth life cycle.",
+      "Ensure clean seed and avoid planting in infested soil to reduce bulb mites."
+    ]
+  },
+  {
+    "id": 12,
+    "commonName": "Peanut",
+    "insects": [
+      { "name": "Southern Corn Rootworm", "effect": "Larvae feed on underground nuts causing yield loss." },
+      { "name": "Tobacco Thrips", "effect": "Feed on seedlings causing stunting and reduced stands." },
+      { "name": "Peanut Caterpillar", "effect": "Defoliates foliage reducing photosynthesis." }
+    ],
+    "solution": [
+      "Use crop rotation and avoid continuous peanut planting.",
+      "Treat seeds with systemic insecticide to protect against seedling thrips.",
+      "Scout and apply foliar insecticides when defoliation exceeds 30%."
+    ]
+  },
+  {
+    "id": 13,
+    "commonName": "Sugarcane",
+    "insects": [
+      { "name": "Sugarcane Borer", "effect": "Larvae tunnel stalks causing broken tops and yield loss." },
+      { "name": "Aphids", "effect": "Transmits viruses and weakens crop through sap loss." },
+      { "name": "White Grubs", "effect": "Damage roots reducing tillering and yield." }
+    ],
+    "solution": [
+      "Use resistant cultivars and maintain field sanitation.",
+      "Apply systemic insecticides at planting to manage aphids.",
+      "Rotate with non-host crops to reduce white grub populations."
+    ]
+  },
+  {
+    "id": 14,
+    "commonName": "Cabbage",
+    "insects": [
+      { "name": "Cabbage Looper", "effect": "Chews large holes in leaves reducing marketable head size." },
+      { "name": "Diamondback Moth", "effect": "Larvae skeletonize leaves and bore into heads." },
+      { "name": "Aphids", "effect": "Cause curling, stunting, and sooty mold." }
+    ],
+    "solution": [
+      "Introduce Trichogramma wasps and use Bt sprays for loopers.",
+      "Use floating row covers early and apply insecticides targeting larvae.",
+      "Spray insecticidal soap and encourage beneficial insects to manage aphids."
+    ]
+  },
+  {
+    "id": 15,
+    "commonName": "Strawberry",
+    "insects": [
+      { "name": "Sap Beetle", "effect": "Feeds on damaged fruit causing rot and contamination." },
+      { "name": "Strawberry Root Weevil", "effect": "Larvae feed on roots causing wilt and reduced vigor." },
+      { "name": "Twospotted Spider Mite", "effect": "Feeds on undersides of leaves causing stippling and bronzing." }
+    ],
+    "solution": [
+      "Harvest promptly, remove damaged fruit and apply insecticide if beetles are abundant.",
+      "Use entomopathogenic nematodes and drench soil to control root weevil larvae.",
+      "Maintain humidity and apply miticides before mite populations explode."
+    ]
+  },
+   {
+    "id": 16,
+    "commonName": "Sorghum",
+    "insects": [
+      { "name": "Sorghum Aphid", "effect": "Rapidly multiplies, sucks sap causing stunting, yellowing, and can cause whole-plant death." },
+      { "name": "Corn Leaf Aphid", "effect": "Feeds in whorls, secretes honeydew, may stunt seedlings and reduce seed weight if mixed with sorghum aphid." },
+      { "name": "Sorghum Shoot Fly", "effect": "Larvae feed on growing shoots causing deadheart and reduced stands." }
+    ],
+    "solution": [
+      "Plant resistant hybrids to Biotype E greenbug and sorghum aphid and use timely planting dates ([turn0search0]).",
+      "Conserve natural enemies like lady beetles, syrphid larvae, parasitic wasps, and nabid bugs; apply insecticide only at economic thresholds ([turn0search0], [turn0search12]).",
+      "Use seed treatments or foliar insecticides if aphid populations cause seedling stunting; monitor and spray for shoot fly based on trap counts or larvae presence ([turn0search6], [turn0search21])."
+    ]
+  },
+  {
+    "id": 17,
+    "commonName": "Tea",
+    "insects": [
+      { "name": "Tea Mosquito Bug", "effect": "Pierces shoots and young leaves leading to chlorosis, dieback and yield loss." },
+      { "name": "Red Spider Mite", "effect": "Feeds on leaf undersides causing bronzing, defoliation, and reduced yield." },
+      { "name": "Thrips", "effect": "Scrape plant cells causing silvering, distortion and vector viruses." }
+    ],
+    "solution": [
+      "Prune shade to reduce mite habitats, and apply miticide when densities exceed threshold ([turn0search13], [turn0search19]).",
+      "Encourage natural predators (spiders, predatory mites) and rotate insecticides to prevent resistance ([turn0search5], [turn0search13]).",
+      "Maintain clean field sanitation and apply contact insecticides or spinosad early in infestation; use exclusion screens in nurseries ([turn0search7], [turn0search1])."
+    ]
+  },
+  {
+    "id": 18,
+    "commonName": "Millet",
+    "insects": [
+      { "name": "Shoot Fly", "effect": "Larvae feed on central shoots causing 'deadheart' and crop loss." },
+      { "name": "Corn Leaf Aphid", "effect": "Sucks sap, secretes honeydew, and can reduce yield, especially when virus is vectored." },
+      { "name": "Indian Grain Aphid", "effect": "Sap-feeding leading to stunted growth in cereals." }
+    ],
+    "solution": [
+      "Plant resistant varieties and adjust planting dates to avoid peak shoot fly periods; monitor with bait traps ([turn0search21]).",
+      "Conserve aphid predators; use insecticides only if stunting or honeydew damage exceeds threshold ([turn0search10], [turn0search12]).",
+      "Monitor for Indian grain aphid and apply threshold-based control only when significant sap damage observed ([turn0search25])."
+    ]
+  },
+   {
+    "id": 19,
+    "commonName": "Banana",
+    "insects": [
+      { "name": "Banana Weevil", "effect": "Larvae bore into rhizomes causing plant weakening and toppling." },
+      { "name": "Banana Aphid", "effect": "Transmits Banana Bunchy Top Virus; causes leaf curling and stunted growth." }
+    ],
+    "solution": [
+      "Use healthy suckers and destroy infested plants. Apply neem-based insecticides near the base.",
+      "Control aphids using yellow sticky traps, natural predators, and systemic insecticides when virus symptoms appear."
+    ]
+  },
+  {
+    "id": 20,
+    "commonName": "Papaya",
+    "insects": [
+      { "name": "Papaya Mealybug", "effect": "Feeds on sap causing yellowing, sooty mold, and stunted fruiting." },
+      { "name": "Red Spider Mite", "effect": "Sucks sap from underside of leaves causing bronzing and defoliation." }
+    ],
+    "solution": [
+      "Use neem oil sprays or biological control with parasitoid wasps.",
+      "Spray miticides or maintain adequate irrigation to reduce spider mite incidence."
+    ]
+  },
+  {
+    "id": 21,
+    "commonName": "Brinjal (Eggplant)",
+    "insects": [
+      { "name": "Shoot and Fruit Borer", "effect": "Larvae bore into shoots and fruits, causing wilting and damaged produce." },
+      { "name": "Aphids", "effect": "Cause leaf curling and act as virus vectors." }
+    ],
+    "solution": [
+      "Remove and destroy infested shoots/fruits. Use pheromone traps and apply neem or Bt sprays.",
+      "Introduce ladybird beetles and use soap-based sprays for aphid suppression."
+    ]
+  },
+  {
+    "id": 22,
+    "commonName": "Pumpkin",
+    "insects": [
+      { "name": "Red Pumpkin Beetle", "effect": "Feeds on leaves and flowers; grubs attack roots and fruits." },
+      { "name": "Fruit Fly", "effect": "Lays eggs in fruits; larvae cause internal rotting." }
+    ],
+    "solution": [
+      "Apply ash and neem cake around base; use trap crops like bottle gourd.",
+      "Use bait traps with methyl eugenol and remove infested fruits regularly."
+    ]
+  },
+  {
+    "id": 23,
+    "commonName": "Okra (Lady Finger)",
+    "insects": [
+      { "name": "Jassids", "effect": "Suck sap causing yellowing, leaf curling and poor pod formation." },
+      { "name": "Fruit Borer", "effect": "Larvae bore into fruits making them unmarketable." }
+    ],
+    "solution": [
+      "Spray neem extract or use resistant varieties like Arka Anamika.",
+      "Use pheromone traps and remove affected fruits promptly."
+    ]
+  },
+  {
+    "id": 24,
+    "commonName": "Carrot",
+    "insects": [
+      { "name": "Carrot Rust Fly", "effect": "Larvae tunnel into roots causing black lines and rot." },
+      { "name": "Aphids", "effect": "Transmit viruses and cause stunted growth." }
+    ],
+    "solution": [
+      "Use floating row covers and practice crop rotation.",
+      "Control aphids early with insecticidal soaps or neem spray."
+    ]
+  },
+  {
+    "id": 25,
+    "commonName": "Cauliflower",
+    "insects": [
+      { "name": "Cabbage Looper", "effect": "Chews large holes in leaves and heads." },
+      { "name": "Diamondback Moth", "effect": "Larvae feed on leaves and bore into curds." }
+    ],
+    "solution": [
+      "Spray Bt formulations or neem oil regularly during early growth.",
+      "Encourage natural predators like birds and parasitoid wasps."
+    ]
+  },
+  {
+    "id": 26,
+    "commonName": "Radish",
+    "insects": [
+      { "name": "Flea Beetle", "effect": "Makes shot holes in leaves; larvae can attack roots." },
+      { "name": "Root Maggot", "effect": "Larvae feed inside roots causing soft rotting and yield loss." }
+    ],
+    "solution": [
+      "Use sticky traps and apply ash or diatomaceous earth around base.",
+      "Avoid overwatering and use crop rotation with non-host crops."
+    ]
+  },
+  {
+    "id": 27,
+    "commonName": "Spinach",
+    "insects": [
+      { "name": "Leaf Miner", "effect": "Larvae tunnel within leaves forming whitish mines reducing quality." },
+      { "name": "Aphids", "effect": "Cause leaf curling and transmit viruses." }
+    ],
+    "solution": [
+      "Remove infested leaves; apply neem oil or Spinosad.",
+      "Introduce beneficial insects like lacewings or lady beetles."
+    ]
+  },
+  {
+    "id": 28,
+    "commonName": "Beetroot",
+    "insects": [
+      { "name": "Beet Leafminer", "effect": "Larvae mine between leaf surfaces making the crop unmarketable." },
+      { "name": "Cutworms", "effect": "Sever young plants at soil level during night feeding." }
+    ],
+    "solution": [
+      "Use row covers to block egg-laying and remove mined leaves.",
+      "Apply biological controls like nematodes or Bacillus thuringiensis at seedling stage."
+    ]
+  },
+  {
+    "id": 29,
+    "commonName": "Mustard",
+    "insects": [
+      { "name": "Mustard Aphid", "effect": "Sucks sap from tender parts, causing curling, stunted growth and poor seed set." },
+      { "name": "Painted Bug", "effect": "Feeds on sap and seeds; causes shriveling of pods and yield loss." }
+    ],
+    "solution": [
+      "Spray neem oil early and introduce predatory insects like lady beetles.",
+      "Apply systemic insecticides at flowering if aphid count exceeds economic threshold."
+    ]
+  },
+  {
+    "id": 30,
+    "commonName": "Pea",
+    "insects": [
+      { "name": "Pea Stem Fly", "effect": "Larvae bore into stems causing wilting and hollow stems." },
+      { "name": "Aphids", "effect": "Transmit mosaic viruses and cause leaf distortion." }
+    ],
+    "solution": [
+      "Use seed treatment with systemic insecticides to prevent early damage.",
+      "Spray neem extract or imidacloprid at early flowering stage if aphid pressure is high."
+    ]
+  },
+  {
+    "id": 31,
+    "commonName": "Chilli",
+    "insects": [
+      { "name": "Thrips", "effect": "Scrape the leaf surface causing curling and silvery appearance." },
+      { "name": "Fruit Borer", "effect": "Larvae bore into fruits rendering them unfit for market." }
+    ],
+    "solution": [
+      "Apply neem-based insecticides and maintain field sanitation.",
+      "Install pheromone traps and spray Spinosad when infestation is noticed."
+    ]
+  },
+  {
+    "id": 32,
+    "commonName": "Coriander",
+    "insects": [
+      { "name": "Aphids", "effect": "Cause yellowing and curling; act as vectors of viral diseases." },
+      { "name": "Cutworms", "effect": "Feed at night, cutting young seedlings at ground level." }
+    ],
+    "solution": [
+      "Use light traps to monitor moths and apply ash around the base of plants.",
+      "Spray neem oil or introduce natural enemies like lacewings for aphid control."
+    ]
+  },
+  {
+    "id": 33,
+    "commonName": "Fenugreek",
+    "insects": [
+      { "name": "Aphids", "effect": "Cluster on young leaves and stems, sucking sap and reducing vigor." },
+      { "name": "White Grubs", "effect": "Feed on roots, leading to yellowing and wilting of plants." }
+    ],
+    "solution": [
+      "Apply neem cake to the soil and maintain weed-free conditions.",
+      "Use systemic insecticides in case of severe infestation."
+    ]
+  },
+  {
+    "id": 34,
+    "commonName": "Garlic",
+    "insects": [
+      { "name": "Thrips", "effect": "Feed on foliage causing silvering, drying and curling of leaves." },
+      { "name": "Onion Fly", "effect": "Maggots attack the bulbs causing rotting." }
+    ],
+    "solution": [
+      "Use reflective mulch and apply insecticides at threshold levels.",
+      "Remove affected plants and use crop rotation to break pest cycle."
+    ]
+  },
+  {
+    "id": 35,
+    "commonName": "Ginger",
+    "insects": [
+      { "name": "Shoot Borer", "effect": "Larvae bore into pseudostems causing yellowing and wilting." },
+      { "name": "Rhizome Scale", "effect": "Sucks sap from rhizomes, leading to shrinkage and poor sprouting." }
+    ],
+    "solution": [
+      "Drench with neem extract and maintain adequate drainage.",
+      "Use clean planting material and solarize beds before planting."
+    ]
+  },
+  {
+    "id": 36,
+    "commonName": "Turmeric",
+    "insects": [
+      { "name": "Rhizome Fly", "effect": "Larvae tunnel into rhizomes causing internal decay and yield loss." },
+      { "name": "Shoot Borer", "effect": "Causes dead heart by boring into central shoots." }
+    ],
+    "solution": [
+      "Remove and destroy infested rhizomes.",
+      "Apply neem-based sprays and maintain proper spacing to reduce humidity."
+    ]
+  },
+  {
+    "id": 37,
+    "commonName": "Bottle Gourd",
+    "insects": [
+      { "name": "Fruit Fly", "effect": "Larvae develop inside fruits causing internal rotting." },
+      { "name": "Red Pumpkin Beetle", "effect": "Adults feed on foliage, grubs damage roots and fruits." }
+    ],
+    "solution": [
+      "Install methyl eugenol traps and remove infested fruits.",
+      "Use ash or neem cake at base and spray neem oil on leaves."
+    ]
+  },
+  {
+    "id": 38,
+    "commonName": "Cucumber",
+    "insects": [
+      { "name": "Aphids", "effect": "Feed on sap, cause stunted growth and transmit mosaic viruses." },
+      { "name": "Spider Mites", "effect": "Cause stippling, leaf bronzing and defoliation." }
+    ],
+    "solution": [
+      "Spray insecticidal soap and introduce natural predators like ladybugs.",
+      "Use sulfur-based miticides in case of heavy mite infestation."
+    ]
+  },
+   {
+    "id": 39,
+    "commonName": "Watermelon",
+    "insects": [
+      { "name": "Fruit Fly", "effect": "Eggs laid in fruit lead to larval feeding and internal decay." },
+      { "name": "Aphids", "effect": "Cause curling of young leaves and spread viral diseases." }
+    ],
+    "solution": [
+      "Use methyl eugenol traps and remove infested fruits promptly.",
+      "Spray neem oil and encourage beneficial insects like lacewings for aphid control."
+    ]
+  },
+  {
+    "id": 40,
+    "commonName": "Muskmelon",
+    "insects": [
+      { "name": "Red Pumpkin Beetle", "effect": "Feeds on cotyledons and young leaves; grubs attack roots." },
+      { "name": "Fruit Fly", "effect": "Larvae damage fruits from inside causing decay." }
+    ],
+    "solution": [
+      "Use ash and neem cake around roots and install bait traps.",
+      "Apply neem oil sprays and dispose of damaged fruits regularly."
+    ]
+  },
+  {
+    "id": 41,
+    "commonName": "Guava",
+    "insects": [
+      { "name": "Fruit Fly", "effect": "Bores into fruits making them unfit for consumption." },
+      { "name": "Mealybugs", "effect": "Suck sap from leaves and fruits leading to sooty mold." }
+    ],
+    "solution": [
+      "Bagging of fruits and use of pheromone traps for fruit fly control.",
+      "Apply neem-based sprays and support natural enemies like ladybird beetles."
+    ]
+  },
+  {
+    "id": 42,
+    "commonName": "Pomegranate",
+    "insects": [
+      { "name": "Pomegranate Butterfly (Anar Butterfly)", "effect": "Larvae bore into fruits causing internal rotting." },
+      { "name": "Aphids", "effect": "Distort leaves and reduce flowering." }
+    ],
+    "solution": [
+      "Bag fruits and use light traps; apply contact insecticides if needed.",
+      "Spray neem oil and promote beneficial insects like hoverflies."
+    ]
+  },
+  {
+    "id": 43,
+    "commonName": "Lemon",
+    "insects": [
+      { "name": "Leaf Miner", "effect": "Larvae tunnel inside leaves, causing serpentine mines and curling." },
+      { "name": "Citrus Psylla", "effect": "Sucks sap, transmits greening disease (HLB)." }
+    ],
+    "solution": [
+      "Prune affected shoots and spray neem or horticultural oil.",
+      "Apply imidacloprid-based sprays and remove infected trees to control psylla."
+    ]
+  },
+  {
+    "id": 44,
+    "commonName": "Mango",
+    "insects": [
+      { "name": "Mango Hopper", "effect": "Sucks sap from inflorescence causing flower drop." },
+      { "name": "Fruit Fly", "effect": "Infests fruits causing rotting and drop." }
+    ],
+    "solution": [
+      "Spray neem oil during flowering and use light traps.",
+      "Use methyl eugenol traps and destroy fallen infested fruits."
+    ]
+  },
+  {
+    "id": 45,
+    "commonName": "Apple Gourd (Tinda)",
+    "insects": [
+      { "name": "Red Pumpkin Beetle", "effect": "Damages foliage and flowers, reducing fruit setting." },
+      { "name": "Fruit Fly", "effect": "Larvae cause internal fruit damage and rotting." }
+    ],
+    "solution": [
+      "Apply neem oil regularly and place bait traps for adult flies.",
+      "Remove affected fruits and maintain field hygiene."
+    ]
+  },
+  {
+    "id": 46,
+    "commonName": "Snake Gourd",
+    "insects": [
+      { "name": "Aphids", "effect": "Suck sap causing leaf curling and virus transmission." },
+      { "name": "Fruit Fly", "effect": "Bores into fruits causing deformation and rot." }
+    ],
+    "solution": [
+      "Use yellow sticky traps and neem sprays for aphid control.",
+      "Bag young fruits and use pheromone traps for fruit fly monitoring."
+    ]
+  },
+  {
+    "id": 47,
+    "commonName": "Ridge Gourd",
+    "insects": [
+      { "name": "Jassids", "effect": "Cause leaf cupping, discoloration and reduce photosynthesis." },
+      { "name": "Fruit Fly", "effect": "Affects developing fruits leading to internal damage." }
+    ],
+    "solution": [
+      "Introduce neem-based sprays and manage weeds around field borders.",
+      "Apply bait traps and remove damaged fruits from the field."
+    ]
+  },
+  {
+    "id": 48,
+    "commonName": "Bitter Gourd",
+    "insects": [
+      { "name": "Aphids", "effect": "Suck sap and transmit mosaic viruses." },
+      { "name": "Fruit Fly", "effect": "Leads to rotting and premature drop of fruits." }
+    ],
+    "solution": [
+      "Use neem oil and biological control agents like coccinellids.",
+      "Install pheromone traps and destroy affected fruits regularly."
+    ]
+  },
+  {
+    "id": 49,
+    "commonName": "Sweet Potato",
+    "insects": [
+      { "name": "Sweet Potato Weevil", "effect": "Larvae bore into tubers and stems, causing yield loss and tuber rot." },
+      { "name": "Whitefly", "effect": "Sucks sap and transmits leaf curl viruses." }
+    ],
+    "solution": [
+      "Use clean planting material, destroy crop residues, and apply pheromone traps.",
+      "Spray neem oil and introduce parasitoids like Encarsia for whitefly control."
+    ]
+  },
+  {
+    "id": 50,
+    "commonName": "Yam",
+    "insects": [
+      { "name": "Scale Insects", "effect": "Attach to stems and leaves, sucking sap and weakening the plant." },
+      { "name": "Mealybugs", "effect": "Cause stunted growth and lead to sooty mold formation." }
+    ],
+    "solution": [
+      "Apply neem or fish oil resin soap sprays and destroy infected vines.",
+      "Encourage natural predators like ladybird beetles and avoid excess nitrogen fertilization."
+    ]
+  },
+  {
+    "id": 51,
+    "commonName": "Turnip",
+    "insects": [
+      { "name": "Flea Beetles", "effect": "Make small holes in leaves and affect root development." },
+      { "name": "Cutworms", "effect": "Sever seedlings at the base leading to poor stand establishment." }
+    ],
+    "solution": [
+      "Use row covers and trap crops like mustard to lure beetles.",
+      "Apply ash or neem powder around plant base; irrigate early to reduce cutworm activity."
+    ]
+  },
+  {
+    "id": 52,
+    "commonName": "Amaranth",
+    "insects": [
+      { "name": "Aphids", "effect": "Cause leaf curling and yellowing, reducing growth rate." },
+      { "name": "Leaf Webber", "effect": "Larvae web leaves together and feed inside, reducing leaf quality." }
+    ],
+    "solution": [
+      "Spray neem oil or garlic extract and encourage beneficial insects.",
+      "Remove webbed leaves and apply biopesticides like Bt or Spinosad."
+    ]
+  },
+  {
+    "id": 53,
+    "commonName": "Cabbage",
+    "insects": [
+      { "name": "Cabbage Worm", "effect": "Feeds on foliage and bores into heads, making them unfit for market." },
+      { "name": "Flea Beetle", "effect": "Makes small shot holes in leaves, affecting photosynthesis." }
+    ],
+    "solution": [
+      "Apply Bt spray during early stages and maintain field sanitation.",
+      "Use floating row covers and rotate crops with non-hosts."
+    ]
+  },
+  {
+    "id": 54,
+    "commonName": "Broccoli",
+    "insects": [
+      { "name": "Cabbage Looper", "effect": "Chews large irregular holes in leaves and heads." },
+      { "name": "Aphids", "effect": "Cluster on underside of leaves, causing yellowing and reduced head size." }
+    ],
+    "solution": [
+      "Spray Bt or neem oil during early crop stages.",
+      "Use soap sprays and encourage lacewings for aphid control."
+    ]
+  },
+  {
+    "id": 55,
+    "commonName": "Lettuce",
+    "insects": [
+      { "name": "Leaf Miner", "effect": "Creates winding mines in leaves reducing market value." },
+      { "name": "Aphids", "effect": "Suck sap and transmit viral diseases." }
+    ],
+    "solution": [
+      "Use row covers to block egg laying and spray neem oil.",
+      "Apply insecticidal soap and remove heavily infested leaves."
+    ]
+  },
+  {
+    "id": 56,
+    "commonName": "Celery",
+    "insects": [
+      { "name": "Carrot Fly", "effect": "Larvae feed on roots, causing tunneling and rot." },
+      { "name": "Aphids", "effect": "Cause leaf curling and reduce vigor." }
+    ],
+    "solution": [
+      "Use floating row covers and plant resistant varieties.",
+      "Apply neem spray or introduce predatory insects like ladybugs."
+    ]
+  },
+  {
+    "id": 57,
+    "commonName": "Parsley",
+    "insects": [
+      { "name": "Armyworm", "effect": "Feeds on leaves causing defoliation." },
+      { "name": "Aphids", "effect": "Suck sap, deform leaves and attract ants." }
+    ],
+    "solution": [
+      "Handpick larvae early and use Spinosad for severe infestations.",
+      "Spray neem oil and release lacewings or parasitic wasps."
+    ]
+  },
+  {
+    "id": 58,
+    "commonName": "Leek",
+    "insects": [
+      { "name": "Leek Moth", "effect": "Larvae tunnel into leaves and bulbs causing rot." },
+      { "name": "Thrips", "effect": "Feed on foliage, causing silvery streaks and leaf twisting." }
+    ],
+    "solution": [
+      "Use pheromone traps for early detection and destroy infested debris.",
+      "Spray miticides or neem extract and ensure good field airflow."
+    ]
+  },
+  {
+    "id": 59,
+    "commonName": "Sapota (Chikoo)",
+    "insects": [
+      { "name": "Fruit Fly", "effect": "Lays eggs in fruit; maggots feed inside, causing internal rotting." },
+      { "name": "Leaf Webber", "effect": "Webs leaves and feeds inside, reducing photosynthesis." }
+    ],
+    "solution": [
+      "Use methyl eugenol traps and remove fallen infested fruits.",
+      "Prune infested shoots and apply neem oil or Bt-based spray."
+    ]
+  },
+  {
+    "id": 60,
+    "commonName": "Ber (Indian Jujube)",
+    "insects": [
+      { "name": "Fruit Borer", "effect": "Larvae bore into ripening fruits, making them unfit for consumption." },
+      { "name": "Leaf Defoliator", "effect": "Feeds on foliage, reducing tree vigor and productivity." }
+    ],
+    "solution": [
+      "Collect and destroy infested fruits; spray contact insecticides pre-harvest.",
+      "Use light traps and neem sprays to manage defoliators."
+    ]
+  },
+  {
+    "id": 61,
+    "commonName": "Custard Apple",
+    "insects": [
+      { "name": "Fruit Borer", "effect": "Larvae damage pulp internally, leading to fruit drop and rot." },
+      { "name": "Mealybugs", "effect": "Suck sap from leaves and stems; cause yellowing and mold growth." }
+    ],
+    "solution": [
+      "Bag fruits and apply botanical sprays during fruit development.",
+      "Introduce predators like ladybird beetles and spray neem oil."
+    ]
+  },
+  {
+    "id": 62,
+    "commonName": "Jackfruit",
+    "insects": [
+      { "name": "Fruit Borer", "effect": "Larvae bore into tender fruits causing rot and unmarketability." },
+      { "name": "Shoot Borer", "effect": "Affects tender shoots leading to drying and distorted growth." }
+    ],
+    "solution": [
+      "Remove and destroy infested fruits; apply systemic insecticides when needed.",
+      "Maintain proper canopy airflow and apply neem-based sprays."
+    ]
+  },
+  {
+    "id": 63,
+    "commonName": "Wood Apple (Bael)",
+    "insects": [
+      { "name": "Fruit Fly", "effect": "Eggs hatch inside fruit leading to soft rot and foul smell." },
+      { "name": "Leaf Roller", "effect": "Rolls and feeds inside leaves, lowering tree vitality." }
+    ],
+    "solution": [
+      "Use pheromone traps and remove damaged fruits early.",
+      "Spray neem or Spinosad and prune infected shoots."
+    ]
+  },
+  {
+    "id": 64,
+    "commonName": "Jamun (Java Plum)",
+    "insects": [
+      { "name": "Leaf Miner", "effect": "Creates serpentine mines on leaves reducing photosynthetic efficiency." },
+      { "name": "Mealybugs", "effect": "Lead to leaf yellowing, branch drying and sooty mold formation." }
+    ],
+    "solution": [
+      "Apply horticultural oils and prune heavily infested branches.",
+      "Use sticky traps and neem soap during early infestations."
+    ]
+  },
+  {
+    "id": 65,
+    "commonName": "Tamarind",
+    "insects": [
+      { "name": "Pod Borer", "effect": "Damages developing pods leading to seed exposure and drop." },
+      { "name": "Scale Insects", "effect": "Attach to branches and suck sap, leading to poor flowering." }
+    ],
+    "solution": [
+      "Apply light insecticide sprays before flowering; remove and destroy infested pods.",
+      "Use horticultural mineral oil and encourage natural predators."
+    ]
+  },
+  {
+    "id": 66,
+    "commonName": "Amla (Indian Gooseberry)",
+    "insects": [
+      { "name": "Shoot Gall Maker", "effect": "Causes gall formation on shoots, disrupting growth." },
+      { "name": "Bark Eating Caterpillar", "effect": "Feeds on bark and creates galleries, weakening branches." }
+    ],
+    "solution": [
+      "Remove galls and apply systemic insecticides during active periods.",
+      "Close caterpillar holes with kerosene-soaked cotton and seal with mud."
+    ]
+  },
+  {
+    "id": 67,
+    "commonName": "Peach",
+    "insects": [
+      { "name": "Peach Fruit Moth", "effect": "Infests fruits internally causing premature drop and rot." },
+      { "name": "Aphids", "effect": "Cluster on shoots causing leaf curl and stunted growth." }
+    ],
+    "solution": [
+      "Spray Spinosad or neem extract during early fruit development.",
+      "Apply soap sprays or imidacloprid at early infestation stage."
+    ]
+  },
+  {
+    "id": 68,
+    "commonName": "Plum",
+    "insects": [
+      { "name": "Fruit Fly", "effect": "Infests ripening fruits leading to poor shelf life." },
+      { "name": "Leaf Curl Aphid", "effect": "Distorts young leaves, affecting fruit formation." }
+    ],
+    "solution": [
+      "Use fruit fly traps and harvest fruits at appropriate maturity.",
+      "Control aphids with neem sprays and promote natural predators."
+    ]
+  },
+   {
+    "id": 69,
+    "commonName": "Pear",
+    "insects": [
+      { "name": "Codling Moth", "effect": "Larvae tunnel into fruits, leaving frass and making them unmarketable." },
+      { "name": "Pear Psylla", "effect": "Sucks sap and secretes honeydew leading to sooty mold." }
+    ],
+    "solution": [
+      "Apply pheromone traps and insect growth regulators (IGRs).",
+      "Spray neem oil and prune infested shoots early in the season."
+    ]
+  },
+  {
+    "id": 70,
+    "commonName": "Fig",
+    "insects": [
+      { "name": "Fig Borer", "effect": "Bores into stems and fruits, causing wilting and internal decay." },
+      { "name": "Scale Insects", "effect": "Sap feeders that weaken the plant and promote fungal growth." }
+    ],
+    "solution": [
+      "Remove and burn infested branches; use light traps.",
+      "Apply horticultural oil sprays and encourage parasitic wasps."
+    ]
+  },
+  {
+    "id": 71,
+    "commonName": "Litchi",
+    "insects": [
+      { "name": "Litchi Fruit Borer", "effect": "Damages developing fruits leading to shriveling and drop." },
+      { "name": "Leaf Curl Mite", "effect": "Causes curling and bronzing of leaves, reducing photosynthesis." }
+    ],
+    "solution": [
+      "Bag fruits at early stages and apply neem-based sprays.",
+      "Use sulfur sprays or miticides for controlling mites."
+    ]
+  },
+  {
+    "id": 72,
+    "commonName": "Grapes",
+    "insects": [
+      { "name": "Grape Berry Moth", "effect": "Larvae bore into berries leading to rotting and fungal infection." },
+      { "name": "Mealybugs", "effect": "Cause fruit drop, mold formation and vine weakening." }
+    ],
+    "solution": [
+      "Use pheromone traps and remove infested bunches.",
+      "Spray neem oil or introduce predatory beetles like Cryptolaemus montrouzieri."
+    ]
+  },
+  {
+    "id": 73,
+    "commonName": "Avocado",
+    "insects": [
+      { "name": "Avocado Thrips", "effect": "Scars fruit surface, reducing market value." },
+      { "name": "Fruit Fly", "effect": "Lays eggs in ripening fruits causing internal rotting." }
+    ],
+    "solution": [
+      "Monitor with yellow sticky traps and spray Spinosad if needed.",
+      "Collect and destroy fallen fruits regularly."
+    ]
+  },
+  {
+    "id": 74,
+    "commonName": "Pineapple",
+    "insects": [
+      { "name": "Mealybugs", "effect": "Transmits wilt virus and weakens the plant." },
+      { "name": "Scale Insects", "effect": "Feed on leaves and crown, reducing plant vigor." }
+    ],
+    "solution": [
+      "Dip suckers in insecticidal solution before planting.",
+      "Apply horticultural oil sprays and encourage predatory insects."
+    ]
+  },
+  {
+    "id": 75,
+    "commonName": "Strawberry",
+    "insects": [
+      { "name": "Spider Mites", "effect": "Cause leaf bronzing, webbing and fruit shrinkage." },
+      { "name": "Strawberry Root Weevil", "effect": "Larvae feed on roots, reducing plant growth." }
+    ],
+    "solution": [
+      "Spray sulfur-based miticides and maintain field hygiene.",
+      "Use biological control with entomopathogenic nematodes."
+    ]
+  },
+  {
+    "id": 76,
+    "commonName": "Blueberry",
+    "insects": [
+      { "name": "Blueberry Maggot", "effect": "Larvae damage fruit pulp causing it to collapse." },
+      { "name": "Aphids", "effect": "Transmit blueberry scorch virus and stunt growth." }
+    ],
+    "solution": [
+      "Use baited traps and remove overripe berries promptly.",
+      "Apply insecticidal soaps or neem oil early in infestation."
+    ]
+  },
+  {
+    "id": 77,
+    "commonName": "Olive",
+    "insects": [
+      { "name": "Olive Fruit Fly", "effect": "Bores into fruit, causing premature drop and decay." },
+      { "name": "Olive Scale", "effect": "Weakens tree and attracts sooty mold." }
+    ],
+    "solution": [
+      "Use pheromone or bait traps and harvest fruits promptly.",
+      "Apply mineral oils and promote beneficial parasitoids."
+    ]
+  },
+  {
+    "id": 78,
+    "commonName": "Kiwi",
+    "insects": [
+      { "name": "Armored Scale Insects", "effect": "Form crusty colonies on stems and fruits; reduce yield." },
+      { "name": "Fruit Fly", "effect": "Larvae feed on fruit flesh leading to collapse and rot." }
+    ],
+    "solution": [
+      "Apply horticultural oils during dormant season.",
+      "Install bait stations and avoid overripe fruit accumulation."
+    ]
+  },
+  {
+    "id": 79,
+    "commonName": "Dragon Fruit",
+    "insects": [
+      { "name": "Mealybugs", "effect": "Suck sap from stems and fruit, leading to yellowing and mold growth." },
+      { "name": "Fruit Borer", "effect": "Larvae feed inside fruits, causing internal decay and drop." }
+    ],
+    "solution": [
+      "Spray neem oil or insecticidal soap; encourage natural predators.",
+      "Bag fruits and use pheromone traps during flowering stage."
+    ]
+  },
+  {
+    "id": 80,
+    "commonName": "Gooseberry (Ribes)",
+    "insects": [
+      { "name": "Currant Worm", "effect": "Feeds on leaves, leading to complete defoliation if unmanaged." },
+      { "name": "Aphids", "effect": "Suck sap, causing curling and stunted shoot growth." }
+    ],
+    "solution": [
+      "Handpick larvae and use neem or Bt spray for early stages.",
+      "Use insecticidal soap and release lacewings or ladybird beetles."
+    ]
+  },
+  {
+    "id": 81,
+    "commonName": "Blackberry",
+    "insects": [
+      { "name": "Japanese Beetle", "effect": "Feeds on foliage and flowers, reducing fruit formation." },
+      { "name": "Cane Borer", "effect": "Bores into canes, causing wilting and dieback." }
+    ],
+    "solution": [
+      "Use beetle traps and remove infested canes below entry point.",
+      "Apply neem oil post-pruning and destroy borers mechanically."
+    ]
+  },
+  {
+    "id": 82,
+    "commonName": "Raspberry",
+    "insects": [
+      { "name": "Raspberry Cane Borer", "effect": "Larvae tunnel into canes, leading to wilted shoot tips." },
+      { "name": "Aphids", "effect": "Transmit raspberry mosaic virus and reduce growth." }
+    ],
+    "solution": [
+      "Cut and remove wilted canes below tunnel point.",
+      "Use insecticidal soap and avoid dense planting to reduce aphid spread."
+    ]
+  },
+  {
+    "id": 83,
+    "commonName": "Passion Fruit",
+    "insects": [
+      { "name": "Fruit Fly", "effect": "Causes punctures in fruits leading to rot and drop." },
+      { "name": "Red Spider Mite", "effect": "Feeds on underside of leaves, causing bronzing and defoliation." }
+    ],
+    "solution": [
+      "Use bait traps and remove fallen fruits regularly.",
+      "Spray miticides and maintain humidity to discourage mites."
+    ]
+  },
+  {
+    "id": 84,
+    "commonName": "Mulberry",
+    "insects": [
+      { "name": "Mulberry Silkworm Larvae", "effect": "Feed on leaves reducing biomass required for silk production." },
+      { "name": "Scale Insects", "effect": "Lead to leaf yellowing and twig dieback." }
+    ],
+    "solution": [
+      "Manage larvae by pruning and releasing parasitic wasps.",
+      "Use horticultural oils and maintain tree health to reduce infestation."
+    ]
+  },
+  {
+    "id": 85,
+    "commonName": "Rambutan",
+    "insects": [
+      { "name": "Fruit Borer", "effect": "Attacks ripening fruits, causing browning and internal rot." },
+      { "name": "Mealybugs", "effect": "Form colonies on fruit and stems; lead to sooty mold." }
+    ],
+    "solution": [
+      "Apply neem oil and use pheromone traps during flowering.",
+      "Encourage predatory beetles and avoid overcrowded plantations."
+    ]
+  },
+  {
+    "id": 86,
+    "commonName": "Mangosteen",
+    "insects": [
+      { "name": "Fruit Borer", "effect": "Damages pericarp and pulp causing unmarketable fruit." },
+      { "name": "Aphids", "effect": "Reduce shoot vigor and may affect fruit set." }
+    ],
+    "solution": [
+      "Monitor with traps and use Bt or neem sprays.",
+      "Control aphids with soap sprays or predatory insects."
+    ]
+  },
+  {
+    "id": 87,
+    "commonName": "Longan",
+    "insects": [
+      { "name": "Longan Fruit Borer", "effect": "Infests fruits leading to browning and early drop." },
+      { "name": "Leaf Miner", "effect": "Creates serpentine mines on leaves, reducing photosynthesis." }
+    ],
+    "solution": [
+      "Remove and destroy infested fruits, spray neem extract during flowering.",
+      "Prune affected foliage and apply horticultural oil."
+    ]
+  },
+  {
+    "id": 88,
+    "commonName": "Star Fruit (Carambola)",
+    "insects": [
+      { "name": "Fruit Fly", "effect": "Causes fruit rotting and premature fruit fall." },
+      { "name": "Scale Insects", "effect": "Attach to leaves and stems, sucking sap and reducing vigor." }
+    ],
+    "solution": [
+      "Use pheromone traps and harvest fruits early.",
+      "Spray insecticidal soap and maintain field sanitation."
+    ]
+  },
+   {
+    "id": 89,
+    "commonName": "Custard Apple (Sitaphal)",
+    "insects": [
+      { "name": "Fruit Borer", "effect": "Infests ripening fruits leading to internal decay and fruit drop." },
+      { "name": "Mealybugs", "effect": "Suck sap from twigs and leaves, resulting in leaf yellowing and black mold." }
+    ],
+    "solution": [
+      "Bag fruits during development and destroy infested ones.",
+      "Spray neem oil and introduce predators like ladybird beetles."
+    ]
+  },
+  {
+    "id": 90,
+    "commonName": "Loquat",
+    "insects": [
+      { "name": "Loquat Fruit Borer", "effect": "Bores into fruits causing spoilage and market loss." },
+      { "name": "Aphids", "effect": "Distort young shoots and spread viral diseases." }
+    ],
+    "solution": [
+      "Use light traps and remove infested fruits regularly.",
+      "Spray neem-based insecticides and introduce natural predators."
+    ]
+  },
+  {
+    "id": 91,
+    "commonName": "Indian Almond (Terminalia catappa)",
+    "insects": [
+      { "name": "Leaf Roller", "effect": "Rolls leaves and feeds within, reducing photosynthetic area." },
+      { "name": "Shoot Borer", "effect": "Damages young shoots and suppresses tree growth." }
+    ],
+    "solution": [
+      "Prune infested branches and apply neem oil.",
+      "Apply contact insecticides during new flush growth stage."
+    ]
+  },
+  {
+    "id": 92,
+    "commonName": "Arecanut (Betel Nut)",
+    "insects": [
+      { "name": "Spindle Bug", "effect": "Damages young leaves within the spindle causing yellow streaks." },
+      { "name": "Root Grubs", "effect": "Feed on roots causing yellowing and wilting." }
+    ],
+    "solution": [
+      "Spray systemic insecticides inside leaf spindle during early infestation.",
+      "Apply neem cake and maintain clean cultivation to reduce grubs."
+    ]
+  },
+  {
+    "id": 93,
+    "commonName": "Betel Leaf",
+    "insects": [
+      { "name": "Scales", "effect": "Cause leaf curling, discoloration and premature leaf drop." },
+      { "name": "Thrips", "effect": "Feed on young leaves causing silvering and edge curling." }
+    ],
+    "solution": [
+      "Apply neem extract and fish oil resin soap weekly.",
+      "Ensure proper shade, moisture, and use yellow sticky traps for thrips."
+    ]
+  },
+  {
+    "id": 94,
+    "commonName": "Clove",
+    "insects": [
+      { "name": "Stem Borer", "effect": "Tunnels into bark causing branch dieback and tree weakness." },
+      { "name": "Scale Insects", "effect": "Suck sap from stems and leaves, causing yellowing." }
+    ],
+    "solution": [
+      "Plug boreholes with kerosene-soaked cotton and seal with mud.",
+      "Spray horticultural oil and introduce ladybird beetles for control."
+    ]
+  },
+  {
+    "id": 95,
+    "commonName": "Nutmeg",
+    "insects": [
+      { "name": "Shoot Borer", "effect": "Attacks terminal shoots leading to distorted growth." },
+      { "name": "Leaf Miner", "effect": "Feeds within leaves causing whitish trails and reduced vigor." }
+    ],
+    "solution": [
+      "Apply neem or Bt sprays during vegetative flush.",
+      "Remove and destroy mined leaves regularly."
+    ]
+  },
+  {
+    "id": 96,
+    "commonName": "Cardamom",
+    "insects": [
+      { "name": "Thrips", "effect": "Feed on young panicles causing withering and flower drop." },
+      { "name": "Capsule Borer", "effect": "Bores into capsules leading to blackening and yield loss." }
+    ],
+    "solution": [
+      "Maintain shade and humidity; use blue sticky traps.",
+      "Spray neem oil or emamectin benzoate at capsule formation stage."
+    ]
+  },
+  {
+    "id": 97,
+    "commonName": "Coffee",
+    "insects": [
+      { "name": "Coffee Berry Borer", "effect": "Larvae bore into berries and feed on beans, reducing quality." },
+      { "name": "Stem Borer", "effect": "Weakens branches by tunneling inside, causing breakage." }
+    ],
+    "solution": [
+      "Collect fallen berries and dry post-harvest; use traps with alcohol lures.",
+      "Apply systemic insecticides to trunks and prune infested branches."
+    ]
+  },
+  {
+    "id": 98,
+    "commonName": "Tea",
+    "insects": [
+      { "name": "Tea Mosquito Bug", "effect": "Feeds on young leaves and buds, causing blistering and leaf drop." },
+      { "name": "Looper Caterpillar", "effect": "Feeds on foliage, leading to defoliation and yield decline." }
+    ],
+    "solution": [
+      "Apply neem seed kernel extract and light traps for early detection.",
+      "Spray Bt formulations or chlorantraniliprole when infestation appears."
+    ]
+  },
+   {
+    "id": 99,
+    "commonName": "Black Pepper",
+    "insects": [
+      { "name": "Pollu Beetle", "effect": "Bores into immature berries causing black hollow fruits and poor yield." },
+      { "name": "Top Shoot Borer", "effect": "Attacks tender shoots resulting in wilting and dieback." }
+    ],
+    "solution": [
+      "Spray neem oil during flowering and berry development stages.",
+      "Remove and destroy affected shoots and apply biological insecticides like Beauveria bassiana."
+    ]
+  },
+  {
+    "id": 100,
+    "commonName": "Chicory",
+    "insects": [
+      { "name": "Aphids", "effect": "Suck sap causing yellowing and curling of leaves." },
+      { "name": "Root Maggot", "effect": "Larvae feed on roots, leading to poor growth and rotting." }
+    ],
+    "solution": [
+      "Apply neem oil and maintain field sanitation.",
+      "Use floating row covers and apply beneficial nematodes in soil."
+    ]
+  },
+  {
+    "id": 101,
+    "commonName": "Saffron",
+    "insects": [
+      { "name": "Mites", "effect": "Feed on corms and reduce sprouting and flowering." },
+      { "name": "Cutworms", "effect": "Cut emerging shoots at ground level." }
+    ],
+    "solution": [
+      "Use sulfur-based sprays and ensure proper drainage.",
+      "Apply ash around plants and practice deep plowing before sowing."
+    ]
+  },
+  {
+    "id": 102,
+    "commonName": "Stevia",
+    "insects": [
+      { "name": "Whiteflies", "effect": "Transmit plant viruses and cause yellowing of foliage." },
+      { "name": "Aphids", "effect": "Lead to sticky honeydew and reduced plant vigor." }
+    ],
+    "solution": [
+      "Use yellow sticky traps and spray neem-based solutions.",
+      "Promote lacewings and parasitoids like Encarsia formosa."
+    ]
+  },
+  {
+    "id": 103,
+    "commonName": "Asparagus",
+    "insects": [
+      { "name": "Asparagus Beetle", "effect": "Chews on spears and ferns, leaving scars and weakening plants." },
+      { "name": "Cutworms", "effect": "Sever young shoots at the base." }
+    ],
+    "solution": [
+      "Handpick beetles and apply neem or pyrethrin-based sprays.",
+      "Use traps and cultivate soil to expose cutworm larvae."
+    ]
+  },
+  {
+    "id": 104,
+    "commonName": "Taro (Colocasia)",
+    "insects": [
+      { "name": "Taro Beetle", "effect": "Bores into corms, reducing marketability and yield." },
+      { "name": "Aphids", "effect": "Cause curling of leaves and attract fungal growth." }
+    ],
+    "solution": [
+      "Practice crop rotation and use clean planting material.",
+      "Apply neem oil and biological controls like Verticillium lecanii."
+    ]
+  },
+  {
+    "id": 105,
+    "commonName": "Colocynth (Bitter Apple)",
+    "insects": [
+      { "name": "Red Pumpkin Beetle", "effect": "Damages foliage and affects flowering and fruiting." },
+      { "name": "Fruit Fly", "effect": "Infests immature fruits leading to rotting." }
+    ],
+    "solution": [
+      "Spray neem extract and remove infested fruits from field.",
+      "Install bait traps and avoid overhead irrigation during fruiting stage."
+    ]
+  },
+  {
+    "id": 106,
+    "commonName": "Okra (Bhindi)",
+    "insects": [
+      { "name": "Jassids", "effect": "Cause leaf cupping and yellowing, reducing yield." },
+      { "name": "Fruit Borer", "effect": "Larvae bore into fruits rendering them unfit for sale." }
+    ],
+    "solution": [
+      "Spray neem oil regularly and maintain clean field borders.",
+      "Use pheromone traps and biological sprays like Spinosad."
+    ]
+  },
+  {
+    "id": 107,
+    "commonName": "Brussels Sprouts",
+    "insects": [
+      { "name": "Cabbage Worm", "effect": "Chews on leaves and sprouts reducing head formation." },
+      { "name": "Aphids", "effect": "Lead to stunted growth and virus transmission." }
+    ],
+    "solution": [
+      "Spray Bt during early larval stages and remove infested leaves.",
+      "Apply insecticidal soap and encourage predators like hoverflies."
+    ]
+  },
+  {
+    "id": 108,
+    "commonName": "Kohlrabi",
+    "insects": [
+      { "name": "Flea Beetles", "effect": "Create small holes in leaves affecting photosynthesis." },
+      { "name": "Cutworms", "effect": "Cut young seedlings at the soil surface." }
+    ],
+    "solution": [
+      "Use row covers and neem seed kernel extract.",
+      "Apply ash or neem cake near plant base and irrigate early morning."
+    ]
+  },
+  {
+    "id": 109,
+    "commonName": "Endive",
+    "insects": [
+      { "name": "Aphids", "effect": "Cause yellowing and distortion of young leaves." },
+      { "name": "Leaf Miners", "effect": "Create serpentine tunnels reducing market quality." }
+    ],
+    "solution": [
+      "Use neem-based sprays and introduce ladybird beetles.",
+      "Apply neem oil and remove affected leaves regularly."
+    ]
+  },
+  {
+    "id": 110,
+    "commonName": "Fennel",
+    "insects": [
+      { "name": "Aphids", "effect": "Suck plant sap, leading to curling and yellowing of leaves." },
+      { "name": "Armyworms", "effect": "Chew on foliage, reducing growth and yield." }
+    ],
+    "solution": [
+      "Apply neem seed extract and use yellow sticky traps.",
+      "Use biological insecticides like Bt or Spinosad early."
+    ]
+  },
+  {
+    "id": 111,
+    "commonName": "Fenugreek",
+    "insects": [
+      { "name": "Aphids", "effect": "Lead to curling and stunted plant growth." },
+      { "name": "Leaf Miner", "effect": "Creates tunnels inside leaves, affecting photosynthesis." }
+    ],
+    "solution": [
+      "Apply neem oil and garlic extract sprays.",
+      "Introduce natural predators and keep field weed-free."
+    ]
+  },
+  {
+    "id": 112,
+    "commonName": "Caraway",
+    "insects": [
+      { "name": "Root Maggots", "effect": "Larvae feed on roots, causing stunted growth." },
+      { "name": "Aphids", "effect": "Reduce vigor and spread viral diseases." }
+    ],
+    "solution": [
+      "Use floating row covers and apply neem oil.",
+      "Maintain crop hygiene and apply bioinsecticides as needed."
+    ]
+  },
+  {
+    "id": 113,
+    "commonName": "Coriander",
+    "insects": [
+      { "name": "Coriander Aphid", "effect": "Sucks sap from shoots and reduces flowering." },
+      { "name": "Cutworms", "effect": "Damage seedlings at base, leading to poor stand." }
+    ],
+    "solution": [
+      "Use neem-based sprays and release predatory insects.",
+      "Apply soil insecticides and irrigate early to prevent cutworm activity."
+    ]
+  },
+  {
+    "id": 114,
+    "commonName": "Dill",
+    "insects": [
+      { "name": "Aphids", "effect": "Cause leaf curling and yellowing." },
+      { "name": "Leaf Miner", "effect": "Tunnel into leaves, reducing their quality and photosynthesis." }
+    ],
+    "solution": [
+      "Spray neem extract and use insecticidal soap.",
+      "Encourage beneficial insects like parasitic wasps."
+    ]
+  },
+  {
+    "id": 115,
+    "commonName": "Mustard",
+    "insects": [
+      { "name": "Mustard Aphid", "effect": "Feeds on flower buds and leaves, reducing seed yield." },
+      { "name": "Painted Bug", "effect": "Sucks sap and causes wilting of shoots and pods." }
+    ],
+    "solution": [
+      "Spray neem oil and encourage ladybird beetles.",
+      "Pluck and destroy infested plants during early stages."
+    ]
+  },
+  {
+    "id": 116,
+    "commonName": "Linseed (Flax)",
+    "insects": [
+      { "name": "Cutworms", "effect": "Sever young seedlings at the base." },
+      { "name": "Aphids", "effect": "Cause curling and chlorosis in leaves." }
+    ],
+    "solution": [
+      "Apply neem cake and keep fields weed-free.",
+      "Spray neem oil or insecticidal soap at early infestation."
+    ]
+  },
+  {
+    "id": 117,
+    "commonName": "Tobacco",
+    "insects": [
+      { "name": "Tobacco Caterpillar", "effect": "Feeds voraciously on leaves leading to defoliation." },
+      { "name": "Whiteflies", "effect": "Transmit leaf curl virus and cause yellowing." }
+    ],
+    "solution": [
+      "Use pheromone traps and apply neem-based pesticides.",
+      "Encourage parasitoids and spray Spinosad if severe."
+    ]
+  },
+  {
+    "id": 118,
+    "commonName": "Jute",
+    "insects": [
+      { "name": "Stem Weevil", "effect": "Bores into stems causing weakening and collapse." },
+      { "name": "Jute Hairy Caterpillar", "effect": "Feeds on leaves causing complete defoliation." }
+    ],
+    "solution": [
+      "Apply neem oil or chlorantraniliprole during vegetative phase.",
+      "Use light traps and collect and destroy egg masses manually."
+    ]
+  },
+   {
+    "id": 119,
+    "commonName": "Sunflower",
+    "insects": [
+      { "name": "Head Borer", "effect": "Larvae feed on developing seeds, reducing yield and quality." },
+      { "name": "Aphids", "effect": "Suck sap from stem and leaves, causing stunted growth." }
+    ],
+    "solution": [
+      "Spray neem seed kernel extract at flower initiation.",
+      "Use light traps and biological control agents like Trichogramma."
+    ]
+  },
+  {
+    "id": 120,
+    "commonName": "Sorghum (Jowar)",
+    "insects": [
+      { "name": "Stem Borer", "effect": "Bores into central shoot, causing dead heart symptoms." },
+      { "name": "Shoot Fly", "effect": "Lays eggs on young shoots; larvae destroy central leaf whorl." }
+    ],
+    "solution": [
+      "Apply neem-based granules at sowing and release egg parasitoids.",
+      "Use seed treatment with Imidacloprid before sowing."
+    ]
+  },
+  {
+    "id": 121,
+    "commonName": "Pearl Millet (Bajra)",
+    "insects": [
+      { "name": "Shoot Fly", "effect": "Larvae cut central shoot leading to dead hearts in seedlings." },
+      { "name": "Stem Borer", "effect": "Larvae feed inside stem, reducing plant vigor and grain fill." }
+    ],
+    "solution": [
+      "Sow in line spacing and apply neem cake during land prep.",
+      "Spray neem seed kernel extract and encourage natural predators."
+    ]
+  },
+  {
+    "id": 122,
+    "commonName": "Finger Millet (Ragi)",
+    "insects": [
+      { "name": "Aphids", "effect": "Cause curling and yellowing of leaves; may transmit mosaic virus." },
+      { "name": "Stem Borers", "effect": "Larvae bore into stem leading to poor panicle formation." }
+    ],
+    "solution": [
+      "Spray neem oil and use sticky traps for monitoring.",
+      "Promote natural predators and intercropping with legumes."
+    ]
+  },
+  {
+    "id": 123,
+    "commonName": "Foxtail Millet",
+    "insects": [
+      { "name": "Armyworms", "effect": "Feed on leaves and panicles causing defoliation." },
+      { "name": "Leaf Rollers", "effect": "Web leaves together and feed within, affecting photosynthesis." }
+    ],
+    "solution": [
+      "Spray Spinosad and apply neem extract during early crop stages.",
+      "Encourage parasitoids and avoid monocropping."
+    ]
+  },
+  {
+    "id": 124,
+    "commonName": "Little Millet",
+    "insects": [
+      { "name": "Grasshoppers", "effect": "Chew on leaves and panicles reducing yield." },
+      { "name": "Aphids", "effect": "Suck sap causing stunting and yellowing." }
+    ],
+    "solution": [
+      "Apply neem seed kernel extract and remove weeds.",
+      "Use light traps and encourage bird perching for natural predation."
+    ]
+  },
+  {
+    "id": 125,
+    "commonName": "Barnyard Millet",
+    "insects": [
+      { "name": "Cutworms", "effect": "Damage seedlings at base, leading to poor establishment." },
+      { "name": "Shoot Borers", "effect": "Damage inner shoots, reducing panicle emergence." }
+    ],
+    "solution": [
+      "Use neem cake in seedbed and irrigate at dusk to reduce activity.",
+      "Apply biopesticides like Bt early in infestation."
+    ]
+  },
+  {
+    "id": 126,
+    "commonName": "Proso Millet",
+    "insects": [
+      { "name": "White Grubs", "effect": "Feed on roots causing lodging and yellowing." },
+      { "name": "Stem Borers", "effect": "Cause internal tunneling and drying of tillers." }
+    ],
+    "solution": [
+      "Apply neem cake and maintain crop rotation.",
+      "Use pheromone traps and flood fields post-harvest to control grubs."
+    ]
+  },
+  {
+    "id": 127,
+    "commonName": "Kodo Millet",
+    "insects": [
+      { "name": "Aphids", "effect": "Suck sap from tender parts, reducing growth and grain fill." },
+      { "name": "Earhead Bug", "effect": "Sucks juice from developing grains reducing grain weight." }
+    ],
+    "solution": [
+      "Spray neem oil and use resistant varieties.",
+      "Avoid delayed harvesting to reduce bug attack."
+    ]
+  },
+  {
+    "id": 128,
+    "commonName": "Job's Tears (Adlay Millet)",
+    "insects": [
+      { "name": "Shoot Fly", "effect": "Causes dead heart by damaging growing point." },
+      { "name": "Armyworm", "effect": "Feeds on leaves and panicles causing defoliation." }
+    ],
+    "solution": [
+      "Early sowing and deep ploughing help reduce incidence.",
+      "Spray neem or Bt formulation at early larval stages."
+    ]
+  },
+  {
+    "id": 129,
+    "commonName": "Quinoa",
+    "insects": [
+      { "name": "Aphids", "effect": "Cause leaf curling and reduce plant vigor." },
+      { "name": "Cutworms", "effect": "Cut young seedlings at the soil level, reducing plant population." }
+    ],
+    "solution": [
+      "Spray neem oil and introduce natural predators like ladybird beetles.",
+      "Use light traps and apply neem cake at base during early growth stages."
+    ]
+  },
+  {
+    "id": 130,
+    "commonName": "Amaranth (Rajgira)",
+    "insects": [
+      { "name": "Leaf Webber", "effect": "Webs and feeds on young leaves, reducing biomass." },
+      { "name": "Aphids", "effect": "Transmits viruses and causes leaf yellowing and curling." }
+    ],
+    "solution": [
+      "Apply neem oil or garlic-chili extract weekly.",
+      "Promote natural predators and maintain crop spacing."
+    ]
+  },
+  {
+    "id": 131,
+    "commonName": "Spinach",
+    "insects": [
+      { "name": "Leaf Miners", "effect": "Create tunnels in leaves, reducing marketability." },
+      { "name": "Aphids", "effect": "Cause leaf curling and transmit viruses." }
+    ],
+    "solution": [
+      "Remove infested leaves and spray neem oil regularly.",
+      "Use insecticidal soaps and floating row covers to prevent infestation."
+    ]
+  },
+  {
+    "id": 132,
+    "commonName": "Lettuce",
+    "insects": [
+      { "name": "Thrips", "effect": "Cause silvery patches and curling on leaves." },
+      { "name": "Cutworms", "effect": "Damage seedlings and cut young plants at soil level." }
+    ],
+    "solution": [
+      "Apply neem seed extract and maintain field hygiene.",
+      "Use pheromone traps and mulch to suppress larvae activity."
+    ]
+  },
+  {
+    "id": 133,
+    "commonName": "Celery",
+    "insects": [
+      { "name": "Aphids", "effect": "Cause leaf curling and honeydew formation." },
+      { "name": "Carrot Rust Fly", "effect": "Larvae feed on roots, reducing quality and yield." }
+    ],
+    "solution": [
+      "Use reflective mulch and apply neem sprays every 10 days.",
+      "Use row covers and remove alternate weed hosts."
+    ]
+  },
+  {
+    "id": 134,
+    "commonName": "Parsley",
+    "insects": [
+      { "name": "Leaf Miners", "effect": "Feed between leaf surfaces, causing blotches and yellowing." },
+      { "name": "Aphids", "effect": "Lead to curling and deformed shoots." }
+    ],
+    "solution": [
+      "Encourage natural enemies and use neem-based sprays.",
+      "Handpick affected leaves and maintain proper spacing."
+    ]
+  },
+  {
+    "id": 135,
+    "commonName": "Leek",
+    "insects": [
+      { "name": "Onion Thrips", "effect": "Cause white streaks and twisting of leaves." },
+      { "name": "Leek Moth", "effect": "Larvae feed inside leaves and stems, weakening the plant." }
+    ],
+    "solution": [
+      "Use reflective mulch and spray spinosad during early stages.",
+      "Remove and destroy affected plant parts and rotate crops."
+    ]
+  },
+  {
+    "id": 136,
+    "commonName": "Chive",
+    "insects": [
+      { "name": "Onion Maggot", "effect": "Larvae feed on roots and bulbs causing rot." },
+      { "name": "Aphids", "effect": "Suck sap and spread mosaic virus." }
+    ],
+    "solution": [
+      "Apply neem cake and avoid continuous cropping of Allium crops.",
+      "Use insecticidal soap and monitor with yellow sticky traps."
+    ]
+  },
+  {
+    "id": 137,
+    "commonName": "Turnip",
+    "insects": [
+      { "name": "Flea Beetles", "effect": "Create shot holes in leaves and damage roots." },
+      { "name": "Root Maggot", "effect": "Feed on roots causing deformities and rot." }
+    ],
+    "solution": [
+      "Use row covers and apply neem oil at early stages.",
+      "Practice crop rotation and remove affected plants immediately."
+    ]
+  },
+  {
+    "id": 138,
+    "commonName": "Radish",
+    "insects": [
+      { "name": "Aphids", "effect": "Suck sap and cause leaf curling and stunted growth." },
+      { "name": "Cutworms", "effect": "Cut off young seedlings at the base." }
+    ],
+    "solution": [
+      "Spray neem oil and garlic extract weekly.",
+      "Irrigate early morning and use ash at plant base to repel cutworms."
+    ]
+  },
+  {
+    "id": 139,
+    "commonName": "Beetroot",
+    "insects": [
+      { "name": "Flea Beetles", "effect": "Feed on young leaves, reducing photosynthesis and plant vigor." },
+      { "name": "Aphids", "effect": "Suck sap from leaves, leading to curling and reduced growth." }
+    ],
+    "solution": [
+      "Use neem oil sprays and row covers during seedling stage.",
+      "Promote beneficial insects like lacewings and ladybird beetles."
+    ]
+  },
+  {
+    "id": 140,
+    "commonName": "Sweet Potato",
+    "insects": [
+      { "name": "Sweet Potato Weevil", "effect": "Bores into vines and tubers, causing internal rot and reduced yield." },
+      { "name": "Wireworms", "effect": "Feed on tubers and roots, leading to tunneling and deformity." }
+    ],
+    "solution": [
+      "Use clean planting material and destroy crop residues after harvest.",
+      "Apply neem cake in soil and avoid late harvesting."
+    ]
+  },
+  {
+    "id": 141,
+    "commonName": "Yam",
+    "insects": [
+      { "name": "Scale Insects", "effect": "Cause yellowing of vines and reduce tuber development." },
+      { "name": "Mealybugs", "effect": "Suck sap from leaves and stems, leading to stunting." }
+    ],
+    "solution": [
+      "Dip seed tubers in insecticidal solution before planting.",
+      "Spray neem oil and ensure good field hygiene."
+    ]
+  },
+  {
+    "id": 142,
+    "commonName": "Cassava (Tapioca)",
+    "insects": [
+      { "name": "Cassava Mealybug", "effect": "Cause leaf distortion and reduced tuber formation." },
+      { "name": "Spider Mites", "effect": "Cause speckling and bronzing of leaves." }
+    ],
+    "solution": [
+      "Introduce parasitoids like *Apoanagyrus lopezi* for mealybugs.",
+      "Spray miticides and maintain adequate field moisture."
+    ]
+  },
+  {
+    "id": 143,
+    "commonName": "Artichoke",
+    "insects": [
+      { "name": "Aphids", "effect": "Suck sap from buds and leaves, causing curling and stunting." },
+      { "name": "Cutworms", "effect": "Feed on stems at ground level, killing young plants." }
+    ],
+    "solution": [
+      "Spray neem-based products and remove weeds nearby.",
+      "Use light traps and mulch around plants."
+    ]
+  },
+  {
+    "id": 144,
+    "commonName": "Zucchini",
+    "insects": [
+      { "name": "Squash Vine Borer", "effect": "Larvae bore into stems causing wilting and collapse." },
+      { "name": "Cucumber Beetle", "effect": "Feeds on leaves and spreads bacterial wilt." }
+    ],
+    "solution": [
+      "Use floating row covers and pheromone traps.",
+      "Spray neem oil weekly and destroy affected vines."
+    ]
+  },
+  {
+    "id": 145,
+    "commonName": "Pumpkin",
+    "insects": [
+      { "name": "Red Pumpkin Beetle", "effect": "Feeds on leaves and flowers, reducing fruit formation." },
+      { "name": "Fruit Fly", "effect": "Lays eggs in young fruits, causing internal damage and rot." }
+    ],
+    "solution": [
+      "Apply neem seed kernel extract and collect infested fruits.",
+      "Use methyl eugenol bait traps to control fruit fly population."
+    ]
+  },
+  {
+    "id": 146,
+    "commonName": "Cucumber",
+    "insects": [
+      { "name": "Whiteflies", "effect": "Transmit leaf curl virus and reduce plant vigor." },
+      { "name": "Aphids", "effect": "Lead to leaf curling and sticky mold growth." }
+    ],
+    "solution": [
+      "Install yellow sticky traps and use neem oil weekly.",
+      "Encourage natural predators like lacewings and hoverflies."
+    ]
+  },
+  {
+    "id": 147,
+    "commonName": "Bottle Gourd",
+    "insects": [
+      { "name": "Fruit Fly", "effect": "Infests young fruits causing decay and premature drop." },
+      { "name": "Red Pumpkin Beetle", "effect": "Feeds on leaves and blossoms, affecting fruit set." }
+    ],
+    "solution": [
+      "Use fly traps and remove infested fruits regularly.",
+      "Spray neem extract and keep field weed-free."
+    ]
+  },
+  {
+    "id": 148,
+    "commonName": "Bitter Gourd",
+    "insects": [
+      { "name": "Fruit Fly", "effect": "Lays eggs in fruits causing internal rotting and collapse." },
+      { "name": "Aphids", "effect": "Cause curling of leaves and transmit viral diseases." }
+    ],
+    "solution": [
+      "Install methyl eugenol traps and destroy infected fruits.",
+      "Use neem oil spray every 7–10 days during flowering and fruiting."
+    ]
+  },
+  {
+    "id": 149,
+    "commonName": "Ridge Gourd",
+    "insects": [
+      { "name": "Red Pumpkin Beetle", "effect": "Feeds on cotyledons, leaves, and flowers reducing plant vigor." },
+      { "name": "Fruit Fly", "effect": "Infests young fruits causing decay and dropping." }
+    ],
+    "solution": [
+      "Spray neem-based formulations and remove infested fruits regularly.",
+      "Use pheromone and fly traps during flowering season."
+    ]
+  },
+  {
+    "id": 150,
+    "commonName": "Snake Gourd",
+    "insects": [
+      { "name": "Fruit Fly", "effect": "Larvae feed inside fruits causing browning and premature fall." },
+      { "name": "Aphids", "effect": "Suck sap from leaves and transmit mosaic viruses." }
+    ],
+    "solution": [
+      "Install methyl eugenol traps and destroy infested fruits.",
+      "Spray neem oil and promote beneficial insects like ladybird beetles."
+    ]
+  },
+  {
+    "id": 151,
+    "commonName": "Ash Gourd",
+    "insects": [
+      { "name": "Pumpkin Beetle", "effect": "Feeds on leaves and flowers, reducing fruit set." },
+      { "name": "Fruit Fly", "effect": "Causes internal damage to fruits leading to rot." }
+    ],
+    "solution": [
+      "Spray neem seed kernel extract and remove infected plant parts.",
+      "Use fly traps and destroy crop residues after harvest."
+    ]
+  },
+  {
+    "id": 152,
+    "commonName": "Ivy Gourd (Tindora)",
+    "insects": [
+      { "name": "Aphids", "effect": "Cause leaf curling, stunted growth and viral infection." },
+      { "name": "Fruit Fly", "effect": "Infest immature fruits causing decay and fall." }
+    ],
+    "solution": [
+      "Spray neem oil and install yellow sticky traps.",
+      "Use pheromone traps and remove infected fruits regularly."
+    ]
+  },
+  {
+    "id": 153,
+    "commonName": "Pointed Gourd (Parwal)",
+    "insects": [
+      { "name": "Aphids", "effect": "Suck sap from shoots and young leaves causing curling and yellowing." },
+      { "name": "Leaf Miners", "effect": "Create tunnels in leaves reducing photosynthesis." }
+    ],
+    "solution": [
+      "Apply insecticidal soap or neem spray weekly.",
+      "Use sticky traps and prune infected foliage."
+    ]
+  },
+  {
+    "id": 154,
+    "commonName": "Brinjal (Eggplant)",
+    "insects": [
+      { "name": "Shoot and Fruit Borer", "effect": "Larvae bore into tender shoots and fruits causing drying and damage." },
+      { "name": "Jassids", "effect": "Cause yellowing and cupping of leaves." }
+    ],
+    "solution": [
+      "Use pheromone traps and spray neem seed kernel extract.",
+      "Remove infested shoots and use Bt-based formulations."
+    ]
+  },
+  {
+    "id": 155,
+    "commonName": "Chilli",
+    "insects": [
+      { "name": "Thrips", "effect": "Cause upward curling of leaves and silvery streaks." },
+      { "name": "Fruit Borer", "effect": "Bores into fruits causing internal feeding and rotting." }
+    ],
+    "solution": [
+      "Spray neem oil and use blue sticky traps.",
+      "Use emamectin benzoate and destroy infested fruits."
+    ]
+  },
+  {
+    "id": 156,
+    "commonName": "Capsicum (Bell Pepper)",
+    "insects": [
+      { "name": "Thrips", "effect": "Feed on young leaves and flowers causing curling and bud drop." },
+      { "name": "Whiteflies", "effect": "Transmit viral diseases and cause leaf yellowing." }
+    ],
+    "solution": [
+      "Install blue sticky traps and spray neem oil regularly.",
+      "Maintain proper spacing and use insecticidal soap if needed."
+    ]
+  },
+  {
+    "id": 157,
+    "commonName": "Watermelon",
+    "insects": [
+      { "name": "Fruit Fly", "effect": "Lay eggs inside fruits leading to larvae infestation and rotting." },
+      { "name": "Aphids", "effect": "Cause leaf curling and reduce plant vigor." }
+    ],
+    "solution": [
+      "Use pheromone traps and remove damaged fruits promptly.",
+      "Spray neem-based solutions and control alternate weed hosts."
+    ]
+  },
+  {
+    "id": 158,
+    "commonName": "Muskmelon",
+    "insects": [
+      { "name": "Red Pumpkin Beetle", "effect": "Feed on young leaves and flowers affecting fruit formation." },
+      { "name": "Fruit Fly", "effect": "Larvae bore into fruits causing decay." }
+    ],
+    "solution": [
+      "Use neem oil sprays at early stages and install fly traps.",
+      "Practice field sanitation and destroy infected fruits."
+    ]
+  },
+   {
+    "id": 159,
+    "commonName": "Cantaloupe",
+    "insects": [
+      { "name": "Aphids", "effect": "Cause leaf curling and transmit mosaic viruses." },
+      { "name": "Leaf Miners", "effect": "Create blotchy tunnels in leaves, affecting photosynthesis." }
+    ],
+    "solution": [
+      "Spray neem oil and use reflective mulches to deter aphids.",
+      "Remove infested leaves and introduce parasitic wasps for control."
+    ]
+  },
+  {
+    "id": 160,
+    "commonName": "Pear",
+    "insects": [
+      { "name": "Pear Psylla", "effect": "Sucks sap from leaves and shoots causing curling and black sooty mold." },
+      { "name": "Codling Moth", "effect": "Larvae bore into fruit causing internal rot and early drop." }
+    ],
+    "solution": [
+      "Apply dormant oil spray in early season and prune affected shoots.",
+      "Use pheromone traps and biological control agents like Trichogramma."
+    ]
+  },
+  {
+    "id": 161,
+    "commonName": "Peach",
+    "insects": [
+      { "name": "Peach Fruit Fly", "effect": "Lays eggs inside fruit leading to larvae damage and rotting." },
+      { "name": "Aphids", "effect": "Cause leaf curling, stunted growth and sticky secretions." }
+    ],
+    "solution": [
+      "Install fruit fly traps and remove fallen fruits promptly.",
+      "Use neem oil sprays and encourage natural enemies like lacewings."
+    ]
+  },
+  {
+    "id": 162,
+    "commonName": "Plum",
+    "insects": [
+      { "name": "Plum Curculio", "effect": "Larvae feed inside fruit causing deformities and early drop." },
+      { "name": "Scale Insects", "effect": "Suck sap from twigs and stems weakening tree growth." }
+    ],
+    "solution": [
+      "Shake trees to dislodge adults and destroy dropped fruits.",
+      "Apply horticultural oil during dormant season and prune infested parts."
+    ]
+  },
+  {
+    "id": 163,
+    "commonName": "Apple",
+    "insects": [
+      { "name": "Codling Moth", "effect": "Larvae tunnel into fruit causing internal feeding and premature fall." },
+      { "name": "Woolly Aphid", "effect": "Form cottony colonies on bark causing galls and poor nutrient flow." }
+    ],
+    "solution": [
+      "Use pheromone traps and introduce parasitoid wasps.",
+      "Spray neem oil and horticultural soap to control aphid colonies."
+    ]
+  },
+  {
+    "id": 164,
+    "commonName": "Cherry",
+    "insects": [
+      { "name": "Cherry Fruit Fly", "effect": "Infests ripe cherries causing maggot damage and fruit drop." },
+      { "name": "Aphids", "effect": "Deform young leaves and transmit viruses." }
+    ],
+    "solution": [
+      "Use yellow sticky traps and pick up fallen fruits daily.",
+      "Spray neem extract and release lady beetles in orchards."
+    ]
+  },
+  {
+    "id": 165,
+    "commonName": "Apricot",
+    "insects": [
+      { "name": "Peach Twig Borer", "effect": "Damages young shoots and bores into fruits." },
+      { "name": "Scale Insects", "effect": "Cause weakening of branches and premature leaf drop." }
+    ],
+    "solution": [
+      "Apply dormant oil before bud break and prune infested twigs.",
+      "Spray neem oil during vegetative flush and post-harvest cleanup."
+    ]
+  },
+  {
+    "id": 166,
+    "commonName": "Pomegranate",
+    "insects": [
+      { "name": "Fruit Borer", "effect": "Larvae bore into developing fruits leading to internal rotting." },
+      { "name": "Aphids", "effect": "Cause curling of leaves and black mold development." }
+    ],
+    "solution": [
+      "Bag fruits and destroy infested ones immediately.",
+      "Spray neem oil or Spinosad and maintain clean orchard floor."
+    ]
+  },
+  {
+    "id": 167,
+    "commonName": "Guava",
+    "insects": [
+      { "name": "Fruit Fly", "effect": "Lays eggs in fruits causing internal feeding and rotting." },
+      { "name": "Mealybugs", "effect": "Suck sap and promote mold growth, reducing fruit quality." }
+    ],
+    "solution": [
+      "Use bait traps and remove infested fruits regularly.",
+      "Spray neem-based insecticide and control ants which protect mealybugs."
+    ]
+  },
+  {
+    "id": 168,
+    "commonName": "Papaya",
+    "insects": [
+      { "name": "Papaya Mealybug", "effect": "Causes leaf yellowing, stunting, and fruit deformation." },
+      { "name": "Fruit Fly", "effect": "Infests ripening fruits causing internal rot and fall." }
+    ],
+    "solution": [
+      "Spray neem oil and introduce parasitoids like *Acerophagus papayae*.",
+      "Collect and destroy damaged fruits; use methyl eugenol traps."
+    ]
+  },
+   {
+    "id": 169,
+    "commonName": "Banana",
+    "insects": [
+      { "name": "Banana Weevil", "effect": "Larvae bore into corms and pseudostems causing wilting and breakage." },
+      { "name": "Thrips", "effect": "Cause blemishes on fruit surface and reduce market value." }
+    ],
+    "solution": [
+      "Use clean suckers, apply neem cake at planting, and trap adults.",
+      "Spray neem oil during fruit development and maintain field hygiene."
+    ]
+  },
+  {
+    "id": 170,
+    "commonName": "Mango",
+    "insects": [
+      { "name": "Mango Hopper", "effect": "Suck sap from inflorescence, causing flower drop." },
+      { "name": "Fruit Fly", "effect": "Infests ripening fruits causing internal rotting." }
+    ],
+    "solution": [
+      "Spray neem extract before flowering and use sticky traps.",
+      "Bag fruits and apply bait traps using methyl eugenol."
+    ]
+  },
+  {
+    "id": 171,
+    "commonName": "Sapota (Chikoo)",
+    "insects": [
+      { "name": "Seed Borer", "effect": "Larvae bore into developing seeds causing internal damage." },
+      { "name": "Leaf Webber", "effect": "Webs and feeds on leaves reducing photosynthesis." }
+    ],
+    "solution": [
+      "Use light traps and remove infected fruits and leaves.",
+      "Spray neem oil and use pheromone traps for early control."
+    ]
+  },
+  {
+    "id": 172,
+    "commonName": "Custard Apple (Sitaphal)",
+    "insects": [
+      { "name": "Fruit Borer", "effect": "Damages internal pulp leading to fruit rotting." },
+      { "name": "Mealybugs", "effect": "Suck plant sap leading to black sooty mold and reduced fruit size." }
+    ],
+    "solution": [
+      "Bag fruits to prevent entry and destroy infected ones.",
+      "Apply neem spray and manage ants that protect mealybugs."
+    ]
+  },
+  {
+    "id": 173,
+    "commonName": "Jackfruit",
+    "insects": [
+      { "name": "Shoot Borer", "effect": "Larvae bore into young shoots, leading to drying and stunted growth." },
+      { "name": "Fruit Borer", "effect": "Feeds on immature fruits causing internal decay." }
+    ],
+    "solution": [
+      "Remove and destroy affected shoots and apply neem oil spray.",
+      "Use biological control like Trichogramma wasps."
+    ]
+  },
+  {
+    "id": 174,
+    "commonName": "Pineapple",
+    "insects": [
+      { "name": "Mealybugs", "effect": "Cause stunted growth and promote fungal growth." },
+      { "name": "Thrips", "effect": "Cause silvery patches on leaves and hinder fruit development." }
+    ],
+    "solution": [
+      "Ensure clean planting material and apply neem oil during early growth.",
+      "Promote biological control with ladybird beetles and parasitoids."
+    ]
+  },
+  {
+    "id": 175,
+    "commonName": "Litchi",
+    "insects": [
+      { "name": "Litchi Fruit Borer", "effect": "Feeds inside fruits leading to decay and drop." },
+      { "name": "Leaf Curl Mite", "effect": "Causes curling of leaves and reduction in photosynthesis." }
+    ],
+    "solution": [
+      "Bag fruits and spray neem oil pre-flowering.",
+      "Prune and burn affected leaves; apply sulfur-based sprays if mites persist."
+    ]
+  },
+  {
+    "id": 176,
+    "commonName": "Ber (Indian Jujube)",
+    "insects": [
+      { "name": "Fruit Fly", "effect": "Leads to early fruit drop and internal rotting." },
+      { "name": "Lac Insect", "effect": "Forms encrustations on twigs weakening plant growth." }
+    ],
+    "solution": [
+      "Use fly traps and remove fallen fruits promptly.",
+      "Apply neem-based sprays and prune infested branches."
+    ]
+  },
+  {
+    "id": 177,
+    "commonName": "Jamun (Java Plum)",
+    "insects": [
+      { "name": "Shoot Borer", "effect": "Damages new shoots and stunts plant growth." },
+      { "name": "Fruit Fly", "effect": "Lays eggs in ripening fruits causing rot." }
+    ],
+    "solution": [
+      "Spray neem oil during new flush and prune affected twigs.",
+      "Use methyl eugenol traps and maintain orchard sanitation."
+    ]
+  },
+  {
+    "id": 178,
+    "commonName": "Fig (Anjeer)",
+    "insects": [
+      { "name": "Fig Borer", "effect": "Bores into branches and fruits leading to decay." },
+      { "name": "Scale Insects", "effect": "Cause yellowing of leaves and weakening of plants." }
+    ],
+    "solution": [
+      "Apply neem oil and prune infected branches early.",
+      "Use systemic insecticides for severe infestations and encourage predatory beetles."
+    ]
+  },
+   {
+    "id": 179,
+    "commonName": "Avocado",
+    "insects": [
+      { "name": "Avocado Thrips", "effect": "Cause scarring on developing fruits and silvering of leaves." },
+      { "name": "Red Spider Mites", "effect": "Suck sap from leaves, leading to bronzing and early leaf fall." }
+    ],
+    "solution": [
+      "Apply neem oil sprays during early fruit development.",
+      "Encourage predatory mites and maintain orchard hygiene."
+    ]
+  },
+  {
+    "id": 180,
+    "commonName": "Olive",
+    "insects": [
+      { "name": "Olive Fruit Fly", "effect": "Larvae feed inside the fruit, causing premature drop and reduced oil quality." },
+      { "name": "Scale Insects", "effect": "Weaken branches and reduce yield by sucking sap." }
+    ],
+    "solution": [
+      "Use pheromone traps and harvest fruits early.",
+      "Apply horticultural oil and introduce parasitoids."
+    ]
+  },
+  {
+    "id": 181,
+    "commonName": "Lemon",
+    "insects": [
+      { "name": "Citrus Leaf Miner", "effect": "Larvae tunnel into leaves causing distortion and reduced growth." },
+      { "name": "Black Citrus Aphid", "effect": "Cause leaf curling and act as a vector for viral diseases." }
+    ],
+    "solution": [
+      "Prune infested shoots and spray neem seed extract weekly.",
+      "Use yellow sticky traps and encourage lacewings."
+    ]
+  },
+  {
+    "id": 182,
+    "commonName": "Orange",
+    "insects": [
+      { "name": "Citrus Psylla", "effect": "Transmits greening disease and causes shoot curling." },
+      { "name": "Whiteflies", "effect": "Lead to honeydew secretion and black sooty mold." }
+    ],
+    "solution": [
+      "Spray neem-based products and release natural predators.",
+      "Prune infested parts and monitor regularly with traps."
+    ]
+  },
+  {
+    "id": 183,
+    "commonName": "Sweet Lime (Mosambi)",
+    "insects": [
+      { "name": "Citrus Aphids", "effect": "Suck sap from tender parts and distort growth." },
+      { "name": "Leaf Miner", "effect": "Cause silvery trails in leaves reducing photosynthesis." }
+    ],
+    "solution": [
+      "Spray neem oil and install yellow sticky traps.",
+      "Encourage parasitic wasps for miner control."
+    ]
+  },
+  {
+    "id": 184,
+    "commonName": "Gooseberry (Amla)",
+    "insects": [
+      { "name": "Bark Eating Caterpillar", "effect": "Larvae feed on bark, weakening branches and stems." },
+      { "name": "Shoot Gall Maker", "effect": "Causes gall formation on shoots and stunted growth." }
+    ],
+    "solution": [
+      "Scrape and apply neem-based paste on trunks.",
+      "Prune and destroy affected twigs before monsoon."
+    ]
+  },
+  {
+    "id": 185,
+    "commonName": "Tamarind",
+    "insects": [
+      { "name": "Fruit Borer", "effect": "Bores into developing pods causing damage to seeds." },
+      { "name": "Aphids", "effect": "Lead to yellowing and distorted leaves." }
+    ],
+    "solution": [
+      "Remove fallen pods and use neem-based sprays during flowering.",
+      "Install sticky traps and maintain clean orchard floor."
+    ]
+  },
+  {
+    "id": 186,
+    "commonName": "Bael (Wood Apple)",
+    "insects": [
+      { "name": "Fruit Fly", "effect": "Infests fruits causing internal rotting." },
+      { "name": "Leaf Roller", "effect": "Rolls and feeds inside leaves reducing foliage health." }
+    ],
+    "solution": [
+      "Use pheromone traps and remove infested fruits regularly.",
+      "Spray neem extract and avoid dense canopy formation."
+    ]
+  },
+  {
+    "id": 187,
+    "commonName": "Drumstick (Moringa)",
+    "insects": [
+      { "name": "Pod Fly", "effect": "Infests developing pods leading to premature drop." },
+      { "name": "Hairy Caterpillar", "effect": "Feeds on leaves causing complete defoliation." }
+    ],
+    "solution": [
+      "Install pheromone traps and destroy infected pods.",
+      "Use neem oil spray during vegetative growth and maintain sanitation."
+    ]
+  },
+  {
+    "id": 188,
+    "commonName": "Coconut",
+    "insects": [
+      { "name": "Rhinoceros Beetle", "effect": "Bores into crown and damages internal tissue." },
+      { "name": "Red Palm Weevil", "effect": "Larvae bore into trunk causing weakening and possible tree death." }
+    ],
+    "solution": [
+      "Use pheromone traps and destroy infected palms.",
+      "Apply neem cake and chlorantraniliprole-based pesticides in bore holes."
+    ]
+  },
+   {
+    "id": 189,
+    "commonName": "Arecanut",
+    "insects": [
+      { "name": "Spindle Bug", "effect": "Sucks sap from young spindle leaves causing yellow streaks and drying." },
+      { "name": "Root Grubs", "effect": "Feed on roots causing yellowing and wilting of palms." }
+    ],
+    "solution": [
+      "Apply neem-based insecticides in the leaf axils regularly.",
+      "Drench soil with chlorpyrifos and apply neem cake around roots."
+    ]
+  },
+  {
+    "id": 190,
+    "commonName": "Betel Leaf",
+    "insects": [
+      { "name": "Scale Insects", "effect": "Cause yellowing and reduced leaf quality." },
+      { "name": "Mites", "effect": "Lead to leaf curling and poor texture." }
+    ],
+    "solution": [
+      "Spray neem oil or sulfur-based miticides.",
+      "Maintain high humidity and remove infested leaves."
+    ]
+  },
+  {
+    "id": 191,
+    "commonName": "Teak",
+    "insects": [
+      { "name": "Teak Defoliator", "effect": "Larvae feed on foliage leading to defoliation." },
+      { "name": "Skeletonizer", "effect": "Feeds on green leaf tissues leaving only veins." }
+    ],
+    "solution": [
+      "Apply biopesticides like Bacillus thuringiensis (Bt).",
+      "Use light traps and conserve parasitoids like Trichogramma."
+    ]
+  },
+  {
+    "id": 192,
+    "commonName": "Neem",
+    "insects": [
+      { "name": "Scale Insects", "effect": "Suck sap from leaves and stems, reducing growth." },
+      { "name": "Leaf Webber", "effect": "Webs and feeds on young leaves reducing photosynthesis." }
+    ],
+    "solution": [
+      "Spray neem oil and prune affected parts.",
+      "Encourage natural predators and maintain tree spacing."
+    ]
+  },
+  {
+    "id": 193,
+    "commonName": "Eucalyptus",
+    "insects": [
+      { "name": "Gall Wasp", "effect": "Causes galls on shoots and leaves, reducing growth rate." },
+      { "name": "Leaf Beetle", "effect": "Feeds on leaf surface causing defoliation." }
+    ],
+    "solution": [
+      "Remove and destroy galled shoots regularly.",
+      "Spray neem oil or use systemic insecticides during early attack."
+    ]
+  },
+  {
+    "id": 194,
+    "commonName": "Bamboo",
+    "insects": [
+      { "name": "Shoot Borer", "effect": "Bores into young culms and causes drying." },
+      { "name": "Leaf Roller", "effect": "Rolls and feeds on leaves reducing photosynthesis." }
+    ],
+    "solution": [
+      "Apply neem spray on emerging shoots.",
+      "Remove and burn infested shoots and maintain spacing."
+    ]
+  },
+  {
+    "id": 195,
+    "commonName": "Rosewood (Sheesham)",
+    "insects": [
+      { "name": "Stem Borer", "effect": "Larvae tunnel into trunks and branches causing dieback." },
+      { "name": "Leaf Miner", "effect": "Creates blotches in leaves and reduces photosynthetic capacity." }
+    ],
+    "solution": [
+      "Apply insecticides in bore holes and prune dead branches.",
+      "Use sticky traps and neem oil spray during early stages."
+    ]
+  },
+  {
+    "id": 196,
+    "commonName": "Cashew",
+    "insects": [
+      { "name": "Tea Mosquito Bug", "effect": "Causes necrotic patches on young shoots, flowers, and nuts." },
+      { "name": "Stem and Root Borer", "effect": "Larvae bore into bark causing girdling and tree death." }
+    ],
+    "solution": [
+      "Spray lambda-cyhalothrin during flushing and flowering stages.",
+      "Remove infested trees and apply Bordeaux paste on wounds."
+    ]
+  },
+  {
+    "id": 197,
+    "commonName": "Coffee",
+    "insects": [
+      { "name": "Coffee White Stem Borer", "effect": "Larvae tunnel through stem weakening plant and reducing yield." },
+      { "name": "Berry Borer", "effect": "Infests berries causing blackened, hollow beans." }
+    ],
+    "solution": [
+      "Apply chlorpyrifos to stems and use pheromone traps.",
+      "Shade regulation and regular pruning help reduce infestations."
+    ]
+  },
+  {
+    "id": 198,
+    "commonName": "Tea",
+    "insects": [
+      { "name": "Tea Mosquito Bug", "effect": "Feeds on young shoots and buds causing blackening and drop." },
+      { "name": "Red Spider Mite", "effect": "Leads to bronzing of leaves and reduced leaf production." }
+    ],
+    "solution": [
+      "Spray neem-based miticides and maintain shade trees.",
+      "Encourage predatory mites and avoid drought stress."
+    ]
+  },
+  {
+    "id": 199,
+    "commonName": "Rubber",
+    "insects": [
+      { "name": "Scale Insects", "effect": "Cause yellowing and poor latex yield." },
+      { "name": "Leaf Roller", "effect": "Webs and folds leaves affecting photosynthesis." }
+    ],
+    "solution": [
+      "Use neem oil or soap sprays for minor infestations.",
+      "Apply systemic insecticides and remove infested parts."
+    ]
+  },
+  {
+    "id": 200,
+    "commonName": "Mulberry",
+    "insects": [
+      { "name": "Leaf Roller", "effect": "Feeds on leaves by rolling them, reducing quality for silkworms." },
+      { "name": "Mealybugs", "effect": "Suck sap and weaken the plant leading to defoliation." }
+    ],
+    "solution": [
+      "Spray neem extract and maintain clean cultivation practices.",
+      "Prune and destroy infested branches and control ant movement."
+    ]
+  }
+]

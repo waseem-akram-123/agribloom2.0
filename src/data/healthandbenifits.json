@@ -1,0 +1,3202 @@
+[
+  {
+    "id": 1,
+    "commonName": "Tomato",
+    "healthBenefits": {
+      "benefit1": "Rich in antioxidants like lycopene that reduce the risk of heart disease.",
+      "benefit2": "Improves skin texture and reduces signs of aging.",
+      "benefit3": "Supports eye health due to high vitamin A content."
+    },
+    "carbohydrates": 3.9,
+    "proteins": 0.9,
+    "fats": 0.2,
+    "vitamins": ["Vitamin C", "Vitamin A", "Vitamin K"],
+    "minerals": ["Potassium", "Folate", "Manganese"],
+    "bestTimeToConsume": "Morning",
+    "shelfLife": "5 to 7 days"
+  },
+  {
+    "id": 2,
+    "commonName": "Mango",
+    "healthBenefits": {
+      "benefit1": "Boosts immunity with high vitamin C content.",
+      "benefit2": "Aids digestion with enzymes like amylase.",
+      "benefit3": "Promotes eye health and skin glow."
+    },
+    "carbohydrates": 14.9,
+    "proteins": 0.8,
+    "fats": 0.4,
+    "vitamins": ["Vitamin C", "Vitamin A", "Vitamin E"],
+    "minerals": ["Potassium", "Magnesium", "Copper"],
+    "bestTimeToConsume": "Afternoon",
+    "shelfLife": "7 to 9 days"
+  },
+  {
+    "id": 3,
+    "commonName": "Spinach",
+    "healthBenefits": {
+      "benefit1": "Increases hemoglobin due to high iron content.",
+      "benefit2": "Supports bone health with vitamin K.",
+      "benefit3": "Improves digestion with dietary fiber."
+    },
+    "carbohydrates": 3.6,
+    "proteins": 2.9,
+    "fats": 0.4,
+    "vitamins": ["Vitamin A", "Vitamin K", "Vitamin C"],
+    "minerals": ["Iron", "Calcium", "Magnesium"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "2 to 3 days"
+  },
+  {
+    "id": 4,
+    "commonName": "Carrot",
+    "healthBenefits": {
+      "benefit1": "Improves vision due to beta-carotene.",
+      "benefit2": "Promotes heart health by reducing cholesterol.",
+      "benefit3": "Boosts immunity with vitamin A and antioxidants."
+    },
+    "carbohydrates": 9.6,
+    "proteins": 0.9,
+    "fats": 0.2,
+    "vitamins": ["Vitamin A", "Vitamin K", "Vitamin C"],
+    "minerals": ["Potassium", "Calcium", "Phosphorus"],
+    "bestTimeToConsume": "Morning",
+    "shelfLife": "3 to 4 weeks"
+  },
+  {
+    "id": 5,
+    "commonName": "Cabbage",
+    "healthBenefits": {
+      "benefit1": "Improves digestion and supports gut health.",
+      "benefit2": "Lowers cholesterol and supports heart function.",
+      "benefit3": "Rich in antioxidants that prevent chronic diseases."
+    },
+    "carbohydrates": 5.8,
+    "proteins": 1.3,
+    "fats": 0.1,
+    "vitamins": ["Vitamin K", "Vitamin C", "Vitamin B6"],
+    "minerals": ["Calcium", "Iron", "Manganese"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "1 to 2 weeks"
+  },
+  {
+    "id": 6,
+    "commonName": "Brinjal (Eggplant)",
+    "healthBenefits": {
+      "benefit1": "Improves heart health by lowering cholesterol.",
+      "benefit2": "Rich in fiber and antioxidants for gut health.",
+      "benefit3": "Supports brain function and cognitive health."
+    },
+    "carbohydrates": 5.9,
+    "proteins": 1.0,
+    "fats": 0.2,
+    "vitamins": ["Vitamin C", "Vitamin B6", "Vitamin K"],
+    "minerals": ["Manganese", "Potassium", "Folate"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "4 to 5 days"
+  },
+  {
+    "id": 7,
+    "commonName": "Cauliflower",
+    "healthBenefits": {
+      "benefit1": "Supports detoxification and liver function.",
+      "benefit2": "High in fiber for digestive health.",
+      "benefit3": "Rich in choline, essential for brain development."
+    },
+    "carbohydrates": 5.0,
+    "proteins": 1.9,
+    "fats": 0.3,
+    "vitamins": ["Vitamin C", "Vitamin K", "Vitamin B6"],
+    "minerals": ["Phosphorus", "Potassium", "Manganese"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "1 week"
+  },
+  {
+    "id": 8,
+    "commonName": "Coriander Leaves",
+    "healthBenefits": {
+      "benefit1": "Helps detoxify heavy metals from the body.",
+      "benefit2": "Reduces anxiety and improves sleep quality.",
+      "benefit3": "Improves skin health and fights acne."
+    },
+    "carbohydrates": 3.7,
+    "proteins": 2.1,
+    "fats": 0.5,
+    "vitamins": ["Vitamin C", "Vitamin K", "Vitamin A"],
+    "minerals": ["Calcium", "Iron", "Magnesium"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "2 to 3 days"
+  },
+  {
+    "id": 9,
+    "commonName": "Cucumber",
+    "healthBenefits": {
+      "benefit1": "Keeps the body hydrated.",
+      "benefit2": "Promotes weight loss with low calories.",
+      "benefit3": "Reduces skin puffiness and improves complexion."
+    },
+    "carbohydrates": 3.6,
+    "proteins": 0.7,
+    "fats": 0.1,
+    "vitamins": ["Vitamin K", "Vitamin C", "Vitamin B1"],
+    "minerals": ["Potassium", "Magnesium", "Silica"],
+    "bestTimeToConsume": "Afternoon",
+    "shelfLife": "7 to 10 days"
+  },
+  {
+    "id": 10,
+    "commonName": "Bitter Gourd (Karela)",
+    "healthBenefits": {
+      "benefit1": "Helps manage blood sugar levels naturally.",
+      "benefit2": "Boosts liver health and detoxification.",
+      "benefit3": "Improves skin health and fights acne."
+    },
+    "carbohydrates": 4.3,
+    "proteins": 1.0,
+    "fats": 0.2,
+    "vitamins": ["Vitamin C", "Vitamin A", "Vitamin B9"],
+    "minerals": ["Iron", "Magnesium", "Potassium"],
+    "bestTimeToConsume": "Morning",
+    "shelfLife": "3 to 4 days"
+  },
+  {
+    "id": 11,
+    "commonName": "Lady Finger (Okra)",
+    "healthBenefits": {
+      "benefit1": "Improves digestive health and prevents constipation.",
+      "benefit2": "Helps control blood sugar levels.",
+      "benefit3": "Boosts brain function and memory."
+    },
+    "carbohydrates": 7.0,
+    "proteins": 2.0,
+    "fats": 0.1,
+    "vitamins": ["Vitamin C", "Vitamin K", "Vitamin B6"],
+    "minerals": ["Calcium", "Magnesium", "Iron"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "2 to 4 days"
+  },
+  {
+    "id": 12,
+    "commonName": "Beetroot",
+    "healthBenefits": {
+      "benefit1": "Improves blood circulation and reduces blood pressure.",
+      "benefit2": "Supports detox and liver function.",
+      "benefit3": "Boosts stamina and energy levels."
+    },
+    "carbohydrates": 9.6,
+    "proteins": 1.6,
+    "fats": 0.2,
+    "vitamins": ["Vitamin C", "Vitamin B9", "Vitamin A"],
+    "minerals": ["Iron", "Magnesium", "Potassium"],
+    "bestTimeToConsume": "Morning",
+    "shelfLife": "2 to 3 weeks"
+  },
+  {
+    "id": 13,
+    "commonName": "Radish",
+    "healthBenefits": {
+      "benefit1": "Improves digestion and relieves bloating.",
+      "benefit2": "Supports liver and kidney function.",
+      "benefit3": "Helps in detoxification and reduces inflammation."
+    },
+    "carbohydrates": 3.4,
+    "proteins": 0.7,
+    "fats": 0.1,
+    "vitamins": ["Vitamin C", "Vitamin B6", "Vitamin K"],
+    "minerals": ["Calcium", "Iron", "Potassium"],
+    "bestTimeToConsume": "Morning",
+    "shelfLife": "1 to 2 weeks"
+  },
+  {
+    "id": 14,
+    "commonName": "Fenugreek Leaves (Methi)",
+    "healthBenefits": {
+      "benefit1": "Controls blood sugar and improves insulin sensitivity.",
+      "benefit2": "Boosts lactation in nursing mothers.",
+      "benefit3": "Reduces cholesterol and inflammation."
+    },
+    "carbohydrates": 6.0,
+    "proteins": 4.4,
+    "fats": 1.1,
+    "vitamins": ["Vitamin C", "Vitamin A", "Vitamin K"],
+    "minerals": ["Iron", "Magnesium", "Phosphorus"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "3 to 4 days"
+  },
+  {
+    "id": 15,
+    "commonName": "Pumpkin",
+    "healthBenefits": {
+      "benefit1": "Supports eye health with high beta-carotene.",
+      "benefit2": "Improves heart health and lowers blood pressure.",
+      "benefit3": "Boosts immunity and digestion."
+    },
+    "carbohydrates": 6.5,
+    "proteins": 1.0,
+    "fats": 0.1,
+    "vitamins": ["Vitamin A", "Vitamin C", "Vitamin E"],
+    "minerals": ["Potassium", "Magnesium", "Phosphorus"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "2 to 3 months"
+  },
+  {
+    "id": 16,
+    "commonName": "Turnip",
+    "healthBenefits": {
+      "benefit1": "Aids digestion and promotes healthy metabolism.",
+      "benefit2": "Supports bone and lung health.",
+      "benefit3": "Reduces inflammation and detoxifies the body."
+    },
+    "carbohydrates": 6.4,
+    "proteins": 0.9,
+    "fats": 0.1,
+    "vitamins": ["Vitamin C", "Vitamin K", "Vitamin B6"],
+    "minerals": ["Calcium", "Potassium", "Iron"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "2 to 3 weeks"
+  },
+  {
+    "id": 17,
+    "commonName": "Green Peas",
+    "healthBenefits": {
+      "benefit1": "Rich in plant protein for muscle growth.",
+      "benefit2": "Supports blood sugar control.",
+      "benefit3": "Improves digestion with high fiber."
+    },
+    "carbohydrates": 14.4,
+    "proteins": 5.4,
+    "fats": 0.4,
+    "vitamins": ["Vitamin C", "Vitamin K", "Vitamin B1"],
+    "minerals": ["Iron", "Zinc", "Magnesium"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "4 to 5 days (fresh pods)"
+  },
+  {
+    "id": 18,
+    "commonName": "Sweet Potato",
+    "healthBenefits": {
+      "benefit1": "Supports eye health and boosts immunity.",
+      "benefit2": "Regulates blood sugar levels.",
+      "benefit3": "Improves gut health with resistant starch."
+    },
+    "carbohydrates": 20.1,
+    "proteins": 1.6,
+    "fats": 0.1,
+    "vitamins": ["Vitamin A", "Vitamin C", "Vitamin B6"],
+    "minerals": ["Manganese", "Potassium", "Magnesium"],
+    "bestTimeToConsume": "Evening",
+    "shelfLife": "2 to 3 weeks"
+  },
+  {
+    "id": 19,
+    "commonName": "Onion",
+    "healthBenefits": {
+      "benefit1": "Supports heart health and reduces cholesterol.",
+      "benefit2": "Has antibacterial properties and boosts immunity.",
+      "benefit3": "Improves digestion and reduces inflammation."
+    },
+    "carbohydrates": 9.3,
+    "proteins": 1.1,
+    "fats": 0.1,
+    "vitamins": ["Vitamin C", "Vitamin B6", "Folate"],
+    "minerals": ["Potassium", "Manganese", "Phosphorus"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "2 to 3 months (dry)"
+  },
+  {
+    "id": 20,
+    "commonName": "Garlic",
+    "healthBenefits": {
+      "benefit1": "Strengthens the immune system.",
+      "benefit2": "Reduces blood pressure and cholesterol.",
+      "benefit3": "Improves detoxification and liver health."
+    },
+    "carbohydrates": 33.1,
+    "proteins": 6.4,
+    "fats": 0.5,
+    "vitamins": ["Vitamin C", "Vitamin B6", "Thiamine"],
+    "minerals": ["Calcium", "Iron", "Phosphorus"],
+    "bestTimeToConsume": "Morning (raw or empty stomach)",
+    "shelfLife": "3 to 5 months (dry)"
+  },
+   {
+    "id": 21,
+    "commonName": "Curry Leaves",
+    "healthBenefits": {
+      "benefit1": "Improves digestion and supports liver health.",
+      "benefit2": "Promotes hair growth and prevents greying.",
+      "benefit3": "Helps control blood sugar levels."
+    },
+    "carbohydrates": 18.7,
+    "proteins": 6.1,
+    "fats": 1.0,
+    "vitamins": ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin E"],
+    "minerals": ["Calcium", "Phosphorus", "Iron"],
+    "bestTimeToConsume": "Morning",
+    "shelfLife": "2 to 3 days (fresh)"
+  },
+  {
+    "id": 22,
+    "commonName": "Amaranth Leaves (Chaulai)",
+    "healthBenefits": {
+      "benefit1": "Rich in calcium and supports bone strength.",
+      "benefit2": "Boosts immunity and digestion.",
+      "benefit3": "Good for eyes and skin."
+    },
+    "carbohydrates": 4.0,
+    "proteins": 3.2,
+    "fats": 0.3,
+    "vitamins": ["Vitamin A", "Vitamin C", "Vitamin K"],
+    "minerals": ["Iron", "Calcium", "Magnesium"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "3 to 4 days"
+  },
+  {
+    "id": 23,
+    "commonName": "Green Chilli",
+    "healthBenefits": {
+      "benefit1": "Boosts metabolism and aids weight loss.",
+      "benefit2": "Improves digestion and relieves congestion.",
+      "benefit3": "Good source of antioxidants and vitamin C."
+    },
+    "carbohydrates": 8.8,
+    "proteins": 1.9,
+    "fats": 0.4,
+    "vitamins": ["Vitamin C", "Vitamin A", "Vitamin B6"],
+    "minerals": ["Potassium", "Iron", "Copper"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "1 to 2 weeks"
+  },
+  {
+    "id": 24,
+    "commonName": "Mustard Leaves (Sarson)",
+    "healthBenefits": {
+      "benefit1": "Excellent source of fiber and aids digestion.",
+      "benefit2": "Strengthens bones and supports detox.",
+      "benefit3": "Helps regulate cholesterol and blood pressure."
+    },
+    "carbohydrates": 4.7,
+    "proteins": 2.7,
+    "fats": 0.4,
+    "vitamins": ["Vitamin K", "Vitamin A", "Vitamin C"],
+    "minerals": ["Calcium", "Magnesium", "Iron"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "3 to 5 days"
+  },
+  {
+    "id": 25,
+    "commonName": "Tinda (Apple Gourd)",
+    "healthBenefits": {
+      "benefit1": "Cools the body and improves digestion.",
+      "benefit2": "Helps in weight loss and hydration.",
+      "benefit3": "Relieves constipation and acidity."
+    },
+    "carbohydrates": 3.9,
+    "proteins": 0.9,
+    "fats": 0.2,
+    "vitamins": ["Vitamin C", "Vitamin A", "Vitamin B1"],
+    "minerals": ["Iron", "Calcium", "Potassium"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "4 to 5 days"
+  },
+  {
+    "id": 26,
+    "commonName": "Snake Gourd",
+    "healthBenefits": {
+      "benefit1": "Cools the body and improves digestion.",
+      "benefit2": "Helps in reducing sugar levels.",
+      "benefit3": "Supports liver function and relieves constipation."
+    },
+    "carbohydrates": 4.5,
+    "proteins": 0.8,
+    "fats": 0.2,
+    "vitamins": ["Vitamin C", "Vitamin A", "Vitamin B2"],
+    "minerals": ["Magnesium", "Calcium", "Phosphorus"],
+    "bestTimeToConsume": "Morning",
+    "shelfLife": "4 to 6 days"
+  },
+  {
+    "id": 27,
+    "commonName": "Drumstick (Moringa)",
+    "healthBenefits": {
+      "benefit1": "Rich in antioxidants and improves bone health.",
+      "benefit2": "Reduces blood sugar and blood pressure.",
+      "benefit3": "Boosts immunity and brain function."
+    },
+    "carbohydrates": 8.0,
+    "proteins": 2.5,
+    "fats": 0.1,
+    "vitamins": ["Vitamin C", "Vitamin A", "Vitamin B6"],
+    "minerals": ["Iron", "Calcium", "Magnesium"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "3 to 5 days"
+  },
+  {
+    "id": 28,
+    "commonName": "Kohlrabi (Knol Khol)",
+    "healthBenefits": {
+      "benefit1": "Improves metabolism and strengthens immune system.",
+      "benefit2": "Aids digestion and detoxification.",
+      "benefit3": "Lowers cholesterol and supports heart health."
+    },
+    "carbohydrates": 6.2,
+    "proteins": 1.7,
+    "fats": 0.1,
+    "vitamins": ["Vitamin C", "Vitamin B6", "Vitamin K"],
+    "minerals": ["Potassium", "Magnesium", "Iron"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "1 week"
+  },
+  {
+    "id": 29,
+    "commonName": "Raw Banana",
+    "healthBenefits": {
+      "benefit1": "Supports digestive health with resistant starch.",
+      "benefit2": "Helps regulate blood sugar and energy.",
+      "benefit3": "Boosts gut bacteria and metabolism."
+    },
+    "carbohydrates": 22.8,
+    "proteins": 1.3,
+    "fats": 0.3,
+    "vitamins": ["Vitamin C", "Vitamin B6", "Vitamin A"],
+    "minerals": ["Potassium", "Magnesium", "Phosphorus"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "5 to 6 days (green)"
+  },
+  {
+    "id": 30,
+    "commonName": "Raw Papaya",
+    "healthBenefits": {
+      "benefit1": "Improves digestion and relieves constipation.",
+      "benefit2": "Helps in menstrual pain relief.",
+      "benefit3": "Boosts immunity and skin health."
+    },
+    "carbohydrates": 9.8,
+    "proteins": 0.6,
+    "fats": 0.1,
+    "vitamins": ["Vitamin C", "Vitamin A", "Vitamin E"],
+    "minerals": ["Calcium", "Magnesium", "Potassium"],
+    "bestTimeToConsume": "Morning",
+    "shelfLife": "1 to 2 weeks"
+  },
+  {
+    "id": 31,
+    "commonName": "Pointed Gourd (Parwal)",
+    "healthBenefits": {
+      "benefit1": "Improves digestion and liver function.",
+      "benefit2": "Detoxifies blood and reduces constipation.",
+      "benefit3": "Supports healthy skin and hair."
+    },
+    "carbohydrates": 4.6,
+    "proteins": 2.0,
+    "fats": 0.1,
+    "vitamins": ["Vitamin A", "Vitamin C", "Vitamin B1"],
+    "minerals": ["Iron", "Magnesium", "Potassium"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "5 to 6 days"
+  },
+  {
+    "id": 32,
+    "commonName": "Ridge Gourd (Turai)",
+    "healthBenefits": {
+      "benefit1": "Supports weight loss and digestion.",
+      "benefit2": "Improves skin glow and reduces acne.",
+      "benefit3": "Relieves constipation and detoxifies body."
+    },
+    "carbohydrates": 3.2,
+    "proteins": 0.6,
+    "fats": 0.1,
+    "vitamins": ["Vitamin C", "Vitamin A", "Vitamin B2"],
+    "minerals": ["Magnesium", "Calcium", "Phosphorus"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "4 to 5 days"
+  },
+  {
+    "id": 33,
+    "commonName": "Ivy Gourd (Kundru)",
+    "healthBenefits": {
+      "benefit1": "Helps manage diabetes and blood sugar levels.",
+      "benefit2": "Improves digestion and gut health.",
+      "benefit3": "Strengthens immune function."
+    },
+    "carbohydrates": 3.1,
+    "proteins": 1.0,
+    "fats": 0.1,
+    "vitamins": ["Vitamin A", "Vitamin C", "Vitamin B2"],
+    "minerals": ["Iron", "Potassium", "Calcium"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "5 to 6 days"
+  },
+  {
+    "id": 34,
+    "commonName": "Mint Leaves",
+    "healthBenefits": {
+      "benefit1": "Soothes stomach and aids in digestion.",
+      "benefit2": "Relieves headaches and congestion.",
+      "benefit3": "Refreshes breath and supports oral health."
+    },
+    "carbohydrates": 8.0,
+    "proteins": 3.8,
+    "fats": 0.7,
+    "vitamins": ["Vitamin A", "Vitamin C", "Vitamin B2"],
+    "minerals": ["Iron", "Calcium", "Magnesium"],
+    "bestTimeToConsume": "Morning",
+    "shelfLife": "2 to 3 days (fresh)"
+  },
+  {
+    "id": 35,
+    "commonName": "Dill Leaves (Suva)",
+    "healthBenefits": {
+      "benefit1": "Improves digestion and reduces bloating.",
+      "benefit2": "Helps regulate menstrual cycles.",
+      "benefit3": "Boosts immunity and supports heart health."
+    },
+    "carbohydrates": 7.0,
+    "proteins": 3.5,
+    "fats": 1.1,
+    "vitamins": ["Vitamin A", "Vitamin C", "Vitamin B6"],
+    "minerals": ["Calcium", "Iron", "Magnesium"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "2 to 4 days"
+  },
+  {
+    "id": 36,
+    "commonName": "Ash Gourd (Petha)",
+    "healthBenefits": {
+      "benefit1": "Helps cool the body and reduce acidity.",
+      "benefit2": "Supports weight loss and detoxification.",
+      "benefit3": "Improves digestion and relieves constipation."
+    },
+    "carbohydrates": 3.9,
+    "proteins": 0.6,
+    "fats": 0.2,
+    "vitamins": ["Vitamin C", "Vitamin B1", "Vitamin B3"],
+    "minerals": ["Calcium", "Phosphorus", "Iron"],
+    "bestTimeToConsume": "Morning",
+    "shelfLife": "2 to 3 weeks"
+  },
+  {
+    "id": 37,
+    "commonName": "Broad Beans (Sem)",
+    "healthBenefits": {
+      "benefit1": "High in protein and fiber for muscle and gut health.",
+      "benefit2": "Improves cholesterol and heart health.",
+      "benefit3": "Boosts iron levels and fights fatigue."
+    },
+    "carbohydrates": 10.2,
+    "proteins": 4.5,
+    "fats": 0.5,
+    "vitamins": ["Vitamin C", "Vitamin K", "Folate"],
+    "minerals": ["Iron", "Magnesium", "Phosphorus"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "5 to 6 days"
+  },
+  {
+    "id": 38,
+    "commonName": "Colocasia Leaves (Arbi Leaves)",
+    "healthBenefits": {
+      "benefit1": "Supports eye and bone health.",
+      "benefit2": "Boosts immunity and energy.",
+      "benefit3": "Improves digestion and reduces inflammation."
+    },
+    "carbohydrates": 6.5,
+    "proteins": 2.0,
+    "fats": 0.4,
+    "vitamins": ["Vitamin A", "Vitamin C", "Vitamin B6"],
+    "minerals": ["Iron", "Calcium", "Magnesium"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "2 to 3 days"
+  },
+  {
+    "id": 39,
+    "commonName": "Elephant Foot Yam (Suran)",
+    "healthBenefits": {
+      "benefit1": "Improves digestion and treats piles.",
+      "benefit2": "Helps regulate hormones and supports female health.",
+      "benefit3": "Good source of fiber and energy."
+    },
+    "carbohydrates": 23.5,
+    "proteins": 1.5,
+    "fats": 0.4,
+    "vitamins": ["Vitamin C", "Vitamin B6", "Vitamin E"],
+    "minerals": ["Potassium", "Iron", "Phosphorus"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "2 to 3 weeks"
+  },
+  {
+    "id": 40,
+    "commonName": "Raw Jackfruit",
+    "healthBenefits": {
+      "benefit1": "Great meat alternative with high fiber and nutrition.",
+      "benefit2": "Improves digestion and bowel movements.",
+      "benefit3": "Regulates blood sugar and cholesterol."
+    },
+    "carbohydrates": 22.4,
+    "proteins": 1.7,
+    "fats": 0.3,
+    "vitamins": ["Vitamin C", "Vitamin B6", "Vitamin A"],
+    "minerals": ["Potassium", "Magnesium", "Calcium"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "5 to 7 days"
+  },
+  {
+    "id": 41,
+    "commonName": "Green Garlic",
+    "healthBenefits": {
+      "benefit1": "Improves heart health and reduces cholesterol.",
+      "benefit2": "Supports immune function and prevents colds.",
+      "benefit3": "Promotes detoxification and reduces inflammation."
+    },
+    "carbohydrates": 33.1,
+    "proteins": 6.4,
+    "fats": 0.5,
+    "vitamins": ["Vitamin C", "Vitamin B6", "Thiamine"],
+    "minerals": ["Calcium", "Iron", "Phosphorus"],
+    "bestTimeToConsume": "Morning",
+    "shelfLife": "7 to 10 days"
+  },
+  {
+    "id": 42,
+    "commonName": "Cluster Beans (Gawar Phali)",
+    "healthBenefits": {
+      "benefit1": "Controls blood sugar and cholesterol levels.",
+      "benefit2": "Improves digestion and prevents constipation.",
+      "benefit3": "Good for heart and bone health."
+    },
+    "carbohydrates": 10.8,
+    "proteins": 3.2,
+    "fats": 0.5,
+    "vitamins": ["Vitamin C", "Vitamin K", "Vitamin A"],
+    "minerals": ["Calcium", "Phosphorus", "Iron"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "4 to 5 days"
+  },
+  {
+    "id": 43,
+    "commonName": "Tender Tamarind Leaves",
+    "healthBenefits": {
+      "benefit1": "Improves digestion and reduces heat in the body.",
+      "benefit2": "Boosts immunity and relieves cold symptoms.",
+      "benefit3": "Good source of iron and folate."
+    },
+    "carbohydrates": 8.1,
+    "proteins": 3.0,
+    "fats": 0.4,
+    "vitamins": ["Vitamin C", "Vitamin A", "Folate"],
+    "minerals": ["Iron", "Magnesium", "Calcium"],
+    "bestTimeToConsume": "Morning",
+    "shelfLife": "2 to 3 days"
+  },
+  {
+    "id": 44,
+    "commonName": "Raw Mango",
+    "healthBenefits": {
+      "benefit1": "Boosts digestion and prevents dehydration.",
+      "benefit2": "Rich in vitamin C and supports immunity.",
+      "benefit3": "Helps control cholesterol and blood disorders."
+    },
+    "carbohydrates": 15.0,
+    "proteins": 0.6,
+    "fats": 0.3,
+    "vitamins": ["Vitamin C", "Vitamin A", "Vitamin B6"],
+    "minerals": ["Magnesium", "Potassium", "Iron"],
+    "bestTimeToConsume": "Afternoon",
+    "shelfLife": "4 to 5 days"
+  },
+  {
+    "id": 45,
+    "commonName": "Sorrel Leaves (Gongura)",
+    "healthBenefits": {
+      "benefit1": "Improves digestion and appetite.",
+      "benefit2": "Rich in iron and treats anemia.",
+      "benefit3": "Supports heart and bone health."
+    },
+    "carbohydrates": 6.0,
+    "proteins": 2.7,
+    "fats": 0.4,
+    "vitamins": ["Vitamin C", "Vitamin A", "Folate"],
+    "minerals": ["Iron", "Calcium", "Magnesium"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "3 to 4 days"
+  },
+  {
+    "id": 46,
+    "commonName": "Banana Stem",
+    "healthBenefits": {
+      "benefit1": "Detoxifies the body and promotes weight loss.",
+      "benefit2": "Prevents kidney stones and aids digestion.",
+      "benefit3": "Improves bowel health and treats acidity."
+    },
+    "carbohydrates": 4.0,
+    "proteins": 1.6,
+    "fats": 0.2,
+    "vitamins": ["Vitamin B6", "Vitamin C"],
+    "minerals": ["Potassium", "Magnesium", "Iron"],
+    "bestTimeToConsume": "Morning",
+    "shelfLife": "3 to 5 days"
+  },
+  {
+    "id": 47,
+    "commonName": "Papaya Leaves",
+    "healthBenefits": {
+      "benefit1": "Boosts platelet count during dengue and malaria.",
+      "benefit2": "Aids digestion and liver detox.",
+      "benefit3": "Supports immunity and reduces inflammation."
+    },
+    "carbohydrates": 7.2,
+    "proteins": 3.1,
+    "fats": 0.5,
+    "vitamins": ["Vitamin C", "Vitamin A", "Vitamin E"],
+    "minerals": ["Calcium", "Iron", "Magnesium"],
+    "bestTimeToConsume": "Morning",
+    "shelfLife": "2 to 3 days"
+  },
+  {
+    "id": 48,
+    "commonName": "Chayote (Chow Chow)",
+    "healthBenefits": {
+      "benefit1": "Supports digestion and hydrates the body.",
+      "benefit2": "Good for managing blood sugar and cholesterol.",
+      "benefit3": "Promotes heart health and reduces fatigue."
+    },
+    "carbohydrates": 4.5,
+    "proteins": 0.8,
+    "fats": 0.1,
+    "vitamins": ["Vitamin C", "Vitamin B6", "Vitamin K"],
+    "minerals": ["Magnesium", "Phosphorus", "Zinc"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "5 to 7 days"
+  },
+  {
+    "id": 49,
+    "commonName": "Spring Onion",
+    "healthBenefits": {
+      "benefit1": "Supports heart health and lowers cholesterol.",
+      "benefit2": "Improves digestion and boosts metabolism.",
+      "benefit3": "Fights infections with antibacterial compounds."
+    },
+    "carbohydrates": 7.3,
+    "proteins": 1.8,
+    "fats": 0.2,
+    "vitamins": ["Vitamin C", "Vitamin K", "Vitamin A"],
+    "minerals": ["Potassium", "Phosphorus", "Calcium"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "4 to 5 days"
+  },
+  {
+    "id": 50,
+    "commonName": "Neem Leaves",
+    "healthBenefits": {
+      "benefit1": "Purifies blood and boosts immunity.",
+      "benefit2": "Treats skin problems and controls acne.",
+      "benefit3": "Supports liver health and acts as natural antibiotic."
+    },
+    "carbohydrates": 8.0,
+    "proteins": 2.2,
+    "fats": 1.1,
+    "vitamins": ["Vitamin C", "Vitamin E", "Vitamin A"],
+    "minerals": ["Calcium", "Iron", "Zinc"],
+    "bestTimeToConsume": "Morning (empty stomach)",
+    "shelfLife": "1 to 2 days (fresh)"
+  },
+  {
+    "id": 51,
+    "commonName": "Amla (Indian Gooseberry)",
+    "healthBenefits": {
+      "benefit1": "Boosts immunity with high Vitamin C content.",
+      "benefit2": "Improves skin glow and reduces aging signs.",
+      "benefit3": "Strengthens liver and supports digestion."
+    },
+    "carbohydrates": 10.2,
+    "proteins": 0.9,
+    "fats": 0.6,
+    "vitamins": ["Vitamin C", "Vitamin A", "Vitamin B5"],
+    "minerals": ["Iron", "Calcium", "Phosphorus"],
+    "bestTimeToConsume": "Morning (empty stomach)",
+    "shelfLife": "15 to 20 days (fresh)"
+  },
+  {
+    "id": 52,
+    "commonName": "Wood Apple (Bael)",
+    "healthBenefits": {
+      "benefit1": "Cures diarrhea and improves gut health.",
+      "benefit2": "Supports liver function and detoxification.",
+      "benefit3": "Regulates blood sugar and cooling effect on body."
+    },
+    "carbohydrates": 31.8,
+    "proteins": 1.8,
+    "fats": 0.4,
+    "vitamins": ["Vitamin C", "Vitamin A", "Riboflavin"],
+    "minerals": ["Calcium", "Phosphorus", "Iron"],
+    "bestTimeToConsume": "Afternoon",
+    "shelfLife": "2 to 3 weeks (unopened)"
+  },
+  {
+    "id": 53,
+    "commonName": "Ber (Indian Jujube)",
+    "healthBenefits": {
+      "benefit1": "Boosts immunity and relieves stress.",
+      "benefit2": "Improves digestion and appetite.",
+      "benefit3": "Prevents constipation and enhances energy."
+    },
+    "carbohydrates": 20.2,
+    "proteins": 1.2,
+    "fats": 0.3,
+    "vitamins": ["Vitamin C", "Vitamin A", "Vitamin B2"],
+    "minerals": ["Calcium", "Iron", "Potassium"],
+    "bestTimeToConsume": "Mid-morning",
+    "shelfLife": "5 to 6 days"
+  },
+  {
+    "id": 54,
+    "commonName": "Jamun (Indian Blackberry)",
+    "healthBenefits": {
+      "benefit1": "Controls blood sugar and diabetes.",
+      "benefit2": "Improves hemoglobin and treats anemia.",
+      "benefit3": "Good for oral hygiene and digestive health."
+    },
+    "carbohydrates": 14.0,
+    "proteins": 0.7,
+    "fats": 0.2,
+    "vitamins": ["Vitamin C", "Vitamin A", "Folate"],
+    "minerals": ["Iron", "Potassium", "Magnesium"],
+    "bestTimeToConsume": "Afternoon",
+    "shelfLife": "2 to 3 days"
+  },
+  {
+    "id": 55,
+    "commonName": "Sapota (Chikoo)",
+    "healthBenefits": {
+      "benefit1": "Provides instant energy with natural sugars.",
+      "benefit2": "Good for skin and hair due to antioxidants.",
+      "benefit3": "Helps digestion with dietary fiber."
+    },
+    "carbohydrates": 19.9,
+    "proteins": 0.4,
+    "fats": 1.1,
+    "vitamins": ["Vitamin A", "Vitamin C", "Niacin"],
+    "minerals": ["Iron", "Calcium", "Potassium"],
+    "bestTimeToConsume": "Evening",
+    "shelfLife": "3 to 5 days (ripe)"
+  },
+  {
+    "id": 56,
+    "commonName": "Custard Apple (Sitaphal)",
+    "healthBenefits": {
+      "benefit1": "Rich in energy and supports brain health.",
+      "benefit2": "Good for skin and vision.",
+      "benefit3": "Improves digestion and strengthens immunity."
+    },
+    "carbohydrates": 25.2,
+    "proteins": 2.5,
+    "fats": 1.0,
+    "vitamins": ["Vitamin C", "Vitamin B6", "Niacin"],
+    "minerals": ["Magnesium", "Potassium", "Calcium"],
+    "bestTimeToConsume": "Afternoon",
+    "shelfLife": "2 to 4 days (ripe)"
+  },
+  {
+    "id": 57,
+    "commonName": "Star Fruit (Carambola)",
+    "healthBenefits": {
+      "benefit1": "Improves immunity and supports hydration.",
+      "benefit2": "Good for weight loss and digestion.",
+      "benefit3": "Lowers cholesterol and inflammation."
+    },
+    "carbohydrates": 6.7,
+    "proteins": 1.0,
+    "fats": 0.3,
+    "vitamins": ["Vitamin C", "Vitamin A", "Folate"],
+    "minerals": ["Potassium", "Magnesium", "Phosphorus"],
+    "bestTimeToConsume": "Morning",
+    "shelfLife": "5 to 7 days"
+  },
+  {
+    "id": 58,
+    "commonName": "Raspberries",
+    "healthBenefits": {
+      "benefit1": "Supports heart and brain health.",
+      "benefit2": "Helps fight inflammation and oxidative stress.",
+      "benefit3": "Promotes weight loss and controls appetite."
+    },
+    "carbohydrates": 11.9,
+    "proteins": 1.5,
+    "fats": 0.6,
+    "vitamins": ["Vitamin C", "Vitamin K", "Folate"],
+    "minerals": ["Manganese", "Magnesium", "Copper"],
+    "bestTimeToConsume": "Afternoon",
+    "shelfLife": "2 to 3 days"
+  },
+  {
+    "id": 59,
+    "commonName": "Black Currant",
+    "healthBenefits": {
+      "benefit1": "Improves vision and immune function.",
+      "benefit2": "Supports joint and heart health.",
+      "benefit3": "Rich in antioxidants and reduces inflammation."
+    },
+    "carbohydrates": 15.4,
+    "proteins": 1.4,
+    "fats": 0.4,
+    "vitamins": ["Vitamin C", "Vitamin A", "Vitamin B5"],
+    "minerals": ["Iron", "Calcium", "Potassium"],
+    "bestTimeToConsume": "Morning",
+    "shelfLife": "4 to 5 days"
+  },
+  {
+    "id": 60,
+    "commonName": "Mulberry (Shahtoot)",
+    "healthBenefits": {
+      "benefit1": "Improves blood circulation and eyesight.",
+      "benefit2": "Strengthens immune and digestive system.",
+      "benefit3": "Supports liver and kidney health."
+    },
+    "carbohydrates": 9.8,
+    "proteins": 1.4,
+    "fats": 0.4,
+    "vitamins": ["Vitamin C", "Vitamin K", "Vitamin E"],
+    "minerals": ["Iron", "Potassium", "Magnesium"],
+    "bestTimeToConsume": "Mid-morning",
+    "shelfLife": "2 to 3 days"
+  },
+  {
+    "id": 61,
+    "commonName": "Pear (Nashpati)",
+    "healthBenefits": {
+      "benefit1": "Regulates blood pressure and improves heart health.",
+      "benefit2": "Improves digestion and helps with constipation.",
+      "benefit3": "Rich in antioxidants for skin and hair."
+    },
+    "carbohydrates": 15.2,
+    "proteins": 0.4,
+    "fats": 0.1,
+    "vitamins": ["Vitamin C", "Vitamin K", "Folate"],
+    "minerals": ["Potassium", "Magnesium", "Calcium"],
+    "bestTimeToConsume": "Afternoon",
+    "shelfLife": "5 to 7 days"
+  },
+  {
+    "id": 62,
+    "commonName": "Plum (Aloo Bukhara)",
+    "healthBenefits": {
+      "benefit1": "Improves bone health and reduces inflammation.",
+      "benefit2": "Prevents constipation and supports gut health.",
+      "benefit3": "Protects heart and regulates blood sugar."
+    },
+    "carbohydrates": 11.4,
+    "proteins": 0.7,
+    "fats": 0.3,
+    "vitamins": ["Vitamin C", "Vitamin A", "Vitamin K"],
+    "minerals": ["Potassium", "Copper", "Phosphorus"],
+    "bestTimeToConsume": "Evening",
+    "shelfLife": "3 to 4 days"
+  },
+  {
+    "id": 63,
+    "commonName": "Lychee",
+    "healthBenefits": {
+      "benefit1": "Boosts immunity and improves skin texture.",
+      "benefit2": "Helps digestion and blood circulation.",
+      "benefit3": "Regulates blood pressure and heart health."
+    },
+    "carbohydrates": 16.5,
+    "proteins": 0.8,
+    "fats": 0.4,
+    "vitamins": ["Vitamin C", "Vitamin B6", "Niacin"],
+    "minerals": ["Potassium", "Copper", "Magnesium"],
+    "bestTimeToConsume": "Morning",
+    "shelfLife": "3 to 4 days"
+  },
+  {
+    "id": 64,
+    "commonName": "Peach",
+    "healthBenefits": {
+      "benefit1": "Improves vision and skin health.",
+      "benefit2": "Aids in weight loss and digestion.",
+      "benefit3": "Helps lower inflammation and regulate heart rate."
+    },
+    "carbohydrates": 9.5,
+    "proteins": 0.9,
+    "fats": 0.3,
+    "vitamins": ["Vitamin C", "Vitamin A", "Vitamin E"],
+    "minerals": ["Potassium", "Magnesium", "Iron"],
+    "bestTimeToConsume": "Afternoon",
+    "shelfLife": "3 to 5 days"
+  },
+  {
+    "id": 65,
+    "commonName": "Fig (Anjeer)",
+    "healthBenefits": {
+      "benefit1": "Supports weight loss and improves digestion.",
+      "benefit2": "Lowers blood pressure and sugar levels.",
+      "benefit3": "Boosts bone strength and prevents constipation."
+    },
+    "carbohydrates": 19.2,
+    "proteins": 0.8,
+    "fats": 0.3,
+    "vitamins": ["Vitamin A", "Vitamin K", "Folate"],
+    "minerals": ["Calcium", "Iron", "Magnesium"],
+    "bestTimeToConsume": "Morning",
+    "shelfLife": "3 to 5 days (fresh)"
+  },
+  {
+    "id": 66,
+    "commonName": "Date (Khajoor)",
+    "healthBenefits": {
+      "benefit1": "Excellent source of natural energy.",
+      "benefit2": "Strengthens bones and controls blood pressure.",
+      "benefit3": "Improves brain function and memory."
+    },
+    "carbohydrates": 75.0,
+    "proteins": 1.8,
+    "fats": 0.2,
+    "vitamins": ["Vitamin B6", "Vitamin A", "Vitamin K"],
+    "minerals": ["Potassium", "Magnesium", "Iron"],
+    "bestTimeToConsume": "Evening",
+    "shelfLife": "2 to 3 months (dry)"
+  },
+  {
+    "id": 67,
+    "commonName": "Avocado",
+    "healthBenefits": {
+      "benefit1": "Rich in healthy fats and heart protective compounds.",
+      "benefit2": "Improves brain and skin health.",
+      "benefit3": "Aids in weight loss and digestion."
+    },
+    "carbohydrates": 8.5,
+    "proteins": 2.0,
+    "fats": 15.0,
+    "vitamins": ["Vitamin K", "Vitamin E", "Vitamin B5"],
+    "minerals": ["Potassium", "Magnesium", "Phosphorus"],
+    "bestTimeToConsume": "Morning",
+    "shelfLife": "3 to 4 days (ripe)"
+  },
+  {
+    "id": 68,
+    "commonName": "Water Chestnut (Singhara)",
+    "healthBenefits": {
+      "benefit1": "Cools the body and treats urinary infections.",
+      "benefit2": "Boosts energy and prevents fatigue.",
+      "benefit3": "Improves digestion and blood purification."
+    },
+    "carbohydrates": 23.9,
+    "proteins": 1.4,
+    "fats": 0.1,
+    "vitamins": ["Vitamin B6", "Vitamin C"],
+    "minerals": ["Potassium", "Calcium", "Magnesium"],
+    "bestTimeToConsume": "Afternoon",
+    "shelfLife": "4 to 5 days"
+  },
+  {
+    "id": 69,
+    "commonName": "Passion Fruit",
+    "healthBenefits": {
+      "benefit1": "Rich in fiber and supports gut health.",
+      "benefit2": "Boosts immunity with high vitamin C.",
+      "benefit3": "Improves sleep and reduces anxiety."
+    },
+    "carbohydrates": 23.4,
+    "proteins": 2.2,
+    "fats": 0.4,
+    "vitamins": ["Vitamin C", "Vitamin A", "Niacin"],
+    "minerals": ["Magnesium", "Iron", "Potassium"],
+    "bestTimeToConsume": "Night",
+    "shelfLife": "3 to 5 days"
+  },
+  {
+    "id": 70,
+    "commonName": "Guava",
+    "healthBenefits": {
+      "benefit1": "Improves digestion and boosts immunity.",
+      "benefit2": "Regulates blood sugar and aids weight loss.",
+      "benefit3": "Promotes healthy skin and heart."
+    },
+    "carbohydrates": 14.3,
+    "proteins": 2.6,
+    "fats": 1.0,
+    "vitamins": ["Vitamin C", "Vitamin A", "Folate"],
+    "minerals": ["Potassium", "Magnesium", "Phosphorus"],
+    "bestTimeToConsume": "Morning",
+    "shelfLife": "4 to 5 days"
+  },
+    {
+    "id": 71,
+    "commonName": "Turnip",
+    "healthBenefits": {
+      "benefit1": "Boosts bone health due to high calcium content.",
+      "benefit2": "Improves digestion and prevents constipation.",
+      "benefit3": "Supports cardiovascular health."
+    },
+    "carbohydrates": 6.4,
+    "proteins": 1.1,
+    "fats": 0.1,
+    "vitamins": ["Vitamin C", "Vitamin K", "Vitamin B6"],
+    "minerals": ["Calcium", "Potassium", "Magnesium"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "5 to 7 days"
+  },
+  {
+    "id": 72,
+    "commonName": "Kohlrabi (Knol-khol)",
+    "healthBenefits": {
+      "benefit1": "Boosts immune function and detoxifies the body.",
+      "benefit2": "Improves metabolism and digestive health.",
+      "benefit3": "Supports weight management."
+    },
+    "carbohydrates": 6.2,
+    "proteins": 1.7,
+    "fats": 0.1,
+    "vitamins": ["Vitamin C", "Vitamin B6", "Folate"],
+    "minerals": ["Potassium", "Calcium", "Magnesium"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "5 to 6 days"
+  },
+  {
+    "id": 73,
+    "commonName": "Pointed Gourd (Parwal)",
+    "healthBenefits": {
+      "benefit1": "Improves liver health and digestion.",
+      "benefit2": "Helps control cholesterol and blood sugar.",
+      "benefit3": "Good for weight loss due to low calories."
+    },
+    "carbohydrates": 3.5,
+    "proteins": 1.2,
+    "fats": 0.1,
+    "vitamins": ["Vitamin C", "Vitamin A"],
+    "minerals": ["Magnesium", "Calcium", "Iron"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "4 to 5 days"
+  },
+  {
+    "id": 74,
+    "commonName": "Snake Gourd",
+    "healthBenefits": {
+      "benefit1": "Cools the body and supports hydration.",
+      "benefit2": "Treats jaundice and liver disorders.",
+      "benefit3": "Aids digestion and reduces acidity."
+    },
+    "carbohydrates": 3.0,
+    "proteins": 0.5,
+    "fats": 0.1,
+    "vitamins": ["Vitamin C", "Vitamin A"],
+    "minerals": ["Calcium", "Iron", "Phosphorus"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "3 to 5 days"
+  },
+  {
+    "id": 75,
+    "commonName": "Ridge Gourd (Turai)",
+    "healthBenefits": {
+      "benefit1": "Helps purify blood and reduce inflammation.",
+      "benefit2": "Improves digestion and is rich in dietary fiber.",
+      "benefit3": "Supports skin health and detoxification."
+    },
+    "carbohydrates": 4.1,
+    "proteins": 0.9,
+    "fats": 0.2,
+    "vitamins": ["Vitamin C", "Vitamin B2"],
+    "minerals": ["Iron", "Magnesium", "Potassium"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "4 to 5 days"
+  },
+  {
+    "id": 76,
+    "commonName": "Ivy Gourd (Tindora)",
+    "healthBenefits": {
+      "benefit1": "Controls blood sugar and is beneficial for diabetics.",
+      "benefit2": "Improves metabolism and energy.",
+      "benefit3": "Rich in antioxidants for cellular repair."
+    },
+    "carbohydrates": 4.8,
+    "proteins": 1.2,
+    "fats": 0.2,
+    "vitamins": ["Vitamin A", "Vitamin C", "Folate"],
+    "minerals": ["Iron", "Calcium", "Potassium"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "4 to 6 days"
+  },
+  {
+    "id": 77,
+    "commonName": "Chicory Leaves",
+    "healthBenefits": {
+      "benefit1": "Stimulates appetite and aids digestion.",
+      "benefit2": "Reduces inflammation and supports liver health.",
+      "benefit3": "Acts as a natural laxative."
+    },
+    "carbohydrates": 4.7,
+    "proteins": 1.7,
+    "fats": 0.3,
+    "vitamins": ["Vitamin K", "Vitamin C", "Vitamin A"],
+    "minerals": ["Calcium", "Iron", "Magnesium"],
+    "bestTimeToConsume": "Morning",
+    "shelfLife": "2 to 3 days"
+  },
+  {
+    "id": 78,
+    "commonName": "Red Amaranth Leaves",
+    "healthBenefits": {
+      "benefit1": "Improves hemoglobin due to high iron content.",
+      "benefit2": "Good for eye health and skin glow.",
+      "benefit3": "Rich in calcium for bone strength."
+    },
+    "carbohydrates": 3.6,
+    "proteins": 2.1,
+    "fats": 0.3,
+    "vitamins": ["Vitamin A", "Vitamin C", "Vitamin K"],
+    "minerals": ["Iron", "Calcium", "Magnesium"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "2 to 4 days"
+  },
+  {
+    "id": 79,
+    "commonName": "Radish Leaves",
+    "healthBenefits": {
+      "benefit1": "Detoxifies liver and supports kidney function.",
+      "benefit2": "Boosts immunity and aids digestion.",
+      "benefit3": "Good for skin and hair health."
+    },
+    "carbohydrates": 3.4,
+    "proteins": 2.0,
+    "fats": 0.2,
+    "vitamins": ["Vitamin A", "Vitamin C", "Vitamin K"],
+    "minerals": ["Calcium", "Iron", "Phosphorus"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "2 to 3 days"
+  },
+  {
+    "id": 80,
+    "commonName": "Sweet Potato Leaves",
+    "healthBenefits": {
+      "benefit1": "Improves eye health and reduces inflammation.",
+      "benefit2": "Supports cardiovascular health.",
+      "benefit3": "Strengthens bones and boosts immunity."
+    },
+    "carbohydrates": 4.2,
+    "proteins": 2.3,
+    "fats": 0.4,
+    "vitamins": ["Vitamin A", "Vitamin C", "Vitamin B6"],
+    "minerals": ["Iron", "Calcium", "Potassium"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "3 to 4 days"
+  },
+  {
+    "id": 81,
+    "commonName": "Garden Cress (Halim)",
+    "healthBenefits": {
+      "benefit1": "Boosts hemoglobin and treats iron deficiency.",
+      "benefit2": "Improves lactation in mothers.",
+      "benefit3": "Good for bones and immunity."
+    },
+    "carbohydrates": 5.5,
+    "proteins": 2.6,
+    "fats": 0.6,
+    "vitamins": ["Vitamin C", "Vitamin A", "Folate"],
+    "minerals": ["Iron", "Calcium", "Magnesium"],
+    "bestTimeToConsume": "Morning",
+    "shelfLife": "3 to 5 days"
+  },
+  {
+    "id": 82,
+    "commonName": "Fenugreek Leaves (Methi)",
+    "healthBenefits": {
+      "benefit1": "Controls blood sugar and improves insulin sensitivity.",
+      "benefit2": "Reduces inflammation and joint pain.",
+      "benefit3": "Improves digestion and detoxification."
+    },
+    "carbohydrates": 6.0,
+    "proteins": 4.4,
+    "fats": 1.1,
+    "vitamins": ["Vitamin C", "Vitamin A", "Vitamin B6"],
+    "minerals": ["Iron", "Calcium", "Phosphorus"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "3 to 4 days"
+  },
+  {
+    "id": 83,
+    "commonName": "Mustard Greens (Sarson)",
+    "healthBenefits": {
+      "benefit1": "Rich in antioxidants and supports heart health.",
+      "benefit2": "Improves bone strength and vision.",
+      "benefit3": "Reduces inflammation and detoxifies body."
+    },
+    "carbohydrates": 4.7,
+    "proteins": 2.7,
+    "fats": 0.5,
+    "vitamins": ["Vitamin K", "Vitamin A", "Vitamin C"],
+    "minerals": ["Calcium", "Iron", "Magnesium"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "3 to 4 days"
+  },
+  {
+    "id": 84,
+    "commonName": "Drumstick Leaves (Moringa)",
+    "healthBenefits": {
+      "benefit1": "Boosts energy and supports immunity.",
+      "benefit2": "Rich in iron, great for anemia.",
+      "benefit3": "Supports lactation in new mothers."
+    },
+    "carbohydrates": 8.3,
+    "proteins": 9.4,
+    "fats": 1.4,
+    "vitamins": ["Vitamin A", "Vitamin C", "Vitamin E"],
+    "minerals": ["Iron", "Calcium", "Magnesium"],
+    "bestTimeToConsume": "Morning",
+    "shelfLife": "2 to 3 days"
+  },
+  {
+    "id": 85,
+    "commonName": "Coriander Leaves (Dhaniya)",
+    "healthBenefits": {
+      "benefit1": "Improves digestion and cools the body.",
+      "benefit2": "Reduces blood sugar and improves cholesterol.",
+      "benefit3": "Supports detoxification and reduces inflammation."
+    },
+    "carbohydrates": 3.7,
+    "proteins": 2.1,
+    "fats": 0.5,
+    "vitamins": ["Vitamin C", "Vitamin A", "Vitamin K"],
+    "minerals": ["Calcium", "Iron", "Magnesium"],
+    "bestTimeToConsume": "Morning",
+    "shelfLife": "2 to 3 days"
+  },
+  {
+    "id": 86,
+    "commonName": "Almond",
+    "healthBenefits": {
+      "benefit1": "Boosts brain function and memory.",
+      "benefit2": "Supports heart health by lowering bad cholesterol.",
+      "benefit3": "Improves skin texture and hair health."
+    },
+    "carbohydrates": 21.6,
+    "proteins": 21.2,
+    "fats": 49.9,
+    "vitamins": ["Vitamin E", "Vitamin B2", "Folate"],
+    "minerals": ["Magnesium", "Calcium", "Iron"],
+    "bestTimeToConsume": "Morning (soaked overnight)",
+    "shelfLife": "6 to 12 months (dry stored)"
+  },
+  {
+    "id": 87,
+    "commonName": "Cashew Nut",
+    "healthBenefits": {
+      "benefit1": "Strengthens bones and supports nerve function.",
+      "benefit2": "Improves heart health and blood pressure.",
+      "benefit3": "Enhances immune system and energy levels."
+    },
+    "carbohydrates": 30.2,
+    "proteins": 18.2,
+    "fats": 43.8,
+    "vitamins": ["Vitamin E", "Vitamin K", "Vitamin B6"],
+    "minerals": ["Zinc", "Magnesium", "Copper"],
+    "bestTimeToConsume": "Mid-morning",
+    "shelfLife": "6 to 9 months (dry stored)"
+  },
+  {
+    "id": 88,
+    "commonName": "Walnut",
+    "healthBenefits": {
+      "benefit1": "Improves brain function and sleep quality.",
+      "benefit2": "Supports heart health with omega-3 fatty acids.",
+      "benefit3": "Boosts male reproductive health."
+    },
+    "carbohydrates": 13.7,
+    "proteins": 15.2,
+    "fats": 65.2,
+    "vitamins": ["Vitamin E", "Vitamin B6", "Folate"],
+    "minerals": ["Magnesium", "Copper", "Phosphorus"],
+    "bestTimeToConsume": "Morning",
+    "shelfLife": "6 to 12 months (unshelled)"
+  },
+  {
+    "id": 89,
+    "commonName": "Pistachio",
+    "healthBenefits": {
+      "benefit1": "Lowers cholesterol and improves heart health.",
+      "benefit2": "Aids in weight management and digestion.",
+      "benefit3": "Good source of antioxidants and fiber."
+    },
+    "carbohydrates": 27.2,
+    "proteins": 20.3,
+    "fats": 45.4,
+    "vitamins": ["Vitamin B6", "Vitamin E", "Thiamine"],
+    "minerals": ["Phosphorus", "Potassium", "Iron"],
+    "bestTimeToConsume": "Evening",
+    "shelfLife": "6 to 9 months"
+  },
+  {
+    "id": 90,
+    "commonName": "Pine Nut (Chilgoza)",
+    "healthBenefits": {
+      "benefit1": "Supports heart health and cholesterol levels.",
+      "benefit2": "Boosts energy and reduces fatigue.",
+      "benefit3": "Improves vision and brain performance."
+    },
+    "carbohydrates": 13.1,
+    "proteins": 13.7,
+    "fats": 68.4,
+    "vitamins": ["Vitamin E", "Vitamin K", "Thiamine"],
+    "minerals": ["Magnesium", "Zinc", "Iron"],
+    "bestTimeToConsume": "Afternoon",
+    "shelfLife": "6 to 8 months"
+  },
+  {
+    "id": 91,
+    "commonName": "Dry Figs (Anjeer)",
+    "healthBenefits": {
+      "benefit1": "Rich in fiber, prevents constipation.",
+      "benefit2": "Controls blood sugar and lowers blood pressure.",
+      "benefit3": "Improves reproductive health."
+    },
+    "carbohydrates": 63.9,
+    "proteins": 3.8,
+    "fats": 0.9,
+    "vitamins": ["Vitamin B6", "Vitamin K", "Niacin"],
+    "minerals": ["Calcium", "Iron", "Magnesium"],
+    "bestTimeToConsume": "Morning (soaked)",
+    "shelfLife": "6 to 10 months (dry)"
+  },
+  {
+    "id": 92,
+    "commonName": "Dry Dates (Chuara)",
+    "healthBenefits": {
+      "benefit1": "Boosts stamina and strength.",
+      "benefit2": "Improves bone health and treats anemia.",
+      "benefit3": "Promotes healthy weight gain."
+    },
+    "carbohydrates": 75.8,
+    "proteins": 2.5,
+    "fats": 0.4,
+    "vitamins": ["Vitamin A", "Vitamin B5"],
+    "minerals": ["Calcium", "Iron", "Potassium"],
+    "bestTimeToConsume": "Evening",
+    "shelfLife": "6 to 12 months"
+  },
+  {
+    "id": 93,
+    "commonName": "Raisin (Kismis)",
+    "healthBenefits": {
+      "benefit1": "Improves digestion and prevents acidity.",
+      "benefit2": "Strengthens bones and boosts iron levels.",
+      "benefit3": "Supports healthy skin and hair."
+    },
+    "carbohydrates": 79.3,
+    "proteins": 3.1,
+    "fats": 0.5,
+    "vitamins": ["Vitamin C", "Vitamin B6", "Niacin"],
+    "minerals": ["Iron", "Calcium", "Magnesium"],
+    "bestTimeToConsume": "Morning (soaked)",
+    "shelfLife": "6 to 10 months"
+  },
+  {
+    "id": 94,
+    "commonName": "Apricot (Khubani - dried)",
+    "healthBenefits": {
+      "benefit1": "Improves skin health and eyesight.",
+      "benefit2": "Good for digestive health due to fiber.",
+      "benefit3": "Boosts immunity and reduces inflammation."
+    },
+    "carbohydrates": 62.6,
+    "proteins": 3.4,
+    "fats": 0.5,
+    "vitamins": ["Vitamin A", "Vitamin C", "Niacin"],
+    "minerals": ["Potassium", "Iron", "Calcium"],
+    "bestTimeToConsume": "Afternoon",
+    "shelfLife": "6 to 8 months"
+  },
+  {
+    "id": 95,
+    "commonName": "Coconut (Dry Copra)",
+    "healthBenefits": {
+      "benefit1": "Boosts energy and supports thyroid function.",
+      "benefit2": "Improves digestion and metabolism.",
+      "benefit3": "Strengthens bones and teeth."
+    },
+    "carbohydrates": 23.7,
+    "proteins": 6.9,
+    "fats": 65.4,
+    "vitamins": ["Vitamin E", "Vitamin B1", "Folate"],
+    "minerals": ["Iron", "Magnesium", "Zinc"],
+    "bestTimeToConsume": "Morning",
+    "shelfLife": "6 to 12 months"
+  },
+  {
+    "id": 96,
+    "commonName": "Peach (Drupe Fruit)",
+    "healthBenefits": {
+      "benefit1": "Improves skin health and digestion.",
+      "benefit2": "Reduces inflammation and oxidative stress.",
+      "benefit3": "Boosts immunity and eye health."
+    },
+    "carbohydrates": 9.5,
+    "proteins": 0.9,
+    "fats": 0.3,
+    "vitamins": ["Vitamin A", "Vitamin C", "Vitamin E"],
+    "minerals": ["Potassium", "Magnesium", "Iron"],
+    "bestTimeToConsume": "Afternoon",
+    "shelfLife": "3 to 5 days"
+  },
+  {
+    "id": 97,
+    "commonName": "Cherry (Drupe Fruit)",
+    "healthBenefits": {
+      "benefit1": "Improves sleep quality with melatonin.",
+      "benefit2": "Reduces inflammation and joint pain.",
+      "benefit3": "Supports heart and skin health."
+    },
+    "carbohydrates": 16.0,
+    "proteins": 1.1,
+    "fats": 0.2,
+    "vitamins": ["Vitamin C", "Vitamin A", "Folate"],
+    "minerals": ["Potassium", "Magnesium", "Calcium"],
+    "bestTimeToConsume": "Evening",
+    "shelfLife": "4 to 6 days"
+  },
+  {
+    "id": 98,
+    "commonName": "Plum (Fresh - Drupe)",
+    "healthBenefits": {
+      "benefit1": "Prevents constipation and boosts gut health.",
+      "benefit2": "Reduces blood pressure and blood sugar levels.",
+      "benefit3": "Improves bone health."
+    },
+    "carbohydrates": 11.4,
+    "proteins": 0.7,
+    "fats": 0.3,
+    "vitamins": ["Vitamin C", "Vitamin A", "Vitamin K"],
+    "minerals": ["Potassium", "Iron", "Phosphorus"],
+    "bestTimeToConsume": "Afternoon",
+    "shelfLife": "3 to 4 days"
+  },
+  {
+    "id": 99,
+    "commonName": "Mango (Drupe Fruit)",
+    "healthBenefits": {
+      "benefit1": "Boosts immunity and digestion.",
+      "benefit2": "Good for eyesight and skin glow.",
+      "benefit3": "Improves gut flora and bone strength."
+    },
+    "carbohydrates": 14.9,
+    "proteins": 0.8,
+    "fats": 0.4,
+    "vitamins": ["Vitamin C", "Vitamin A", "Vitamin E"],
+    "minerals": ["Potassium", "Magnesium", "Calcium"],
+    "bestTimeToConsume": "Mid-morning",
+    "shelfLife": "5 to 7 days"
+  },
+  {
+    "id": 100,
+    "commonName": "Lychee (Drupe Fruit)",
+    "healthBenefits": {
+      "benefit1": "Supports blood circulation and heart health.",
+      "benefit2": "Boosts immunity and digestion.",
+      "benefit3": "Good for hydration and energy."
+    },
+    "carbohydrates": 16.5,
+    "proteins": 0.8,
+    "fats": 0.4,
+    "vitamins": ["Vitamin C", "Vitamin B6", "Niacin"],
+    "minerals": ["Potassium", "Copper", "Magnesium"],
+    "bestTimeToConsume": "Morning",
+    "shelfLife": "3 to 4 days"
+  },
+   {
+    "id": 101,
+    "commonName": "Green Gram (Moong Dal)",
+    "healthBenefits": {
+      "benefit1": "Excellent source of plant-based protein.",
+      "benefit2": "Aids digestion and detoxifies the body.",
+      "benefit3": "Controls blood sugar levels."
+    },
+    "carbohydrates": 19.2,
+    "proteins": 24.0,
+    "fats": 1.3,
+    "vitamins": ["Vitamin B1", "Vitamin B6", "Folate"],
+    "minerals": ["Iron", "Magnesium", "Potassium"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "6 to 9 months (dry)"
+  },
+  {
+    "id": 102,
+    "commonName": "Black Gram (Urad Dal)",
+    "healthBenefits": {
+      "benefit1": "Strengthens bones and boosts energy.",
+      "benefit2": "Improves digestion and helps relieve constipation.",
+      "benefit3": "Enhances heart health with potassium and fiber."
+    },
+    "carbohydrates": 25.2,
+    "proteins": 24.0,
+    "fats": 1.6,
+    "vitamins": ["Vitamin B1", "Vitamin B2", "Folate"],
+    "minerals": ["Calcium", "Iron", "Magnesium"],
+    "bestTimeToConsume": "Dinner",
+    "shelfLife": "6 to 9 months (dry)"
+  },
+  {
+    "id": 103,
+    "commonName": "Chickpeas (Kabuli Chana)",
+    "healthBenefits": {
+      "benefit1": "Helps manage weight and keeps you full longer.",
+      "benefit2": "Controls blood sugar and cholesterol.",
+      "benefit3": "Improves digestive and gut health."
+    },
+    "carbohydrates": 27.4,
+    "proteins": 19.3,
+    "fats": 6.0,
+    "vitamins": ["Vitamin B6", "Vitamin K", "Folate"],
+    "minerals": ["Iron", "Phosphorus", "Magnesium"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "6 to 12 months (dry)"
+  },
+  {
+    "id": 104,
+    "commonName": "Pigeon Pea (Arhar Dal / Toor Dal)",
+    "healthBenefits": {
+      "benefit1": "Good for heart and weight control.",
+      "benefit2": "Rich in potassium, helps manage blood pressure.",
+      "benefit3": "Strengthens immunity and bone health."
+    },
+    "carbohydrates": 28.5,
+    "proteins": 22.0,
+    "fats": 1.7,
+    "vitamins": ["Vitamin B1", "Folate"],
+    "minerals": ["Iron", "Magnesium", "Calcium"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "6 to 9 months (dry)"
+  },
+  {
+    "id": 105,
+    "commonName": "Pearl Millet (Bajra)",
+    "healthBenefits": {
+      "benefit1": "Boosts energy and improves digestion.",
+      "benefit2": "Helps manage diabetes and cholesterol.",
+      "benefit3": "Strengthens bones and supports heart health."
+    },
+    "carbohydrates": 61.8,
+    "proteins": 10.6,
+    "fats": 5.0,
+    "vitamins": ["Niacin", "Vitamin B1"],
+    "minerals": ["Iron", "Magnesium", "Phosphorus"],
+    "bestTimeToConsume": "Dinner",
+    "shelfLife": "4 to 6 months (dry)"
+  },
+  {
+    "id": 106,
+    "commonName": "Finger Millet (Ragi)",
+    "healthBenefits": {
+      "benefit1": "Rich in calcium, great for bone health.",
+      "benefit2": "Controls blood sugar and aids weight loss.",
+      "benefit3": "Improves skin health and detoxifies the body."
+    },
+    "carbohydrates": 72.6,
+    "proteins": 7.3,
+    "fats": 1.3,
+    "vitamins": ["Vitamin B3", "Vitamin B1"],
+    "minerals": ["Calcium", "Iron", "Phosphorus"],
+    "bestTimeToConsume": "Breakfast",
+    "shelfLife": "6 to 8 months (dry)"
+  },
+  {
+    "id": 107,
+    "commonName": "Sorghum (Jowar)",
+    "healthBenefits": {
+      "benefit1": "Improves digestive health and boosts immunity.",
+      "benefit2": "Helps in diabetes control and weight management.",
+      "benefit3": "Supports bone health and reduces cholesterol."
+    },
+    "carbohydrates": 72.1,
+    "proteins": 10.4,
+    "fats": 3.1,
+    "vitamins": ["Vitamin B3", "Vitamin B6"],
+    "minerals": ["Phosphorus", "Iron", "Zinc"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "6 to 9 months"
+  },
+  {
+    "id": 108,
+    "commonName": "Foxtail Millet (Kangni)",
+    "healthBenefits": {
+      "benefit1": "Improves heart health and controls cholesterol.",
+      "benefit2": "Prevents diabetes and improves energy levels.",
+      "benefit3": "Aids digestion and promotes weight loss."
+    },
+    "carbohydrates": 60.6,
+    "proteins": 12.3,
+    "fats": 4.3,
+    "vitamins": ["Vitamin B1", "Vitamin B2", "Niacin"],
+    "minerals": ["Iron", "Magnesium", "Phosphorus"],
+    "bestTimeToConsume": "Breakfast",
+    "shelfLife": "6 to 9 months"
+  },
+  {
+    "id": 109,
+    "commonName": "Little Millet (Kutki)",
+    "healthBenefits": {
+      "benefit1": "Controls blood glucose and cholesterol.",
+      "benefit2": "Improves gut health and digestion.",
+      "benefit3": "Supports weight loss and bone strength."
+    },
+    "carbohydrates": 67.0,
+    "proteins": 7.7,
+    "fats": 4.7,
+    "vitamins": ["Vitamin B3", "Vitamin B6"],
+    "minerals": ["Iron", "Zinc", "Calcium"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "6 to 8 months"
+  },
+  {
+    "id": 110,
+    "commonName": "Barnyard Millet (Sanwa)",
+    "healthBenefits": {
+      "benefit1": "Good for diabetics due to low glycemic index.",
+      "benefit2": "Promotes digestive and bone health.",
+      "benefit3": "Improves metabolism and immunity."
+    },
+    "carbohydrates": 65.5,
+    "proteins": 6.2,
+    "fats": 2.2,
+    "vitamins": ["Vitamin B1", "Folate"],
+    "minerals": ["Iron", "Calcium", "Phosphorus"],
+    "bestTimeToConsume": "Dinner",
+    "shelfLife": "5 to 7 months"
+  },
+  {
+    "id": 111,
+    "commonName": "Kodo Millet",
+    "healthBenefits": {
+      "benefit1": "Helps control diabetes and obesity.",
+      "benefit2": "Improves digestion and gut health.",
+      "benefit3": "Strengthens nerves and bones."
+    },
+    "carbohydrates": 65.9,
+    "proteins": 8.3,
+    "fats": 3.6,
+    "vitamins": ["Vitamin B3", "Folate"],
+    "minerals": ["Calcium", "Magnesium", "Iron"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "5 to 7 months"
+  },
+  {
+    "id": 112,
+    "commonName": "Proso Millet (Cheena)",
+    "healthBenefits": {
+      "benefit1": "Improves nervous system and heart health.",
+      "benefit2": "Reduces blood sugar levels.",
+      "benefit3": "Boosts immunity and metabolic rate."
+    },
+    "carbohydrates": 70.4,
+    "proteins": 12.5,
+    "fats": 1.1,
+    "vitamins": ["Vitamin B1", "Vitamin B3"],
+    "minerals": ["Iron", "Phosphorus", "Magnesium"],
+    "bestTimeToConsume": "Breakfast",
+    "shelfLife": "6 to 9 months"
+  },
+  {
+    "id": 113,
+    "commonName": "Horse Gram (Kulthi)",
+    "healthBenefits": {
+      "benefit1": "Useful for weight loss and reducing cholesterol.",
+      "benefit2": "Good for treating kidney stones.",
+      "benefit3": "Helps manage diabetes."
+    },
+    "carbohydrates": 57.2,
+    "proteins": 22.0,
+    "fats": 0.5,
+    "vitamins": ["Vitamin B1", "Vitamin C"],
+    "minerals": ["Iron", "Calcium", "Phosphorus"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "5 to 6 months"
+  },
+  {
+    "id": 114,
+    "commonName": "Cowpea (Lobia)",
+    "healthBenefits": {
+      "benefit1": "Boosts immunity and bone health.",
+      "benefit2": "Controls blood sugar levels.",
+      "benefit3": "Improves digestion and skin health."
+    },
+    "carbohydrates": 23.5,
+    "proteins": 24.0,
+    "fats": 1.9,
+    "vitamins": ["Vitamin B1", "Vitamin C", "Folate"],
+    "minerals": ["Calcium", "Iron", "Magnesium"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "6 to 9 months"
+  },
+  {
+    "id": 115,
+    "commonName": "Field Pea (Matar Dal)",
+    "healthBenefits": {
+      "benefit1": "Improves digestion and boosts energy.",
+      "benefit2": "Supports eye health and immunity.",
+      "benefit3": "Regulates blood sugar and cholesterol."
+    },
+    "carbohydrates": 25.1,
+    "proteins": 20.0,
+    "fats": 1.0,
+    "vitamins": ["Vitamin A", "Vitamin C", "Folate"],
+    "minerals": ["Iron", "Potassium", "Zinc"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "6 to 9 months"
+  },
+  {
+    "id": 116,
+    "commonName": "Bitter Gourd (Karela)",
+    "healthBenefits": {
+      "benefit1": "Lowers blood sugar levels effectively.",
+      "benefit2": "Improves liver health and digestion.",
+      "benefit3": "Detoxifies blood and boosts immunity."
+    },
+    "carbohydrates": 3.7,
+    "proteins": 1.0,
+    "fats": 0.2,
+    "vitamins": ["Vitamin C", "Vitamin A", "Folate"],
+    "minerals": ["Potassium", "Iron", "Magnesium"],
+    "bestTimeToConsume": "Morning (on empty stomach)",
+    "shelfLife": "4 to 5 days"
+  },
+  {
+    "id": 117,
+    "commonName": "Drumstick (Moringa Pods)",
+    "healthBenefits": {
+      "benefit1": "Strengthens bones and joints.",
+      "benefit2": "Enhances digestion and detoxifies.",
+      "benefit3": "Improves skin and hair health."
+    },
+    "carbohydrates": 8.5,
+    "proteins": 2.1,
+    "fats": 0.1,
+    "vitamins": ["Vitamin C", "Vitamin B6", "Vitamin A"],
+    "minerals": ["Calcium", "Magnesium", "Iron"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "3 to 5 days"
+  },
+  {
+    "id": 118,
+    "commonName": "Colocasia (Arbi)",
+    "healthBenefits": {
+      "benefit1": "Improves digestive and gut health.",
+      "benefit2": "Boosts energy and immunity.",
+      "benefit3": "Controls blood pressure and heart health."
+    },
+    "carbohydrates": 26.5,
+    "proteins": 1.5,
+    "fats": 0.2,
+    "vitamins": ["Vitamin C", "Vitamin E", "Folate"],
+    "minerals": ["Magnesium", "Iron", "Potassium"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "4 to 6 days"
+  },
+  {
+    "id": 119,
+    "commonName": "Elephant Foot Yam (Suran)",
+    "healthBenefits": {
+      "benefit1": "Improves digestive and liver health.",
+      "benefit2": "Reduces inflammation and joint pain.",
+      "benefit3": "Supports hormonal balance and immunity."
+    },
+    "carbohydrates": 26.0,
+    "proteins": 1.7,
+    "fats": 0.3,
+    "vitamins": ["Vitamin B6", "Vitamin C", "Folate"],
+    "minerals": ["Potassium", "Calcium", "Iron"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "5 to 7 days"
+  },
+  {
+    "id": 120,
+    "commonName": "Taro Leaves (Arbi ke Patte)",
+    "healthBenefits": {
+      "benefit1": "Rich in iron and supports blood health.",
+      "benefit2": "Improves vision and bone strength.",
+      "benefit3": "Aids digestion and prevents constipation."
+    },
+    "carbohydrates": 6.0,
+    "proteins": 3.0,
+    "fats": 0.3,
+    "vitamins": ["Vitamin A", "Vitamin C", "Folate"],
+    "minerals": ["Iron", "Calcium", "Magnesium"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "2 to 3 days"
+  },
+  {
+    "id": 121,
+    "commonName": "Pumpkin Leaves",
+    "healthBenefits": {
+      "benefit1": "Improves eyesight and boosts immunity.",
+      "benefit2": "Supports bone health and digestion.",
+      "benefit3": "Good for managing diabetes."
+    },
+    "carbohydrates": 5.0,
+    "proteins": 3.5,
+    "fats": 0.4,
+    "vitamins": ["Vitamin A", "Vitamin C", "Vitamin K"],
+    "minerals": ["Calcium", "Iron", "Phosphorus"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "2 to 3 days"
+  },
+  {
+    "id": 122,
+    "commonName": "Curry Leaves",
+    "healthBenefits": {
+      "benefit1": "Controls blood sugar and improves digestion.",
+      "benefit2": "Boosts hair growth and skin health.",
+      "benefit3": "Reduces cholesterol and inflammation."
+    },
+    "carbohydrates": 6.0,
+    "proteins": 6.1,
+    "fats": 1.0,
+    "vitamins": ["Vitamin A", "Vitamin C", "Vitamin B6"],
+    "minerals": ["Calcium", "Iron", "Magnesium"],
+    "bestTimeToConsume": "Morning",
+    "shelfLife": "3 to 4 days"
+  },
+  {
+    "id": 123,
+    "commonName": "Beetroot Leaves",
+    "healthBenefits": {
+      "benefit1": "Improves hemoglobin and blood health.",
+      "benefit2": "Strengthens bones and supports vision.",
+      "benefit3": "Good for skin and liver detoxification."
+    },
+    "carbohydrates": 4.3,
+    "proteins": 2.2,
+    "fats": 0.2,
+    "vitamins": ["Vitamin A", "Vitamin C", "Vitamin K"],
+    "minerals": ["Iron", "Magnesium", "Potassium"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "2 to 3 days"
+  },
+  {
+    "id": 124,
+    "commonName": "Carrot Leaves",
+    "healthBenefits": {
+      "benefit1": "Improves kidney and bladder health.",
+      "benefit2": "Rich in antioxidants and fiber.",
+      "benefit3": "Supports digestion and eye health."
+    },
+    "carbohydrates": 5.1,
+    "proteins": 3.7,
+    "fats": 0.4,
+    "vitamins": ["Vitamin A", "Vitamin C", "Folate"],
+    "minerals": ["Potassium", "Iron", "Calcium"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "2 to 3 days"
+  },
+  {
+    "id": 125,
+    "commonName": "Cucumber",
+    "healthBenefits": {
+      "benefit1": "Hydrates and cools the body naturally.",
+      "benefit2": "Aids digestion and helps detoxification.",
+      "benefit3": "Good for skin glow and weight loss."
+    },
+    "carbohydrates": 3.6,
+    "proteins": 0.7,
+    "fats": 0.1,
+    "vitamins": ["Vitamin K", "Vitamin C", "Folate"],
+    "minerals": ["Magnesium", "Potassium", "Silica"],
+    "bestTimeToConsume": "Mid-morning",
+    "shelfLife": "3 to 5 days"
+  },
+  {
+    "id": 126,
+    "commonName": "Bottle Gourd (Lauki)",
+    "healthBenefits": {
+      "benefit1": "Regulates blood pressure and cools the body.",
+      "benefit2": "Aids weight loss and improves digestion.",
+      "benefit3": "Detoxifies liver and hydrates skin."
+    },
+    "carbohydrates": 3.5,
+    "proteins": 0.6,
+    "fats": 0.1,
+    "vitamins": ["Vitamin C", "Vitamin B2", "Choline"],
+    "minerals": ["Calcium", "Iron", "Magnesium"],
+    "bestTimeToConsume": "Morning",
+    "shelfLife": "4 to 5 days"
+  },
+  {
+    "id": 127,
+    "commonName": "Ash Gourd (Petha)",
+    "healthBenefits": {
+      "benefit1": "Cools the system and improves lung health.",
+      "benefit2": "Helps in weight loss and acid reflux.",
+      "benefit3": "Boosts mental clarity and energy."
+    },
+    "carbohydrates": 3.2,
+    "proteins": 0.5,
+    "fats": 0.1,
+    "vitamins": ["Vitamin C", "Vitamin B1"],
+    "minerals": ["Iron", "Calcium", "Phosphorus"],
+    "bestTimeToConsume": "Morning (empty stomach)",
+    "shelfLife": "6 to 8 days"
+  },
+  {
+    "id": 128,
+    "commonName": "Turmeric Root (Fresh Haldi)",
+    "healthBenefits": {
+      "benefit1": "Anti-inflammatory and natural painkiller.",
+      "benefit2": "Improves skin tone and healing power.",
+      "benefit3": "Boosts brain function and immunity."
+    },
+    "carbohydrates": 10.0,
+    "proteins": 2.0,
+    "fats": 0.6,
+    "vitamins": ["Vitamin C", "Vitamin B6"],
+    "minerals": ["Iron", "Potassium", "Manganese"],
+    "bestTimeToConsume": "Morning",
+    "shelfLife": "7 to 10 days (fresh)"
+  },
+  {
+    "id": 129,
+    "commonName": "Ginger Root",
+    "healthBenefits": {
+      "benefit1": "Improves digestion and prevents nausea.",
+      "benefit2": "Reduces inflammation and muscle pain.",
+      "benefit3": "Boosts immunity and relieves cold symptoms."
+    },
+    "carbohydrates": 17.8,
+    "proteins": 1.8,
+    "fats": 0.7,
+    "vitamins": ["Vitamin C", "Vitamin B6"],
+    "minerals": ["Magnesium", "Zinc", "Iron"],
+    "bestTimeToConsume": "Morning",
+    "shelfLife": "7 to 10 days (fresh)"
+  },
+  {
+    "id": 130,
+    "commonName": "Garlic",
+    "healthBenefits": {
+      "benefit1": "Controls blood pressure and cholesterol.",
+      "benefit2": "Strengthens immune system and detoxifies.",
+      "benefit3": "Reduces risk of heart disease and infections."
+    },
+    "carbohydrates": 33.1,
+    "proteins": 6.4,
+    "fats": 0.5,
+    "vitamins": ["Vitamin C", "Vitamin B6"],
+    "minerals": ["Selenium", "Manganese", "Calcium"],
+    "bestTimeToConsume": "Morning (raw or in food)",
+    "shelfLife": "1 to 2 months (dry)"
+  },
+  {
+    "id": 131,
+    "commonName": "Sweet Potato",
+    "healthBenefits": {
+      "benefit1": "Boosts energy and regulates blood sugar.",
+      "benefit2": "Rich in antioxidants and supports gut health.",
+      "benefit3": "Improves vision and skin texture."
+    },
+    "carbohydrates": 20.1,
+    "proteins": 1.6,
+    "fats": 0.1,
+    "vitamins": ["Vitamin A", "Vitamin C", "Vitamin B6"],
+    "minerals": ["Potassium", "Manganese", "Magnesium"],
+    "bestTimeToConsume": "Breakfast",
+    "shelfLife": "10 to 15 days"
+  },
+  {
+    "id": 132,
+    "commonName": "Radish (Mooli)",
+    "healthBenefits": {
+      "benefit1": "Improves liver function and detoxifies.",
+      "benefit2": "Boosts metabolism and digestion.",
+      "benefit3": "Reduces inflammation and supports weight loss."
+    },
+    "carbohydrates": 3.4,
+    "proteins": 0.7,
+    "fats": 0.1,
+    "vitamins": ["Vitamin C", "Folate", "Vitamin B6"],
+    "minerals": ["Calcium", "Potassium", "Phosphorus"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "4 to 6 days"
+  },
+  {
+    "id": 133,
+    "commonName": "Turnip (Shalgam)",
+    "healthBenefits": {
+      "benefit1": "Improves heart and bone health.",
+      "benefit2": "Aids digestion and boosts immunity.",
+      "benefit3": "Detoxifies liver and reduces inflammation."
+    },
+    "carbohydrates": 6.4,
+    "proteins": 0.9,
+    "fats": 0.2,
+    "vitamins": ["Vitamin C", "Vitamin K", "Folate"],
+    "minerals": ["Calcium", "Potassium", "Phosphorus"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "5 to 7 days"
+  },
+  {
+    "id": 134,
+    "commonName": "Cluster Beans (Gawar Phali)",
+    "healthBenefits": {
+      "benefit1": "Improves heart and digestive health.",
+      "benefit2": "Controls blood sugar and cholesterol.",
+      "benefit3": "Rich in dietary fiber and iron."
+    },
+    "carbohydrates": 10.8,
+    "proteins": 3.7,
+    "fats": 0.5,
+    "vitamins": ["Vitamin C", "Vitamin A", "Folate"],
+    "minerals": ["Calcium", "Iron", "Magnesium"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "3 to 5 days"
+  },
+  {
+    "id": 135,
+    "commonName": "Ridge Gourd (Turai)",
+    "healthBenefits": {
+      "benefit1": "Improves skin health and hydrates the body.",
+      "benefit2": "Aids digestion and detoxification.",
+      "benefit3": "Promotes weight loss and eye health."
+    },
+    "carbohydrates": 2.9,
+    "proteins": 0.6,
+    "fats": 0.2,
+    "vitamins": ["Vitamin C", "Vitamin A", "Vitamin B6"],
+    "minerals": ["Magnesium", "Potassium", "Calcium"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "3 to 5 days"
+  },
+  {
+    "id": 136,
+    "commonName": "Sponge Gourd (Nenua)",
+    "healthBenefits": {
+      "benefit1": "Hydrates and cools the body naturally.",
+      "benefit2": "Improves digestion and treats constipation.",
+      "benefit3": "Supports healthy skin and weight control."
+    },
+    "carbohydrates": 3.1,
+    "proteins": 1.0,
+    "fats": 0.2,
+    "vitamins": ["Vitamin C", "Vitamin B5", "Vitamin A"],
+    "minerals": ["Potassium", "Calcium", "Magnesium"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "3 to 4 days"
+  },
+  {
+    "id": 137,
+    "commonName": "Ivy Gourd (Kundru)",
+    "healthBenefits": {
+      "benefit1": "Lowers blood sugar and supports liver function.",
+      "benefit2": "Improves digestion and immunity.",
+      "benefit3": "Reduces oxidative stress and fatigue."
+    },
+    "carbohydrates": 4.2,
+    "proteins": 1.2,
+    "fats": 0.1,
+    "vitamins": ["Vitamin C", "Vitamin A", "Folate"],
+    "minerals": ["Iron", "Magnesium", "Phosphorus"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "3 to 5 days"
+  },
+  {
+    "id": 138,
+    "commonName": "Snake Gourd (Chichinda)",
+    "healthBenefits": {
+      "benefit1": "Acts as a natural coolant for the body.",
+      "benefit2": "Aids in detoxification and digestion.",
+      "benefit3": "Helps manage diabetes and constipation."
+    },
+    "carbohydrates": 3.0,
+    "proteins": 0.7,
+    "fats": 0.1,
+    "vitamins": ["Vitamin C", "Vitamin A", "Vitamin B6"],
+    "minerals": ["Magnesium", "Calcium", "Iron"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "4 to 5 days"
+  },
+  {
+    "id": 139,
+    "commonName": "Pointed Gourd (Parwal)",
+    "healthBenefits": {
+      "benefit1": "Improves liver and digestive health.",
+      "benefit2": "Controls blood sugar and supports immunity.",
+      "benefit3": "Detoxifies blood and boosts metabolism."
+    },
+    "carbohydrates": 4.0,
+    "proteins": 2.0,
+    "fats": 0.1,
+    "vitamins": ["Vitamin C", "Vitamin A", "Folate"],
+    "minerals": ["Iron", "Calcium", "Phosphorus"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "3 to 5 days"
+  },
+  {
+    "id": 140,
+    "commonName": "Indian Round Gourd (Tinda)",
+    "healthBenefits": {
+      "benefit1": "Supports weight loss and digestion.",
+      "benefit2": "Cools the body and improves skin.",
+      "benefit3": "Good for detox and heart health."
+    },
+    "carbohydrates": 2.8,
+    "proteins": 0.8,
+    "fats": 0.2,
+    "vitamins": ["Vitamin C", "Vitamin B1"],
+    "minerals": ["Calcium", "Iron", "Potassium"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "4 to 5 days"
+  },
+  {
+    "id": 141,
+    "commonName": "Indian Sorrel (Chaulai Saag)",
+    "healthBenefits": {
+      "benefit1": "Rich in iron, boosts hemoglobin.",
+      "benefit2": "Improves digestion and vision.",
+      "benefit3": "Strengthens bones and reduces weakness."
+    },
+    "carbohydrates": 3.9,
+    "proteins": 3.2,
+    "fats": 0.3,
+    "vitamins": ["Vitamin A", "Vitamin C", "Vitamin K"],
+    "minerals": ["Iron", "Calcium", "Magnesium"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "2 to 3 days"
+  },
+  {
+    "id": 142,
+    "commonName": "Fenugreek Leaves (Methi Saag)",
+    "healthBenefits": {
+      "benefit1": "Improves blood sugar and cholesterol.",
+      "benefit2": "Good for hair, skin, and hormonal balance.",
+      "benefit3": "Enhances digestion and relieves bloating."
+    },
+    "carbohydrates": 6.0,
+    "proteins": 4.4,
+    "fats": 0.9,
+    "vitamins": ["Vitamin K", "Vitamin C", "Vitamin A"],
+    "minerals": ["Iron", "Calcium", "Magnesium"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "2 to 3 days"
+  },
+  {
+    "id": 143,
+    "commonName": "Amaranth Leaves (Lal Saag)",
+    "healthBenefits": {
+      "benefit1": "Supports eye health and hemoglobin levels.",
+      "benefit2": "Improves digestion and liver function.",
+      "benefit3": "Rich in calcium, good for bones."
+    },
+    "carbohydrates": 4.6,
+    "proteins": 2.6,
+    "fats": 0.3,
+    "vitamins": ["Vitamin A", "Vitamin C", "Vitamin K"],
+    "minerals": ["Calcium", "Iron", "Phosphorus"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "2 to 3 days"
+  },
+  {
+    "id": 144,
+    "commonName": "Radish Leaves",
+    "healthBenefits": {
+      "benefit1": "Rich in calcium, supports bone strength.",
+      "benefit2": "Detoxifies the liver and improves digestion.",
+      "benefit3": "Boosts immunity and reduces fatigue."
+    },
+    "carbohydrates": 3.8,
+    "proteins": 3.4,
+    "fats": 0.4,
+    "vitamins": ["Vitamin C", "Vitamin A", "Vitamin K"],
+    "minerals": ["Iron", "Calcium", "Magnesium"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "2 to 3 days"
+  },
+  {
+    "id": 145,
+    "commonName": "Mustard Leaves (Sarson Saag)",
+    "healthBenefits": {
+      "benefit1": "Boosts immunity and metabolism.",
+      "benefit2": "Improves digestion and bone health.",
+      "benefit3": "Good for skin, eyes, and respiratory health."
+    },
+    "carbohydrates": 4.7,
+    "proteins": 2.7,
+    "fats": 0.5,
+    "vitamins": ["Vitamin A", "Vitamin C", "Vitamin K"],
+    "minerals": ["Iron", "Calcium", "Phosphorus"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "3 to 4 days"
+  },
+  {
+    "id": 146,
+    "commonName": "Coriander Leaves (Dhaniya)",
+    "healthBenefits": {
+      "benefit1": "Improves digestion and appetite.",
+      "benefit2": "Detoxifies heavy metals from the body.",
+      "benefit3": "Lowers cholesterol and regulates blood sugar."
+    },
+    "carbohydrates": 3.7,
+    "proteins": 2.1,
+    "fats": 0.5,
+    "vitamins": ["Vitamin A", "Vitamin C", "Vitamin K"],
+    "minerals": ["Potassium", "Calcium", "Magnesium"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "2 to 3 days"
+  },
+  {
+    "id": 147,
+    "commonName": "Mint Leaves (Pudina)",
+    "healthBenefits": {
+      "benefit1": "Aids in digestion and soothes the stomach.",
+      "benefit2": "Relieves respiratory problems and congestion.",
+      "benefit3": "Improves oral health and freshens breath."
+    },
+    "carbohydrates": 6.0,
+    "proteins": 3.8,
+    "fats": 0.9,
+    "vitamins": ["Vitamin A", "Vitamin C", "Folate"],
+    "minerals": ["Iron", "Calcium", "Potassium"],
+    "bestTimeToConsume": "Morning",
+    "shelfLife": "2 to 3 days"
+  },
+  {
+    "id": 148,
+    "commonName": "Basil Leaves (Tulsi)",
+    "healthBenefits": {
+      "benefit1": "Boosts immunity and respiratory health.",
+      "benefit2": "Reduces stress and anxiety naturally.",
+      "benefit3": "Anti-inflammatory and antibacterial properties."
+    },
+    "carbohydrates": 2.7,
+    "proteins": 3.2,
+    "fats": 0.6,
+    "vitamins": ["Vitamin C", "Vitamin A", "Vitamin K"],
+    "minerals": ["Iron", "Calcium", "Zinc"],
+    "bestTimeToConsume": "Morning (raw leaves or tea)",
+    "shelfLife": "2 to 3 days (fresh)"
+  },
+  {
+    "id": 149,
+    "commonName": "Green Chilli",
+    "healthBenefits": {
+      "benefit1": "Improves metabolism and promotes weight loss.",
+      "benefit2": "Rich in antioxidants and Vitamin C.",
+      "benefit3": "Clears nasal congestion and improves immunity."
+    },
+    "carbohydrates": 8.8,
+    "proteins": 2.0,
+    "fats": 0.3,
+    "vitamins": ["Vitamin C", "Vitamin A", "Vitamin B6"],
+    "minerals": ["Potassium", "Iron", "Magnesium"],
+    "bestTimeToConsume": "Lunch (as side or ingredient)",
+    "shelfLife": "5 to 6 days"
+  },
+  {
+    "id": 150,
+    "commonName": "Raw Mango",
+    "healthBenefits": {
+      "benefit1": "Cools the body and prevents heatstroke.",
+      "benefit2": "Improves digestion and liver function.",
+      "benefit3": "Rich in Vitamin C, boosts immunity."
+    },
+    "carbohydrates": 14.8,
+    "proteins": 0.8,
+    "fats": 0.4,
+    "vitamins": ["Vitamin C", "Vitamin A", "Folate"],
+    "minerals": ["Potassium", "Magnesium", "Iron"],
+    "bestTimeToConsume": "Afternoon",
+    "shelfLife": "5 to 7 days"
+  },
+  {
+    "id": 151,
+    "commonName": "Tamarind (Imli)",
+    "healthBenefits": {
+      "benefit1": "Aids digestion and relieves constipation.",
+      "benefit2": "Improves heart and nerve health.",
+      "benefit3": "Antioxidant-rich and reduces inflammation."
+    },
+    "carbohydrates": 62.5,
+    "proteins": 3.0,
+    "fats": 0.6,
+    "vitamins": ["Vitamin C", "Vitamin B1", "Niacin"],
+    "minerals": ["Calcium", "Iron", "Magnesium"],
+    "bestTimeToConsume": "Afternoon (as chutney or pulp)",
+    "shelfLife": "2 to 3 months (dry pulp)"
+  },
+  {
+    "id": 152,
+    "commonName": "Raw Banana",
+    "healthBenefits": {
+      "benefit1": "Supports digestive health and gut flora.",
+      "benefit2": "Regulates blood sugar and cholesterol.",
+      "benefit3": "Rich in resistant starch and potassium."
+    },
+    "carbohydrates": 22.8,
+    "proteins": 1.0,
+    "fats": 0.2,
+    "vitamins": ["Vitamin C", "Vitamin B6"],
+    "minerals": ["Potassium", "Magnesium", "Iron"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "5 to 7 days"
+  },
+  {
+    "id": 153,
+    "commonName": "Curry Plant Fruit (Ber/Indian Jujube)",
+    "healthBenefits": {
+      "benefit1": "Boosts immune system and digestion.",
+      "benefit2": "Good for skin and hair health.",
+      "benefit3": "Reduces anxiety and promotes sleep."
+    },
+    "carbohydrates": 17.0,
+    "proteins": 0.9,
+    "fats": 0.2,
+    "vitamins": ["Vitamin C", "Vitamin A", "Vitamin B2"],
+    "minerals": ["Calcium", "Phosphorus", "Iron"],
+    "bestTimeToConsume": "Morning",
+    "shelfLife": "5 to 6 days"
+  },
+  {
+    "id": 154,
+    "commonName": "Custard Apple (Sitaphal)",
+    "healthBenefits": {
+      "benefit1": "Improves digestion and supports brain health.",
+      "benefit2": "Good for vision and immune system.",
+      "benefit3": "Relieves fatigue and prevents anemia."
+    },
+    "carbohydrates": 25.2,
+    "proteins": 2.0,
+    "fats": 1.0,
+    "vitamins": ["Vitamin C", "Vitamin B6", "Folate"],
+    "minerals": ["Potassium", "Magnesium", "Iron"],
+    "bestTimeToConsume": "Evening",
+    "shelfLife": "3 to 5 days (ripe)"
+  },
+  {
+    "id": 155,
+    "commonName": "Guava (Amrud)",
+    "healthBenefits": {
+      "benefit1": "Boosts immunity and controls blood sugar.",
+      "benefit2": "Improves digestion and eye health.",
+      "benefit3": "Rich in antioxidants and fiber."
+    },
+    "carbohydrates": 14.3,
+    "proteins": 2.6,
+    "fats": 0.3,
+    "vitamins": ["Vitamin C", "Vitamin A", "Folate"],
+    "minerals": ["Potassium", "Calcium", "Iron"],
+    "bestTimeToConsume": "Morning",
+    "shelfLife": "5 to 6 days"
+  },
+  {
+    "id": 156,
+    "commonName": "Wood Apple (Bael)",
+    "healthBenefits": {
+      "benefit1": "Treats diarrhea and stomach ulcers.",
+      "benefit2": "Detoxifies body and improves digestion.",
+      "benefit3": "Boosts immunity and cools the body."
+    },
+    "carbohydrates": 31.8,
+    "proteins": 1.8,
+    "fats": 0.3,
+    "vitamins": ["Vitamin C", "Vitamin B1"],
+    "minerals": ["Calcium", "Phosphorus", "Iron"],
+    "bestTimeToConsume": "Morning",
+    "shelfLife": "8 to 10 days"
+  },
+  {
+    "id": 157,
+    "commonName": "Sapota (Chikoo)",
+    "healthBenefits": {
+      "benefit1": "Boosts energy and promotes healthy digestion.",
+      "benefit2": "Good for bone and skin health.",
+      "benefit3": "Strengthens immune system."
+    },
+    "carbohydrates": 19.9,
+    "proteins": 0.7,
+    "fats": 1.1,
+    "vitamins": ["Vitamin A", "Vitamin C", "Niacin"],
+    "minerals": ["Calcium", "Iron", "Copper"],
+    "bestTimeToConsume": "Evening",
+    "shelfLife": "3 to 5 days (ripe)"
+  },
+  {
+    "id": 158,
+    "commonName": "Jamun (Java Plum)",
+    "healthBenefits": {
+      "benefit1": "Controls diabetes and purifies blood.",
+      "benefit2": "Improves digestion and oral health.",
+      "benefit3": "Boosts hemoglobin and immunity."
+    },
+    "carbohydrates": 14.0,
+    "proteins": 0.7,
+    "fats": 0.2,
+    "vitamins": ["Vitamin C", "Vitamin A"],
+    "minerals": ["Iron", "Potassium", "Magnesium"],
+    "bestTimeToConsume": "Afternoon",
+    "shelfLife": "2 to 3 days (fresh)"
+  },
+  {
+    "id": 159,
+    "commonName": "Star Fruit (Kamrakh)",
+    "healthBenefits": {
+      "benefit1": "Good for digestion and liver detox.",
+      "benefit2": "Boosts metabolism and immunity.",
+      "benefit3": "Controls cholesterol and inflammation."
+    },
+    "carbohydrates": 6.7,
+    "proteins": 1.0,
+    "fats": 0.3,
+    "vitamins": ["Vitamin C", "Vitamin B5"],
+    "minerals": ["Potassium", "Phosphorus", "Magnesium"],
+    "bestTimeToConsume": "Morning",
+    "shelfLife": "4 to 6 days"
+  },
+  {
+    "id": 160,
+    "commonName": "Mulberry (Shahtoot)",
+    "healthBenefits": {
+      "benefit1": "Improves blood circulation and liver health.",
+      "benefit2": "Strengthens immunity and vision.",
+      "benefit3": "Reduces blood pressure and sugar levels."
+    },
+    "carbohydrates": 9.8,
+    "proteins": 1.4,
+    "fats": 0.4,
+    "vitamins": ["Vitamin C", "Vitamin K", "Vitamin E"],
+    "minerals": ["Iron", "Calcium", "Potassium"],
+    "bestTimeToConsume": "Morning",
+    "shelfLife": "2 to 3 days"
+  },
+  {
+    "id": 161,
+    "commonName": "Pineapple",
+    "healthBenefits": {
+      "benefit1": "Aids digestion and reduces inflammation.",
+      "benefit2": "Boosts immunity with high Vitamin C content.",
+      "benefit3": "Supports bone health and healing."
+    },
+    "carbohydrates": 13.1,
+    "proteins": 0.5,
+    "fats": 0.1,
+    "vitamins": ["Vitamin C", "Vitamin B1", "Vitamin B6"],
+    "minerals": ["Manganese", "Copper", "Potassium"],
+    "bestTimeToConsume": "Afternoon",
+    "shelfLife": "3 to 5 days (cut), 5 to 7 days (whole)"
+  },
+  {
+    "id": 162,
+    "commonName": "Lychee",
+    "healthBenefits": {
+      "benefit1": "Rich in antioxidants and Vitamin C.",
+      "benefit2": "Boosts blood circulation and immunity.",
+      "benefit3": "Supports skin health and hydration."
+    },
+    "carbohydrates": 16.5,
+    "proteins": 0.8,
+    "fats": 0.4,
+    "vitamins": ["Vitamin C", "Vitamin B6"],
+    "minerals": ["Copper", "Potassium", "Phosphorus"],
+    "bestTimeToConsume": "Evening",
+    "shelfLife": "2 to 3 days"
+  },
+  {
+    "id": 163,
+    "commonName": "Papaya",
+    "healthBenefits": {
+      "benefit1": "Improves digestion with natural enzymes.",
+      "benefit2": "Boosts immunity and reduces inflammation.",
+      "benefit3": "Supports eye and heart health."
+    },
+    "carbohydrates": 10.8,
+    "proteins": 0.5,
+    "fats": 0.3,
+    "vitamins": ["Vitamin C", "Vitamin A", "Folate"],
+    "minerals": ["Magnesium", "Potassium", "Calcium"],
+    "bestTimeToConsume": "Morning",
+    "shelfLife": "2 to 4 days (ripe)"
+  },
+  {
+    "id": 164,
+    "commonName": "Pomegranate (Anar)",
+    "healthBenefits": {
+      "benefit1": "Boosts hemoglobin and improves blood flow.",
+      "benefit2": "Protects heart and reduces inflammation.",
+      "benefit3": "Rich in antioxidants and fiber."
+    },
+    "carbohydrates": 18.7,
+    "proteins": 1.7,
+    "fats": 1.2,
+    "vitamins": ["Vitamin C", "Vitamin K", "Folate"],
+    "minerals": ["Potassium", "Phosphorus", "Iron"],
+    "bestTimeToConsume": "Morning",
+    "shelfLife": "5 to 7 days"
+  },
+  {
+    "id": 165,
+    "commonName": "Coconut (Tender)",
+    "healthBenefits": {
+      "benefit1": "Hydrates and cools the body naturally.",
+      "benefit2": "Improves digestion and skin texture.",
+      "benefit3": "Boosts energy and reduces fatigue."
+    },
+    "carbohydrates": 6.2,
+    "proteins": 1.0,
+    "fats": 0.2,
+    "vitamins": ["Vitamin C", "Vitamin B1"],
+    "minerals": ["Potassium", "Magnesium", "Sodium"],
+    "bestTimeToConsume": "Morning",
+    "shelfLife": "2 to 3 days (after cutting)"
+  },
+  {
+    "id": 166,
+    "commonName": "Water Chestnut (Singhara)",
+    "healthBenefits": {
+      "benefit1": "Supports urinary health and digestion.",
+      "benefit2": "Rich in antioxidants and minerals.",
+      "benefit3": "Improves energy and reduces inflammation."
+    },
+    "carbohydrates": 23.9,
+    "proteins": 1.4,
+    "fats": 0.1,
+    "vitamins": ["Vitamin B6", "Vitamin C"],
+    "minerals": ["Potassium", "Copper", "Manganese"],
+    "bestTimeToConsume": "Afternoon",
+    "shelfLife": "4 to 6 days"
+  },
+  {
+    "id": 167,
+    "commonName": "Black Grapes",
+    "healthBenefits": {
+      "benefit1": "Rich in resveratrol for heart health.",
+      "benefit2": "Improves digestion and skin quality.",
+      "benefit3": "Boosts brain function and reduces fatigue."
+    },
+    "carbohydrates": 17.0,
+    "proteins": 0.6,
+    "fats": 0.2,
+    "vitamins": ["Vitamin C", "Vitamin K", "Folate"],
+    "minerals": ["Potassium", "Iron", "Copper"],
+    "bestTimeToConsume": "Evening",
+    "shelfLife": "3 to 5 days"
+  },
+  {
+    "id": 168,
+    "commonName": "Green Grapes",
+    "healthBenefits": {
+      "benefit1": "Aids in hydration and liver health.",
+      "benefit2": "Rich in antioxidants and vitamin C.",
+      "benefit3": "Improves vision and strengthens bones."
+    },
+    "carbohydrates": 17.2,
+    "proteins": 0.7,
+    "fats": 0.2,
+    "vitamins": ["Vitamin C", "Vitamin K"],
+    "minerals": ["Potassium", "Calcium", "Iron"],
+    "bestTimeToConsume": "Afternoon",
+    "shelfLife": "3 to 5 days"
+  },
+  {
+    "id": 169,
+    "commonName": "Rose Apple (Jamrul)",
+    "healthBenefits": {
+      "benefit1": "Cools the body and aids hydration.",
+      "benefit2": "Boosts digestion and controls sugar levels.",
+      "benefit3": "Improves heart health and immunity."
+    },
+    "carbohydrates": 5.7,
+    "proteins": 0.6,
+    "fats": 0.3,
+    "vitamins": ["Vitamin C", "Vitamin A"],
+    "minerals": ["Calcium", "Potassium", "Phosphorus"],
+    "bestTimeToConsume": "Morning",
+    "shelfLife": "2 to 3 days"
+  },
+  {
+    "id": 170,
+    "commonName": "Fig (Anjeer)",
+    "healthBenefits": {
+      "benefit1": "Aids in digestion and prevents constipation.",
+      "benefit2": "Improves bone density and heart health.",
+      "benefit3": "Boosts energy and hemoglobin levels."
+    },
+    "carbohydrates": 19.2,
+    "proteins": 0.8,
+    "fats": 0.3,
+    "vitamins": ["Vitamin B6", "Vitamin K"],
+    "minerals": ["Calcium", "Iron", "Magnesium"],
+    "bestTimeToConsume": "Morning",
+    "shelfLife": "1 to 2 days (fresh), 3 to 6 months (dry)"
+  },
+  {
+    "id": 171,
+    "commonName": "Peach",
+    "healthBenefits": {
+      "benefit1": "Improves skin texture and digestion.",
+      "benefit2": "Rich in antioxidants and vitamin C.",
+      "benefit3": "Reduces inflammation and boosts immunity."
+    },
+    "carbohydrates": 9.5,
+    "proteins": 0.9,
+    "fats": 0.3,
+    "vitamins": ["Vitamin C", "Vitamin A", "Niacin"],
+    "minerals": ["Potassium", "Magnesium", "Iron"],
+    "bestTimeToConsume": "Mid-morning",
+    "shelfLife": "2 to 4 days"
+  },
+  {
+    "id": 172,
+    "commonName": "Plum (Aloo Bukhara)",
+    "healthBenefits": {
+      "benefit1": "Improves digestion and controls blood sugar.",
+      "benefit2": "Boosts bone health and reduces fatigue.",
+      "benefit3": "Helps in detoxification and vision."
+    },
+    "carbohydrates": 11.4,
+    "proteins": 0.7,
+    "fats": 0.3,
+    "vitamins": ["Vitamin C", "Vitamin A", "Vitamin K"],
+    "minerals": ["Calcium", "Potassium", "Phosphorus"],
+    "bestTimeToConsume": "Evening",
+    "shelfLife": "3 to 4 days"
+  },
+  {
+    "id": 173,
+    "commonName": "Persimmon (Japani Phal)",
+    "healthBenefits": {
+      "benefit1": "Rich in fiber and aids digestion.",
+      "benefit2": "Boosts immunity and eye health.",
+      "benefit3": "Supports heart health and energy levels."
+    },
+    "carbohydrates": 18.6,
+    "proteins": 0.6,
+    "fats": 0.3,
+    "vitamins": ["Vitamin A", "Vitamin C", "Vitamin E"],
+    "minerals": ["Manganese", "Copper", "Potassium"],
+    "bestTimeToConsume": "Afternoon",
+    "shelfLife": "2 to 3 days"
+  },
+  {
+    "id": 174,
+    "commonName": "Apricot (Khubani)",
+    "healthBenefits": {
+      "benefit1": "Good for eye and skin health.",
+      "benefit2": "Helps digestion and boosts immunity.",
+      "benefit3": "Regulates blood pressure and heart health."
+    },
+    "carbohydrates": 11.1,
+    "proteins": 1.4,
+    "fats": 0.4,
+    "vitamins": ["Vitamin A", "Vitamin C", "Vitamin E"],
+    "minerals": ["Potassium", "Iron", "Magnesium"],
+    "bestTimeToConsume": "Morning",
+    "shelfLife": "2 to 3 days"
+  },
+  {
+    "id": 175,
+    "commonName": "Gooseberry (Amla)",
+    "healthBenefits": {
+      "benefit1": "Rich in Vitamin C, boosts immunity.",
+      "benefit2": "Improves digestion and detoxifies the liver.",
+      "benefit3": "Strengthens hair, skin, and vision."
+    },
+    "carbohydrates": 14.0,
+    "proteins": 0.9,
+    "fats": 0.5,
+    "vitamins": ["Vitamin C", "Vitamin A", "Folate"],
+    "minerals": ["Calcium", "Iron", "Phosphorus"],
+    "bestTimeToConsume": "Morning",
+    "shelfLife": "10 to 15 days (fresh)"
+  },
+  {
+    "id": 176,
+    "commonName": "Jackfruit (Kathal)",
+    "healthBenefits": {
+      "benefit1": "Improves digestion due to high fiber.",
+      "benefit2": "Supports heart health and reduces cholesterol.",
+      "benefit3": "Boosts immunity and strengthens bones."
+    },
+    "carbohydrates": 23.0,
+    "proteins": 1.7,
+    "fats": 0.6,
+    "vitamins": ["Vitamin C", "Vitamin A", "Vitamin B6"],
+    "minerals": ["Potassium", "Magnesium", "Calcium"],
+    "bestTimeToConsume": "Afternoon",
+    "shelfLife": "3 to 5 days (ripe)"
+  },
+  {
+    "id": 177,
+    "commonName": "Bitter Gourd (Karela)",
+    "healthBenefits": {
+      "benefit1": "Helps lower blood sugar levels.",
+      "benefit2": "Improves liver health and detoxification.",
+      "benefit3": "Boosts immunity and skin health."
+    },
+    "carbohydrates": 4.3,
+    "proteins": 1.0,
+    "fats": 0.2,
+    "vitamins": ["Vitamin C", "Vitamin A", "Folate"],
+    "minerals": ["Potassium", "Iron", "Magnesium"],
+    "bestTimeToConsume": "Morning",
+    "shelfLife": "4 to 5 days"
+  },
+  {
+    "id": 178,
+    "commonName": "Snake Gourd (Chichinda)",
+    "healthBenefits": {
+      "benefit1": "Detoxifies body and supports hydration.",
+      "benefit2": "Aids digestion and weight loss.",
+      "benefit3": "Improves respiratory health."
+    },
+    "carbohydrates": 3.1,
+    "proteins": 0.6,
+    "fats": 0.3,
+    "vitamins": ["Vitamin C", "Vitamin A"],
+    "minerals": ["Calcium", "Phosphorus", "Magnesium"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "4 to 6 days"
+  },
+  {
+    "id": 179,
+    "commonName": "Pointed Gourd (Parwal)",
+    "healthBenefits": {
+      "benefit1": "Improves digestion and liver function.",
+      "benefit2": "Supports skin health and weight control.",
+      "benefit3": "Boosts metabolism and immune strength."
+    },
+    "carbohydrates": 3.5,
+    "proteins": 1.8,
+    "fats": 0.2,
+    "vitamins": ["Vitamin C", "Vitamin A", "Vitamin B1"],
+    "minerals": ["Calcium", "Phosphorus", "Iron"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "5 to 7 days"
+  },
+  {
+    "id": 180,
+    "commonName": "Ivy Gourd (Tindora)",
+    "healthBenefits": {
+      "benefit1": "Controls blood sugar levels.",
+      "benefit2": "Enhances metabolism and liver health.",
+      "benefit3": "Promotes digestive wellness."
+    },
+    "carbohydrates": 4.2,
+    "proteins": 1.2,
+    "fats": 0.3,
+    "vitamins": ["Vitamin A", "Vitamin B2"],
+    "minerals": ["Calcium", "Iron", "Potassium"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "4 to 6 days"
+  },
+  {
+    "id": 181,
+    "commonName": "Elephant Foot Yam (Suran)",
+    "healthBenefits": {
+      "benefit1": "Aids in digestive health and bowel movement.",
+      "benefit2": "Helps in weight loss and cholesterol reduction.",
+      "benefit3": "Boosts brain function and hormonal balance."
+    },
+    "carbohydrates": 23.0,
+    "proteins": 2.0,
+    "fats": 0.4,
+    "vitamins": ["Vitamin C", "Vitamin B6"],
+    "minerals": ["Potassium", "Magnesium", "Phosphorus"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "7 to 10 days (raw)"
+  },
+  {
+    "id": 182,
+    "commonName": "Colocasia (Arbi)",
+    "healthBenefits": {
+      "benefit1": "Improves gut health and energy levels.",
+      "benefit2": "Rich in resistant starch and antioxidants.",
+      "benefit3": "Supports heart and eye health."
+    },
+    "carbohydrates": 26.5,
+    "proteins": 2.3,
+    "fats": 0.1,
+    "vitamins": ["Vitamin E", "Vitamin B6"],
+    "minerals": ["Manganese", "Phosphorus", "Iron"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "6 to 8 days"
+  },
+  {
+    "id": 183,
+    "commonName": "Black Eyed Pea (Lobia)",
+    "healthBenefits": {
+      "benefit1": "High in fiber and supports gut health.",
+      "benefit2": "Improves heart health and lowers cholesterol.",
+      "benefit3": "Supports iron levels and energy."
+    },
+    "carbohydrates": 23.5,
+    "proteins": 8.3,
+    "fats": 0.6,
+    "vitamins": ["Vitamin B1", "Folate"],
+    "minerals": ["Iron", "Magnesium", "Phosphorus"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "7 to 8 months (dry)"
+  },
+  {
+    "id": 184,
+    "commonName": "Cluster Beans (Gawar Phali)",
+    "healthBenefits": {
+      "benefit1": "Lowers blood sugar and cholesterol levels.",
+      "benefit2": "Improves digestion and weight management.",
+      "benefit3": "Rich in dietary fiber and folate."
+    },
+    "carbohydrates": 10.8,
+    "proteins": 3.5,
+    "fats": 0.2,
+    "vitamins": ["Vitamin C", "Folate"],
+    "minerals": ["Calcium", "Phosphorus", "Iron"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "4 to 5 days"
+  },
+  {
+    "id": 185,
+    "commonName": "Field Bean (Hyacinth Bean / Sem Phali)",
+    "healthBenefits": {
+      "benefit1": "Good for digestion and energy levels.",
+      "benefit2": "Supports muscle development.",
+      "benefit3": "Rich in plant protein and fiber."
+    },
+    "carbohydrates": 19.0,
+    "proteins": 7.0,
+    "fats": 0.5,
+    "vitamins": ["Vitamin B1", "Folate"],
+    "minerals": ["Iron", "Magnesium", "Zinc"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "5 to 6 days (fresh pods)"
+  },
+  {
+    "id": 186,
+    "commonName": "Bottle Gourd (Lauki)",
+    "healthBenefits": {
+      "benefit1": "Promotes weight loss and hydration.",
+      "benefit2": "Good for heart and liver health.",
+      "benefit3": "Improves digestion and soothes inflammation."
+    },
+    "carbohydrates": 3.7,
+    "proteins": 0.6,
+    "fats": 0.1,
+    "vitamins": ["Vitamin C", "Vitamin B1"],
+    "minerals": ["Potassium", "Calcium", "Iron"],
+    "bestTimeToConsume": "Morning",
+    "shelfLife": "4 to 6 days"
+  },
+  {
+    "id": 187,
+    "commonName": "Indian Bean (Val Papdi)",
+    "healthBenefits": {
+      "benefit1": "Improves digestive and respiratory health.",
+      "benefit2": "Supports healthy cholesterol levels.",
+      "benefit3": "Boosts energy and reduces fatigue."
+    },
+    "carbohydrates": 9.6,
+    "proteins": 4.0,
+    "fats": 0.4,
+    "vitamins": ["Vitamin C", "Vitamin B6"],
+    "minerals": ["Iron", "Phosphorus", "Magnesium"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "4 to 5 days"
+  },
+  {
+    "id": 188,
+    "commonName": "Ridge Gourd (Turai)",
+    "healthBenefits": {
+      "benefit1": "Cleanses liver and helps digestion.",
+      "benefit2": "Promotes weight loss and hydration.",
+      "benefit3": "Good for diabetes and cholesterol control."
+    },
+    "carbohydrates": 2.2,
+    "proteins": 0.5,
+    "fats": 0.1,
+    "vitamins": ["Vitamin C", "Vitamin A"],
+    "minerals": ["Iron", "Magnesium", "Potassium"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "3 to 5 days"
+  },
+  {
+    "id": 189,
+    "commonName": "Turmeric Root (Haldi)",
+    "healthBenefits": {
+      "benefit1": "Anti-inflammatory and antioxidant-rich.",
+      "benefit2": "Boosts immunity and brain function.",
+      "benefit3": "Improves skin health and liver function."
+    },
+    "carbohydrates": 17.2,
+    "proteins": 1.9,
+    "fats": 0.9,
+    "vitamins": ["Vitamin C", "Vitamin B6"],
+    "minerals": ["Iron", "Potassium", "Manganese"],
+    "bestTimeToConsume": "Morning (raw or paste)",
+    "shelfLife": "7 to 10 days (fresh)"
+  },
+  {
+    "id": 190,
+    "commonName": "Ginger",
+    "healthBenefits": {
+      "benefit1": "Improves digestion and reduces nausea.",
+      "benefit2": "Anti-inflammatory and pain-relieving.",
+      "benefit3": "Boosts immunity and relieves cold symptoms."
+    },
+    "carbohydrates": 17.8,
+    "proteins": 1.8,
+    "fats": 0.7,
+    "vitamins": ["Vitamin B6", "Vitamin C"],
+    "minerals": ["Magnesium", "Manganese", "Potassium"],
+    "bestTimeToConsume": "Morning",
+    "shelfLife": "2 to 3 weeks (fresh)"
+  },
+  {
+    "id": 191,
+    "commonName": "Arrowroot (Ararot)",
+    "healthBenefits": {
+      "benefit1": "Soothes digestion and treats diarrhea.",
+      "benefit2": "Gluten-free and good for celiac patients.",
+      "benefit3": "Boosts metabolism and immunity."
+    },
+    "carbohydrates": 13.4,
+    "proteins": 0.4,
+    "fats": 0.1,
+    "vitamins": ["Vitamin B9", "Vitamin B6"],
+    "minerals": ["Iron", "Potassium", "Magnesium"],
+    "bestTimeToConsume": "Morning",
+    "shelfLife": "7 to 10 days (fresh)"
+  },
+  {
+    "id": 192,
+    "commonName": "Roselle (Gongura)",
+    "healthBenefits": {
+      "benefit1": "Rich in iron and improves hemoglobin.",
+      "benefit2": "Aids digestion and promotes heart health.",
+      "benefit3": "Anti-inflammatory and supports liver."
+    },
+    "carbohydrates": 5.4,
+    "proteins": 1.5,
+    "fats": 0.2,
+    "vitamins": ["Vitamin C", "Vitamin A"],
+    "minerals": ["Iron", "Calcium", "Magnesium"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "4 to 5 days"
+  },
+  {
+    "id": 193,
+    "commonName": "Taro Leaf (Patra)",
+    "healthBenefits": {
+      "benefit1": "Rich in antioxidants and fiber.",
+      "benefit2": "Strengthens bones and improves vision.",
+      "benefit3": "Good for skin health and anemia."
+    },
+    "carbohydrates": 4.1,
+    "proteins": 2.0,
+    "fats": 0.4,
+    "vitamins": ["Vitamin A", "Vitamin C"],
+    "minerals": ["Calcium", "Iron", "Potassium"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "2 to 3 days"
+  },
+  {
+    "id": 194,
+    "commonName": "Indian Sorrel (Chakwat)",
+    "healthBenefits": {
+      "benefit1": "Good for liver and digestive health.",
+      "benefit2": "Detoxifies the body and supports kidneys.",
+      "benefit3": "Anti-inflammatory and iron-rich."
+    },
+    "carbohydrates": 3.9,
+    "proteins": 2.1,
+    "fats": 0.3,
+    "vitamins": ["Vitamin A", "Vitamin C"],
+    "minerals": ["Iron", "Calcium", "Phosphorus"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "3 to 4 days"
+  },
+  {
+    "id": 195,
+    "commonName": "Indian Goosefoot (Bathua)",
+    "healthBenefits": {
+      "benefit1": "Improves digestion and boosts metabolism.",
+      "benefit2": "Good for skin, liver, and kidneys.",
+      "benefit3": "Rich in fiber and detoxifying agents."
+    },
+    "carbohydrates": 4.6,
+    "proteins": 3.2,
+    "fats": 0.5,
+    "vitamins": ["Vitamin A", "Vitamin C", "Folate"],
+    "minerals": ["Iron", "Calcium", "Potassium"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "2 to 3 days"
+  },
+  {
+    "id": 196,
+    "commonName": "Drumstick Leaves (Moringa)",
+    "healthBenefits": {
+      "benefit1": "Extremely rich in iron and calcium.",
+      "benefit2": "Improves immunity and fights infections.",
+      "benefit3": "Lowers blood pressure and sugar levels."
+    },
+    "carbohydrates": 8.3,
+    "proteins": 9.4,
+    "fats": 1.4,
+    "vitamins": ["Vitamin A", "Vitamin C", "Vitamin E"],
+    "minerals": ["Iron", "Calcium", "Magnesium"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "2 to 3 days (fresh)"
+  },
+  {
+    "id": 197,
+    "commonName": "Bamboo Shoot",
+    "healthBenefits": {
+      "benefit1": "Low calorie and supports weight loss.",
+      "benefit2": "Rich in fiber, improves digestion.",
+      "benefit3": "Detoxifies the body and lowers cholesterol."
+    },
+    "carbohydrates": 5.2,
+    "proteins": 2.6,
+    "fats": 0.3,
+    "vitamins": ["Vitamin B6", "Vitamin C"],
+    "minerals": ["Potassium", "Calcium", "Phosphorus"],
+    "bestTimeToConsume": "Lunch",
+    "shelfLife": "2 to 3 days (fresh)"
+  },
+  {
+    "id": 198,
+    "commonName": "Raw Turmeric",
+    "healthBenefits": {
+      "benefit1": "Natural anti-inflammatory and antioxidant.",
+      "benefit2": "Improves joint health and skin glow.",
+      "benefit3": "Boosts liver and brain function."
+    },
+    "carbohydrates": 10.0,
+    "proteins": 1.6,
+    "fats": 0.9,
+    "vitamins": ["Vitamin C", "Vitamin B6"],
+    "minerals": ["Iron", "Manganese", "Potassium"],
+    "bestTimeToConsume": "Morning",
+    "shelfLife": "7 to 10 days (raw)"
+  },
+  {
+    "id": 199,
+    "commonName": "Black Cardamom (Badi Elaichi)",
+    "healthBenefits": {
+      "benefit1": "Improves respiratory health and digestion.",
+      "benefit2": "Detoxifies and protects against infections.",
+      "benefit3": "Boosts heart and oral health."
+    },
+    "carbohydrates": 68.5,
+    "proteins": 10.8,
+    "fats": 6.7,
+    "vitamins": ["Vitamin C", "Vitamin B2"],
+    "minerals": ["Potassium", "Calcium", "Magnesium"],
+    "bestTimeToConsume": "Afternoon (as spice or herbal tea)",
+    "shelfLife": "6 to 12 months (dry)"
+  },
+  {
+    "id": 200,
+    "commonName": "Fennel (Saunf)",
+    "healthBenefits": {
+      "benefit1": "Aids digestion and prevents bloating.",
+      "benefit2": "Improves eyesight and freshens breath.",
+      "benefit3": "Rich in antioxidants and cooling agents."
+    },
+    "carbohydrates": 52.3,
+    "proteins": 15.8,
+    "fats": 14.9,
+    "vitamins": ["Vitamin C", "Vitamin A"],
+    "minerals": ["Iron", "Calcium", "Magnesium"],
+    "bestTimeToConsume": "After meals",
+    "shelfLife": "6 to 8 months (dry)"
+  }
+]
