@@ -24,6 +24,7 @@ export default function SignupPage() {
     email: "",
     password: "",
     role: "farmer",
+    adminKey: "",
   });
 
   const [error, setError] = useState("");
@@ -34,7 +35,20 @@ export default function SignupPage() {
     try {
       setLoading(true);
       setError("");
-      const response = await axios.post("/api/users/signup", user);
+
+      const payload: any = {
+        username: user.username,
+        email: user.email,
+        password: user.password,
+        role: user.role,
+      };
+
+      // Only include adminKey if role is admin
+      if (user.role === "admin") {
+        payload.adminKey = user.adminKey;
+      }
+
+      const response = await axios.post("/api/users/signup", payload);
       toast.success(response.data.message || "Signup successful.");
       router.push("/login");
     } catch (error: any) {
@@ -130,13 +144,32 @@ export default function SignupPage() {
                 className="w-full p-2 border rounded"
                 value={user.role}
                 onChange={(e) =>
-                  setUser({ ...user, role: e.target.value })
+                  setUser({
+                    ...user,
+                    role: e.target.value,
+                    adminKey: "", // reset admin key if role changes
+                  })
                 }
               >
                 <option value="farmer">Farmer</option>
                 <option value="admin">Admin</option>
               </select>
             </div>
+
+            {user.role === "admin" && (
+              <div>
+                <Label htmlFor="adminKey">Admin Key</Label>
+                <Input
+                  id="adminKey"
+                  type="text"
+                  value={user.adminKey}
+                  onChange={(e) =>
+                    setUser({ ...user, adminKey: e.target.value })
+                  }
+                  placeholder="Enter secret admin key"
+                />
+              </div>
+            )}
 
             <Button
               type="submit"

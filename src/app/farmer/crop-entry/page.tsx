@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function CropEntryPage() {
   const [form, setForm] = useState({
@@ -11,6 +11,27 @@ export default function CropEntryPage() {
     area: 0,
     season: "kharif",
   });
+
+  const [userId, setUserId] = useState<string | null>(null);
+
+  useEffect(() => {
+    const fetchUser = async () => {
+      try {
+        const res = await fetch("/api/users/me");
+        const data = await res.json();
+
+        if (res.ok && data.user?.id) {
+          setUserId(data.user.id);
+        } else {
+          console.error("Failed to fetch user ID");
+        }
+      } catch (err) {
+        console.error("Error fetching user ID", err);
+      }
+    };
+
+    fetchUser();
+  }, []);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
@@ -31,6 +52,11 @@ export default function CropEntryPage() {
       return;
     }
 
+    if (!userId) {
+      alert("❌ Cannot submit: user ID not found.");
+      return;
+    }
+
     try {
       const res = await fetch("/api/farmer/crop-entry", {
         method: "POST",
@@ -42,7 +68,7 @@ export default function CropEntryPage() {
           sowingDate,
           area,
           season,
-          farmerId: "68778ea6d5cd1bc9731dd4b0", // ✅ Replace with real farmerId from session later
+          farmerId: userId, // ✅ Use fetched user ID (admin or farmer)
         }),
       });
 

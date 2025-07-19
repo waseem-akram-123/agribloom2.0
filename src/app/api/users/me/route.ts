@@ -7,16 +7,11 @@ export async function GET(request: NextRequest) {
   try {
     await connectToDB();
 
-      // console.log("✅ Cookie received:", request.cookies.get("token")?.value);
-
-    const userId = await getDataFromToken(request);
-    const user = await User.findById(userId).select("username email");
+    const decoded = getDataFromToken(request);
+    const user = await User.findById(decoded.id).select("username email role");
 
     if (!user) {
-      return new NextResponse(
-        JSON.stringify({ authenticated: false }),
-        { status: 404 }
-      );
+      return new NextResponse(JSON.stringify({ authenticated: false }), { status: 404 });
     }
 
     return new NextResponse(
@@ -26,12 +21,13 @@ export async function GET(request: NextRequest) {
           id: user._id,
           username: user.username,
           email: user.email,
+          role: user.role, // ✅ Send role to frontend
         },
       }),
       {
         status: 200,
         headers: {
-          "Cache-Control": "no-store, no-cache, must-revalidate, proxy-revalidate",
+          "Cache-Control": "no-store",
           "Pragma": "no-cache",
           "Expires": "0",
         },
@@ -39,17 +35,13 @@ export async function GET(request: NextRequest) {
     );
   } catch (err) {
     console.error(err);
-    return new NextResponse(
-      JSON.stringify({ authenticated: false }),
-      {
-        status: 401,
-        headers: {
-          "Cache-Control": "no-store, no-cache, must-revalidate, proxy-revalidate",
-          "Pragma": "no-cache",
-          "Expires": "0",
-        },
-      }
-    );
+    return new NextResponse(JSON.stringify({ authenticated: false }), {
+      status: 401,
+      headers: {
+        "Cache-Control": "no-store",
+        "Pragma": "no-cache",
+        "Expires": "0",
+      },
+    });
   }
 }
-

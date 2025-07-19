@@ -5,7 +5,9 @@ import { useEffect, useState } from "react";
 interface Trend {
   crop: string;
   totalEntries: number;
+  totalArea: number;
   averageArea: number;
+  percentage: number;
 }
 
 export default function TrendsPage() {
@@ -44,7 +46,9 @@ export default function TrendsPage() {
             >
               <h2 className="text-lg font-bold capitalize">{trend.crop}</h2>
               <p>Total Entries: {trend.totalEntries}</p>
-              <p>Avg Area: {trend.averageArea} acre</p>
+              <p>Total Area: {trend.totalArea} acres</p>
+              <p>Average Area: {trend.averageArea} acres</p>
+              <p>Contribution: {trend.percentage}% of total sown area</p>
             </div>
           ))}
         </div>

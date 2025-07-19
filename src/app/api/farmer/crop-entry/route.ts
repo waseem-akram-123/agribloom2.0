@@ -1,21 +1,24 @@
 import { NextRequest, NextResponse } from "next/server";
 import CropEntry from "@/models/CropEntry";
 import { connectToDB } from "@/dbConfig/dbConfig";
+import { getDataFromToken } from "@/helpers/getDataFromToken"; // ✅ Use token to get ID
 
 export async function POST(req: NextRequest) {
   try {
-    await connectToDB(); // ensure DB is connected
+    await connectToDB();
+
+    const user = await getDataFromToken(req); // ✅ Decode JWT from cookie
+    const farmerId = user.id; // ✅ Get MongoDB ID from token
 
     const body = await req.json();
+    const { crop, district, village, sowingDate, area, season } = body;
 
-    const { farmerId, crop, district, village, sowingDate, area, season } = body;
-
-    if (!farmerId || !crop || !district || !village || !sowingDate || !area || !season) {
+    if (!crop || !district || !village || !sowingDate || !area || !season) {
       return NextResponse.json({ message: "Missing fields" }, { status: 400 });
     }
 
     const entry = new CropEntry({
-      farmerId,
+      farmerId, // ✅ taken securely from token
       crop,
       district,
       village,
@@ -28,7 +31,7 @@ export async function POST(req: NextRequest) {
 
     return NextResponse.json({ message: "Crop entry saved" }, { status: 201 });
   } catch (error) {
-    console.error("POST /api/crop-entry error:", error);
+    console.error("POST /api/farmer/crop-entry error:", error);
     return NextResponse.json({ message: "Internal Server Error" }, { status: 500 });
   }
 }

@@ -9,15 +9,13 @@ if (!secret) {
 
 interface DecodedToken {
   id: string;
+  role: "admin" | "farmer"; // ✅ Add role
   iat: number;
   exp: number;
-  // other fields are ignored since we're not returning them
 }
 
-export const getDataFromToken = (request: NextRequest): string => {
+export const getDataFromToken = (request: NextRequest): DecodedToken => {
   const token = request.cookies.get("token")?.value;
-
-  // console.log("✅ Cookie received:", token);
 
   if (!token) {
     throw new Error("No token provided");
@@ -25,7 +23,7 @@ export const getDataFromToken = (request: NextRequest): string => {
 
   try {
     const decodedToken = jwt.verify(token, secret) as DecodedToken;
-    return decodedToken.id; // ✅ Only returning the ID
+    return decodedToken; // ✅ Return full decodedToken
   } catch (error: any) {
     throw new Error(error.message || "Token verification failed");
   }

@@ -6,6 +6,12 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import axios from "axios";
+import {
+  DropdownMenu,
+  DropdownMenuTrigger,
+  DropdownMenuContent,
+  DropdownMenuItem,
+} from "@/components/ui/dropdown-menu";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -28,6 +34,8 @@ export default function Navbar() {
   const [showFarmerDropdown, setShowFarmerDropdown] = useState(false);
   const [showUserDropdown, setShowUserDropdown] = useState(false);
 
+  const [role, setRole] = useState(""); // ✅ For admin role check
+
   const studyRef = useRef<HTMLDivElement>(null);
   const farmerRef = useRef<HTMLDivElement>(null);
   const userRef = useRef<HTMLDivElement>(null);
@@ -43,6 +51,7 @@ export default function Navbar() {
       .then((res) => {
         setIsAuthenticated(res.data.authenticated);
         setUsername(res.data.user?.username || "");
+        setRole(res.data.user?.role || ""); // ✅ Store user role
       })
       .catch(() => {
         setIsAuthenticated(false);
@@ -65,10 +74,7 @@ export default function Navbar() {
       ) {
         setShowFarmerDropdown(false);
       }
-      if (
-        userRef.current &&
-        !userRef.current.contains(event.target as Node)
-      ) {
+      if (userRef.current && !userRef.current.contains(event.target as Node)) {
         setShowUserDropdown(false);
       }
     };
@@ -132,6 +138,27 @@ export default function Navbar() {
                 </HoveredLink>
                 <HoveredLink href="/contactus">Contact Us</HoveredLink>
 
+                {/* ✅ Show Admin tab if user is admin */}
+                {role === "admin" && (
+                  <DropdownMenu>
+                    <DropdownMenuTrigger asChild>
+                      <Button variant="ghost" className="text-sm font-medium">
+                        Admin
+                      </Button>
+                    </DropdownMenuTrigger>
+                    <DropdownMenuContent align="end">
+                      <DropdownMenuItem asChild>
+                        <Link href="/admin/dashboard">Dashboard</Link>
+                      </DropdownMenuItem>
+                      <DropdownMenuItem asChild>
+                        <Link href="/farmer/crop-entry">
+                          Crop Entry (on behalf)
+                        </Link>
+                      </DropdownMenuItem>
+                    </DropdownMenuContent>
+                  </DropdownMenu>
+                )}
+
                 {/* Farmer Dropdown */}
                 <div className="relative" ref={farmerRef}>
                   <button
@@ -194,9 +221,7 @@ export default function Navbar() {
                             <div className="bg-green-100 p-2 rounded-full">
                               <TrendingUp className="h-4 w-4 text-green-600" />
                             </div>
-                            <p className="font-medium text-gray-800">
-                              Trends
-                            </p>
+                            <p className="font-medium text-gray-800">Trends</p>
                           </Link>
                         </div>
                       </motion.div>
@@ -298,7 +323,8 @@ export default function Navbar() {
                                 Medicinal and Poisonous Plants
                               </p>
                               <p className="text-xs text-gray-500">
-                                Explore different tree Medicinal trees and poisonous plants
+                                Explore different tree Medicinal trees and
+                                poisonous plants
                               </p>
                             </div>
                           </Link>
