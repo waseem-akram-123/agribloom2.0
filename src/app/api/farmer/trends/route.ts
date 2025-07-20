@@ -1,44 +1,67 @@
-import { NextResponse } from "next/server";
-import { connectToDB } from "@/dbConfig/dbConfig";
-import Crop from "@/models/CropEntry";
+// /app/api/farmer/trends/route.ts
 
-export async function GET() {
+import { NextRequest, NextResponse } from "next/server";
+import { connectToDB } from "@/dbConfig/dbConfig";
+import CropEntryModel, { ICropEntry } from "@/models/CropEntry";
+import { getDataFromToken } from "@/helpers/getDataFromToken";
+
+export async function GET(request: NextRequest) {
   try {
     await connectToDB();
+    const { id: userId, role } = await getDataFromToken(request);
+    let entries: ICropEntry[] = [];
 
-    const cropData = await Crop.aggregate([
-      {
-        $group: {
-          _id: "$crop",
-          totalEntries: { $sum: 1 },
-          totalArea: { $sum: "$area" },
-          averageArea: { $avg: "$area" },
-        },
-      },
-      {
-        $project: {
-          crop: "$_id",
-          totalEntries: 1,
-          totalArea: 1,
-          averageArea: { $round: ["$averageArea", 2] },
-          _id: 0,
-        },
-      },
-    ]);
+    if (role === "admin") {
+      // Admin sees all crop entries
+      entries = await CropEntryModel.find();
+    } else {
+      // Farmer: get their district
+      const farmerEntries = await CropEntryModel.find({ farmerId: userId });
+      if (farmerEntries.length === 0) return NextResponse.json([]);
+      const district = farmerEntries[0].district;
 
-    const totalArea = cropData.reduce((sum, item) => sum + item.totalArea, 0);
+      // Get all crop entries in same district
+      entries = await CropEntryModel.find({ district });
+    }
 
-    const trendData = cropData.map((item) => ({
-      ...item,
-      percentage: Math.round((item.totalArea / totalArea) * 100), // based on acres
-    })).sort((a, b) => b.totalArea - a.totalArea);
+    // Group crops
+    const cropMap = new Map<string, { area: number; entries: ICropEntry[] }>();
+    let totalAreaAllCrops = 0;
 
-    return NextResponse.json(trendData);
-  } catch (err) {
-    console.error("Error fetching crop trends:", err);
-    return NextResponse.json(
-      { error: "Failed to fetch crop trends" },
-      { status: 500 }
-    );
+    for (const entry of entries) {
+      totalAreaAllCrops += entry.area;
+      const key = entry.crop;
+      const prev = cropMap.get(key);
+      if (prev) {
+        prev.area += entry.area;
+        prev.entries.push(entry);
+      } else {
+        cropMap.set(key, { area: entry.area, entries: [entry] });
+      }
+    }
+
+    const trends = Array.from(cropMap, ([crop, { area, entries }]) => {
+      const totalEntries = entries.length;
+      const averageArea = totalEntries > 0 ? area / totalEntries : 0;
+      const percentage =
+        totalAreaAllCrops > 0 ? (area / totalAreaAllCrops) * 100 : 0;
+
+      // If there are multiple villages, you can list them all, or just show the first one.
+      // Here, we show the first village for simplicity.
+      return {
+        crop,
+        totalEntries,
+        totalArea: area,
+        averageArea,
+        percentage,
+        district: entries[0].district,
+        village: entries[0].village, // <-- Add this line to include village
+      };
+    });
+
+    return NextResponse.json(trends);
+  } catch (error) {
+    console.error("Error fetching crop trends:", error);
+    return NextResponse.json([], { status: 500 });
   }
 }

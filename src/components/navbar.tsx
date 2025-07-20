@@ -33,12 +33,14 @@ export default function Navbar() {
   const [showStudyDropdown, setShowStudyDropdown] = useState(false);
   const [showFarmerDropdown, setShowFarmerDropdown] = useState(false);
   const [showUserDropdown, setShowUserDropdown] = useState(false);
+  const [showAdminDropdown, setShowAdminDropdown] = useState(false); // ✅ Admin dropdown
 
-  const [role, setRole] = useState(""); // ✅ For admin role check
+  const [role, setRole] = useState("");
 
   const studyRef = useRef<HTMLDivElement>(null);
   const farmerRef = useRef<HTMLDivElement>(null);
   const userRef = useRef<HTMLDivElement>(null);
+  const adminRef = useRef<HTMLDivElement>(null); // ✅ Admin ref
 
   useEffect(() => {
     axios
@@ -51,7 +53,7 @@ export default function Navbar() {
       .then((res) => {
         setIsAuthenticated(res.data.authenticated);
         setUsername(res.data.user?.username || "");
-        setRole(res.data.user?.role || ""); // ✅ Store user role
+        setRole(res.data.user?.role || "");
       })
       .catch(() => {
         setIsAuthenticated(false);
@@ -59,7 +61,6 @@ export default function Navbar() {
       .finally(() => setLoading(false));
   }, []);
 
-  // Close dropdowns on outside click
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (
@@ -76,6 +77,12 @@ export default function Navbar() {
       }
       if (userRef.current && !userRef.current.contains(event.target as Node)) {
         setShowUserDropdown(false);
+      }
+      if (
+        adminRef.current &&
+        !adminRef.current.contains(event.target as Node)
+      ) {
+        setShowAdminDropdown(false);
       }
     };
     document.addEventListener("mousedown", handleClickOutside);
@@ -112,7 +119,7 @@ export default function Navbar() {
       transition={{ duration: 0.5 }}
     >
       <div className="max-w-7xl mx-auto px-4 py-1 flex flex-col md:flex-row md:items-center">
-        {/* Logo Section */}
+        {/* Logo */}
         <div className="flex items-center gap-3">
           <Image
             src="/nature/logo.jpg"
@@ -138,25 +145,67 @@ export default function Navbar() {
                 </HoveredLink>
                 <HoveredLink href="/contactus">Contact Us</HoveredLink>
 
-                {/* ✅ Show Admin tab if user is admin */}
+                {/* ✅ Admin Dropdown */}
                 {role === "admin" && (
-                  <DropdownMenu>
-                    <DropdownMenuTrigger asChild>
-                      <Button variant="ghost" className="text-sm font-medium">
-                        Admin
-                      </Button>
-                    </DropdownMenuTrigger>
-                    <DropdownMenuContent align="end">
-                      <DropdownMenuItem asChild>
-                        <Link href="/admin/dashboard">Dashboard</Link>
-                      </DropdownMenuItem>
-                      <DropdownMenuItem asChild>
-                        <Link href="/farmer/crop-entry">
-                          Crop Entry (on behalf)
-                        </Link>
-                      </DropdownMenuItem>
-                    </DropdownMenuContent>
-                  </DropdownMenu>
+                  <div className="relative" ref={adminRef}>
+                    <button
+                      onClick={() => {
+                        setShowAdminDropdown((prev) => !prev);
+                        setShowFarmerDropdown(false);
+                        setShowStudyDropdown(false);
+                      }}
+                      className={`flex items-center gap-1 text-base transition-all font-medium cursor-pointer ${
+                        pathname.startsWith("/admin")
+                          ? "text-green-600 font-semibold"
+                          : "text-gray-700"
+                      } hover:text-green-700`}
+                    >
+                      Admin
+                      <ChevronDown
+                        className={`h-4 w-4 transition-transform ${
+                          showAdminDropdown ? "rotate-180" : ""
+                        }`}
+                      />
+                    </button>
+                    <AnimatePresence>
+                      {showAdminDropdown && (
+                        <motion.div
+                          initial={{ opacity: 0, y: -10 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          exit={{ opacity: 0, y: -10 }}
+                          transition={{ duration: 0.2 }}
+                          className="absolute left-0 mt-2 bg-white p-3 rounded-lg shadow-xl z-50 min-w-[220px] border border-green-100"
+                        >
+                          <div className="flex flex-col gap-2">
+                            <Link
+                              href="/farmer/dashboard"
+                              className="flex items-center gap-3 p-2 rounded-md hover:bg-green-50 transition-colors"
+                              onClick={() => setShowAdminDropdown(false)}
+                            >
+                              <div className="bg-green-100 p-2 rounded-full">
+                                <PieChart className="h-4 w-4 text-green-600" />
+                              </div>
+                              <p className="font-medium text-gray-800">
+                                Dashboard
+                              </p>
+                            </Link>
+                            <Link
+                              href="/farmer/trends"
+                              className="flex items-center gap-3 p-2 rounded-md hover:bg-green-50 transition-colors"
+                              onClick={() => setShowAdminDropdown(false)}
+                            >
+                              <div className="bg-green-100 p-2 rounded-full">
+                                <TrendingUp className="h-4 w-4 text-green-600" />
+                              </div>
+                              <p className="font-medium text-gray-800">
+                                Trends
+                              </p>
+                            </Link>
+                          </div>
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
+                  </div>
                 )}
 
                 {/* Farmer Dropdown */}

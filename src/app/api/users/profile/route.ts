@@ -6,8 +6,8 @@ import { getDataFromToken } from "@/helpers/getDataFromToken";
 export async function GET(request: NextRequest) {
   await connectToDB();
   try {
-    const userId = await getDataFromToken(request);
-    const user = await User.findById(userId).select("-password");
+    const decoded = await getDataFromToken(request);
+    const user = await User.findById(decoded.id).select("-password");
     return NextResponse.json({ message: "User found", data: user });
   } catch (error: any) {
     return NextResponse.json({ error: error.message }, { status: 401 });
@@ -17,7 +17,7 @@ export async function GET(request: NextRequest) {
 export async function PATCH(request: NextRequest) {
   await connectToDB();
   try {
-    const userId = await getDataFromToken(request);
+    const decoded = await getDataFromToken(request);
     const body = await request.json();
 
     const updates: any = {};
@@ -55,7 +55,7 @@ export async function PATCH(request: NextRequest) {
       updates.profileCompleted = true;
     }
 
-    const updatedUser = await User.findByIdAndUpdate(userId, updates, {
+    const updatedUser = await User.findByIdAndUpdate(decoded.id, updates, {
       new: true,
     }).select("-password");
 

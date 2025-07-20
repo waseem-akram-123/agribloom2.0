@@ -8,6 +8,8 @@ interface Trend {
   totalArea: number;
   averageArea: number;
   percentage: number;
+  district: string;
+  village: string;
 }
 
 export default function TrendsPage() {
@@ -32,7 +34,9 @@ export default function TrendsPage() {
 
   return (
     <div className="p-6">
-      <h1 className="text-2xl font-semibold mb-4 text-green-800">Crop Sowing Trends</h1>
+      <h1 className="text-2xl font-semibold mb-4 text-green-800">
+        Crop Sowing Trends
+      </h1>
       {loading ? (
         <p className="text-gray-500">Loading trends...</p>
       ) : trends.length === 0 ? (
@@ -45,10 +49,12 @@ export default function TrendsPage() {
               className="border rounded-xl shadow p-4 bg-green-50 hover:bg-green-100 transition"
             >
               <h2 className="text-lg font-bold capitalize">{trend.crop}</h2>
+              <p>District: <strong>{trend.district}</strong></p>
+              <p>Village: <strong>{trend.village}</strong></p>
               <p>Total Entries: {trend.totalEntries}</p>
-              <p>Total Area: {trend.totalArea} acres</p>
-              <p>Average Area: {trend.averageArea} acres</p>
-              <p>Contribution: {trend.percentage}% of total sown area</p>
+              <p>Total Area: {trend.totalArea.toFixed(2)} acres</p>
+              <p>Average Area: {trend.averageArea.toFixed(2)} acres</p>
+              <p>Contribution: {trend.percentage.toFixed(2)}% of total area</p>
             </div>
           ))}
         </div>

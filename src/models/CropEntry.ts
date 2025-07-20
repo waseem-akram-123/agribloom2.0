@@ -1,6 +1,6 @@
 import mongoose, { Schema, Document, models } from "mongoose";
 
-interface ICropEntry extends Document {
+export interface ICropEntry extends Document {
   farmerId: mongoose.Types.ObjectId;
   crop: string;
   district: string;

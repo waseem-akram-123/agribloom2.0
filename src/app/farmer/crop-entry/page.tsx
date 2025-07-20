@@ -16,20 +16,12 @@ export default function CropEntryPage() {
 
   useEffect(() => {
     const fetchUser = async () => {
-      try {
-        const res = await fetch("/api/users/me");
-        const data = await res.json();
-
-        if (res.ok && data.user?.id) {
-          setUserId(data.user.id);
-        } else {
-          console.error("Failed to fetch user ID");
-        }
-      } catch (err) {
-        console.error("Error fetching user ID", err);
+      const res = await fetch("/api/users/me");
+      const data = await res.json();
+      if (res.ok && data.user?.id) {
+        setUserId(data.user.id);
       }
     };
-
     fetchUser();
   }, []);
 
@@ -47,13 +39,8 @@ export default function CropEntryPage() {
     e.preventDefault();
 
     const { crop, district, village, sowingDate, area, season } = form;
-    if (!crop || !district || !village || !sowingDate || area <= 0) {
-      alert("⚠️ Please fill in all fields correctly.");
-      return;
-    }
-
-    if (!userId) {
-      alert("❌ Cannot submit: user ID not found.");
+    if (!crop || !district || !village || !sowingDate || area <= 0 || !userId) {
+      alert("❌ Please fill all fields correctly.");
       return;
     }
 
@@ -68,18 +55,18 @@ export default function CropEntryPage() {
           sowingDate,
           area,
           season,
-          farmerId: userId, // ✅ Use fetched user ID (admin or farmer)
+          farmerId: userId,
         }),
       });
 
       const data = await res.json();
 
       if (!res.ok) {
-        alert("❌ Error: " + (data.message || "Something went wrong."));
+        alert("❌ " + (data.message || "Something went wrong"));
         return;
       }
 
-      alert("✅ Crop entry submitted successfully!");
+      alert("✅ Crop entry saved!");
       setForm({
         crop: "",
         district: "",
@@ -90,7 +77,7 @@ export default function CropEntryPage() {
       });
     } catch (error) {
       console.error("Submit error:", error);
-      alert("❌ Network or server error.");
+      alert("❌ Server error.");
     }
   };
 
