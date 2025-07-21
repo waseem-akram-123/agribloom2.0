@@ -1,8 +1,11 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { useRouter } from "next/navigation";
 
 export default function CropEntryPage() {
+  const router = useRouter();
+
   const [form, setForm] = useState({
     crop: "",
     district: "",
@@ -75,6 +78,8 @@ export default function CropEntryPage() {
         area: 0,
         season: "kharif",
       });
+
+      router.push("/farmer/dashboard"); // Redirect after success
     } catch (error) {
       console.error("Submit error:", error);
       alert("❌ Server error.");
