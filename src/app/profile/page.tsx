@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Home, Leaf, Sprout, Trees, Flower2, Sun, Activity, Pencil } from "lucide-react";
+import { Home, Leaf, Sprout, Trees, Flower2, Sun, Activity, Pencil, Apple} from "lucide-react";
 import { FallingLeaves } from "@/components/ui/Fallingleaves";
 
 export default function ProfilePage() {
@@ -75,6 +75,7 @@ export default function ProfilePage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <ProfileDetail icon={<Sprout className="text-green-600" />} label="Email" value={user.email} />
               <ProfileDetail icon={<Leaf className="text-green-600" />} label="Favorite Vegetable" value={user.favoriteVegetable} />
+              <ProfileDetail icon={<Apple className="text-green-600" />} label="Favorite Fruit" value={user.favoriteFruit} />
               <ProfileDetail icon={<Trees className="text-green-600" />} label="Favorite Tree" value={user.favoriteTree} />
               <ProfileDetail icon={<Flower2 className="text-green-600" />} label="Favorite Flower" value={user.favoriteFlower || "Not set"} />
               <ProfileDetail icon={<Sun className="text-green-600" />} label="Favorite Season" value={user.favoriteSeason} />

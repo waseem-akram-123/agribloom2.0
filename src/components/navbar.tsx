@@ -22,6 +22,7 @@ import {
   ClipboardList,
   PieChart,
   TrendingUp,
+  BarChart3,
 } from "lucide-react";
 
 export default function Navbar() {
@@ -189,6 +190,7 @@ export default function Navbar() {
                                 Dashboard
                               </p>
                             </Link>
+
                             <Link
                               href="/farmer/trends"
                               className="flex items-center gap-3 p-2 rounded-md hover:bg-green-50 transition-colors"
@@ -199,6 +201,19 @@ export default function Navbar() {
                               </div>
                               <p className="font-medium text-gray-800">
                                 Trends
+                              </p>
+                            </Link>
+
+                            <Link
+                              href="/admin/analysis"
+                              className="flex items-center gap-3 p-2 rounded-md hover:bg-green-50 transition-colors"
+                              onClick={() => setShowAdminDropdown(false)}
+                            >
+                              <div className="bg-green-100 p-2 rounded-full">
+                                <BarChart3 className="h-4 w-4 text-green-600" />
+                              </div>
+                              <p className="font-medium text-gray-800">
+                                Analysis
                               </p>
                             </Link>
                           </div>
