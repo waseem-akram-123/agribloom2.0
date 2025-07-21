@@ -164,7 +164,7 @@ export default function SoilTypesPage() {
           transition={{ delay: 0.2 }}
           className="text-xl md:text-2xl max-w-4xl mx-auto"
         >
-          Discover the diverse soil types that form the foundation of India's agricultural wealth
+          Discover the diverse soil types that form the foundation of India&apos;s agricultural wealth
         </motion.p>
       </div>
 
@@ -177,7 +177,7 @@ export default function SoilTypesPage() {
           className="max-w-4xl mx-auto text-center mb-12"
         >
           <p className="text-lg text-gray-700 mb-6">
-            India's diverse geography gives rise to various soil types, each with unique properties 
+            India&apos;s diverse geography gives rise to various soil types, each with unique properties 
             and agricultural potential. Understanding these soils is crucial for sustainable farming 
             and maximizing crop yields.
           </p>

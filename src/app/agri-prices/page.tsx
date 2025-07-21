@@ -1,13 +1,14 @@
 "use client";
 
 import { useState } from "react";
+import type { AgriPriceResponse, AgriPriceItem } from "@/types/agriPrice";
 import axios from "axios";
 
 export default function AgriPrices() {
   const [crop, setCrop] = useState("");
   const [state, setState] = useState("");
   const [district, setDistrict] = useState("");
-  const [data, setData] = useState<any>(null);
+  const [data, setData] = useState<AgriPriceResponse | null>(null);
   const [error, setError] = useState("");
 
   const capitalize = (str: string) =>
@@ -26,12 +27,18 @@ export default function AgriPrices() {
         },
       });
       setData(res.data);
-    } catch (err: any) {
-      setError(
-        err.response?.data?.message ||
-          err.response?.data?.error ||
-          "Unknown error"
-      );
+    } catch (err: unknown) {
+      if (axios.isAxiosError(err)) {
+        setError(
+          err.response?.data?.message ||
+            err.response?.data?.error ||
+            "Unknown error"
+        );
+      } else if (err instanceof Error) {
+        setError(err.message);
+      } else {
+        setError("Unknown error");
+      }
     }
   };
 
@@ -73,13 +80,12 @@ export default function AgriPrices() {
 
       {error && <p className="text-red-500 mt-4">{error}</p>}
 
-      {data?.prices?.length > 0 && (
+      {data && Array.isArray(data.prices) && data.prices.length > 0 && (
         <div className="mt-6 space-y-4">
           <h2 className="text-xl font-semibold">
-            Prices for {capitalize(crop)} ({capitalize(district)},{" "}
-            {capitalize(state)})
+            Prices for {capitalize(crop)} ({capitalize(district)}, {capitalize(state)})
           </h2>
-          {data.prices.map((item: any, i: number) => (
+          {data.prices.map((item: AgriPriceItem, i: number) => (
             <div
               key={i}
               className="p-4 border border-gray-300 rounded bg-gray-50"
@@ -87,8 +93,7 @@ export default function AgriPrices() {
               <p className="font-bold">{item.mandi}</p>
               <p>Date: {item.date}</p>
               <p>
-                Min: ₹{item.minPrice} | Max: ₹{item.maxPrice} | Modal: ₹
-                {item.modalPrice}
+                Min: ₹{item.minPrice} | Max: ₹{item.maxPrice} | Modal: ₹{item.modalPrice}
               </p>
             </div>
           ))}

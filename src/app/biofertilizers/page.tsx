@@ -218,7 +218,7 @@ export default function BiofertilizersPage() {
             transition={{ delay: 0.2 }}
             className="text-xl md:text-2xl max-w-3xl mx-auto"
           >
-            Harnessing nature's power for sustainable agriculture
+            Harnessing nature&apos;s power for sustainable agriculture
           </motion.p>
         </div>
       </div>
@@ -242,7 +242,7 @@ export default function BiofertilizersPage() {
             transition={{ duration: 0.6 }}
             className="text-3xl font-bold text-gray-900 mb-6"
           >
-            Nature's Microbial Allies for Healthier Crops
+            Nature&apos;s Microbial Allies for Healthier Crops
           </motion.h2>
           <motion.p
             initial={{ opacity: 0 }}

@@ -67,9 +67,11 @@ export async function POST(request: NextRequest) {
       message: "User registered successfully. Please check your email.",
       success: true,
     });
-  } catch (error: any) {
+  } catch (error: unknown) {
+    let message = "Something went wrong";
+    if (error instanceof Error) message = error.message;
     return NextResponse.json(
-      { message: error.message || "Something went wrong" },
+      { message },
       { status: 500 }
     );
   }

@@ -9,7 +9,7 @@ import { FallingLeaves } from "@/components/ui/Fallingleaves";
 
 export default function ProfilePage() {
   const router = useRouter();
-  const [user, setUser] = useState<any>(null);
+  const [user, setUser] = useState<Record<string, unknown> | null>(null);
   const [error, setError] = useState("");
 
   useEffect(() => {
@@ -22,8 +22,9 @@ export default function ProfilePage() {
         const data = await res.json();
         if (!res.ok) throw new Error(data.error || "Failed to fetch profile");
         setUser(data.data);
-      } catch (err: any) {
-        setError(err.message);
+      } catch (err: unknown) {
+        if (err instanceof Error) setError(err.message);
+        else setError("Unknown error");
       }
     };
 
@@ -67,19 +68,19 @@ export default function ProfilePage() {
               </div>
             </div>
             <CardTitle className="text-green-800 text-2xl font-bold text-center">
-              {user.username}'s Garden
+              {String(user.username)}&apos;s Garden
             </CardTitle>
           </CardHeader>
 
           <CardContent className="space-y-4 px-6 py-4">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <ProfileDetail icon={<Sprout className="text-green-600" />} label="Email" value={user.email} />
-              <ProfileDetail icon={<Leaf className="text-green-600" />} label="Favorite Vegetable" value={user.favoriteVegetable} />
-              <ProfileDetail icon={<Apple className="text-green-600" />} label="Favorite Fruit" value={user.favoriteFruit} />
-              <ProfileDetail icon={<Trees className="text-green-600" />} label="Favorite Tree" value={user.favoriteTree} />
-              <ProfileDetail icon={<Flower2 className="text-green-600" />} label="Favorite Flower" value={user.favoriteFlower || "Not set"} />
-              <ProfileDetail icon={<Sun className="text-green-600" />} label="Favorite Season" value={user.favoriteSeason} />
-              <ProfileDetail icon={<Activity className="text-green-600" />} label="Favorite Activity" value={user.favoriteActivity} />
+              <ProfileDetail icon={<Sprout className="text-green-600" />} label="Email" value={String(user.email || "")} />
+              <ProfileDetail icon={<Leaf className="text-green-600" />} label="Favorite Vegetable" value={String(user.favoriteVegetable || "")} />
+              <ProfileDetail icon={<Apple className="text-green-600" />} label="Favorite Fruit" value={String(user.favoriteFruit || "")} />
+              <ProfileDetail icon={<Trees className="text-green-600" />} label="Favorite Tree" value={String(user.favoriteTree || "")} />
+              <ProfileDetail icon={<Flower2 className="text-green-600" />} label="Favorite Flower" value={String(user.favoriteFlower || "Not set")}/>
+              <ProfileDetail icon={<Sun className="text-green-600" />} label="Favorite Season" value={String(user.favoriteSeason || "")} />
+              <ProfileDetail icon={<Activity className="text-green-600" />} label="Favorite Activity" value={String(user.favoriteActivity || "")} />
             </div>
 
             <div className="flex flex-col sm:flex-row justify-between gap-3 pt-6">

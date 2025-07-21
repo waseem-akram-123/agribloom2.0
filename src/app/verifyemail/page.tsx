@@ -9,17 +9,6 @@ export default function VerifyEmailPage() {
   const [verified, setVerified] = useState(false);
   const [error, setError] = useState(false);
 
-  const verifyUserEmail = async () => {
-    try {
-      await axios.post("/api/users/verifyemail", { token });
-      setVerified(true);
-      setError(false);
-    } catch (error: any) {
-      setError(true);
-      console.log(error.response?.data);
-    }
-  };
-
   useEffect(() => {
     setError(false);
     const urlToken = window.location.search.split("=")[1];
@@ -27,6 +16,18 @@ export default function VerifyEmailPage() {
   }, []);
 
   useEffect(() => {
+    const verifyUserEmail = async () => {
+      try {
+        await axios.post("/api/users/verifyemail", { token });
+        setVerified(true);
+        setError(false);
+      } catch (error: unknown) {
+        setError(true);
+        if (error && typeof error === "object" && "response" in error && error.response && typeof error.response === "object" && "data" in error.response) {
+          console.log((error.response as { data?: unknown }).data);
+        }
+      }
+    };
     if (token.length > 0) {
       verifyUserEmail();
     }

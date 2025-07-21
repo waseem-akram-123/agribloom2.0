@@ -92,7 +92,7 @@ export default function ContactPage() {
               Connect With AgriBloom
             </h1>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              We'd love to hear from you! Whether you have questions about our
+              We&apos;d love to hear from you! Whether you have questions about our
               services or want to collaborate, our team is here to help
               cultivate your agricultural success.
             </p>

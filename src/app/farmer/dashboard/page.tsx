@@ -11,17 +11,30 @@ import {
 } from "recharts";
 import { useEffect, useState } from "react";
 
-const CustomTooltip = ({ active, payload, label }: any) => {
+
+interface CustomTooltipProps {
+  active?: boolean;
+  payload?: Array<{
+    payload: {
+      percentage: number;
+      totalArea: number;
+      averageArea: number;
+      totalEntries: number;
+    };
+  }>;
+  label?: string;
+}
+
+const CustomTooltip = ({ active, payload, label }: CustomTooltipProps) => {
   if (active && payload && payload.length) {
-    const { percentage, totalArea, averageArea, totalEntries } =
-      payload[0].payload;
+    const { percentage, totalArea, averageArea, totalEntries } = payload[0].payload;
     return (
       <div className="bg-lime-50 border border-green-500 rounded-md p-2 text-sm shadow-md">
         <p className="font-semibold">{label}</p>
         <p>🌱 % Contribution: {percentage.toFixed(2)}%</p>
         <p>🌾 Total Area: {totalArea.toFixed(2)} acres</p>
         <p>📊 Avg Area: {averageArea.toFixed(2)} acres</p>
-        <p>🧾 Entries: {totalEntries}</p>
+        <p>🗂️ Entries: {totalEntries}</p>
       </div>
     );
   }
@@ -29,7 +42,7 @@ const CustomTooltip = ({ active, payload, label }: any) => {
 };
 
 export default function FarmerDashboardPage() {
-  const [cropTrendData, setCropTrendData] = useState<any[]>([]);
+  const [cropTrendData, setCropTrendData] = useState<Array<Record<string, unknown>>>([]);
   const [topCrop, setTopCrop] = useState("");
   const [district, setDistrict] = useState("");
   const [role, setRole] = useState("");

@@ -436,7 +436,7 @@ export default function HealthBenefitsPage() {
             </ul>
             <div className="mt-4 p-3 bg-green-50 rounded-lg border border-green-100">
               <p className="text-sm text-green-700 italic">
-                "Let food be thy medicine and medicine be thy food." -
+                &quot;Let food be thy medicine and medicine be thy food.&quot; -
                 Hippocrates
               </p>
             </div>

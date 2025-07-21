@@ -38,15 +38,17 @@ export default function LoginPage() {
       } else {
         router.push("/complete-profile");
       }
-    } catch (error: any) {
-      const msg = error.response?.data?.message;
-
+    } catch (error: unknown) {
+      let msg = "Login failed";
+      if (error && typeof error === "object" && "response" in error && error.response && typeof error.response === "object" && "data" in error.response && error.response.data && typeof error.response.data === "object" && "message" in error.response.data) {
+        msg = (error.response.data as { message?: string }).message || msg;
+      }
       if (msg === "User doesn’t exist, please sign up") {
         toast.error("User doesn’t exist, please sign up.");
       } else if (msg === "Invalid credentials") {
         toast.error("Incorrect email or password.");
       } else {
-        toast.error(msg || "Login failed");
+        toast.error(msg);
       }
     } finally {
       setLoading(false);

@@ -9,8 +9,10 @@ export async function GET(request: NextRequest) {
     const decoded = await getDataFromToken(request);
     const user = await User.findById(decoded.id).select("-password");
     return NextResponse.json({ message: "User found", data: user });
-  } catch (error: any) {
-    return NextResponse.json({ error: error.message }, { status: 401 });
+  } catch (error: unknown) {
+    let message = "Unauthorized";
+    if (error instanceof Error) message = error.message;
+    return NextResponse.json({ error: message }, { status: 401 });
   }
 }
 
@@ -20,7 +22,7 @@ export async function PATCH(request: NextRequest) {
     const decoded = await getDataFromToken(request);
     const body = await request.json();
 
-    const updates: any = {};
+    const updates: Record<string, unknown> = {};
 
     // Only assign fields if they exist in the request body
     const fields = [
@@ -60,7 +62,9 @@ export async function PATCH(request: NextRequest) {
     }).select("-password");
 
     return NextResponse.json({ message: "Profile updated", user: updatedUser });
-  } catch (error: any) {
-    return NextResponse.json({ error: error.message }, { status: 400 });
+  } catch (error: unknown) {
+    let message = "Profile update failed";
+    if (error instanceof Error) message = error.message;
+    return NextResponse.json({ error: message }, { status: 400 });
   }
 }

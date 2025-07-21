@@ -36,7 +36,7 @@ export default function SignupPage() {
       setLoading(true);
       setError("");
 
-      const payload: any = {
+      const payload: Record<string, unknown> = {
         username: user.username,
         email: user.email,
         password: user.password,
@@ -51,8 +51,11 @@ export default function SignupPage() {
       const response = await axios.post("/api/users/signup", payload);
       toast.success(response.data.message || "Signup successful.");
       router.push("/login");
-    } catch (error: any) {
-      const msg = error.response?.data?.message || "Signup failed";
+    } catch (error: unknown) {
+      let msg = "Signup failed";
+      if (error && typeof error === "object" && "response" in error && error.response && typeof error.response === "object" && "data" in error.response && error.response.data && typeof error.response.data === "object" && "message" in error.response.data) {
+        msg = (error.response.data as { message?: string }).message || msg;
+      }
       setError(msg);
       toast.error(msg);
     } finally {

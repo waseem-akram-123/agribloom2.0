@@ -61,7 +61,7 @@ export default function CompleteProfilePage() {
             favoriteActivity: data.data.favoriteActivity || "",
           });
         }
-      } catch (error) {
+      } catch {
         toast.error("Failed to fetch existing profile data.");
       } finally {
         setLoading(false);
