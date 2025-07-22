@@ -25,32 +25,45 @@ export async function POST(request: NextRequest) {
         id: user._id,
         username: user.username,
         email: user.email,
-        role: user.role, // ✅ from AgriIntel
+        role: user.role,
       },
       process.env.TOKEN_SECRET!,
-      { expiresIn: "1d" }
+      { expiresIn: "1d" } // Token is still valid for 1 day on server, but cookie won't persist
     );
 
-    const response = NextResponse.json({
-      message: "Login successful",
-      success: true,
-      profileCompleted: user.profileCompleted, // ✅ from AgriBloom
-    });
+    // ✅ Create response
+    const response = new NextResponse(
+      JSON.stringify({
+        message: "Login successful",
+        success: true,
+        profileCompleted: user.profileCompleted,
+      }),
+      {
+        status: 200,
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
 
-    response.cookies.set("token", token, {
-      httpOnly: true,
-      secure: process.env.NODE_ENV === "production",
-      sameSite: "strict",
-      path: "/",
-    });
+    // ✅ Set session-only cookie (no maxAge)
+    response.cookies.set(
+      "token",
+      token,
+      {
+        httpOnly: true,
+        secure: process.env.NODE_ENV === "production",
+        sameSite: "lax",
+        path: "/",
+        // ❌ No maxAge or expires – makes it a session cookie
+      }
+    );
 
     return response;
   } catch (error: unknown) {
     console.error("Login error:", error);
-    let message = "Internal server error";
-    if (error instanceof Error) message = error.message;
     return NextResponse.json(
-      { message },
+      { message: "Internal server error" },
       { status: 500 }
     );
   }
