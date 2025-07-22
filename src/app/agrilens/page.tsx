@@ -1,6 +1,12 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+// Force reload if token cookie is missing (helps with Edge cookie sync after login)
+useEffect(() => {
+  if (typeof window !== "undefined" && !document.cookie.includes("token=")) {
+    window.location.reload();
+  }
+}, []);
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Search } from "lucide-react";
