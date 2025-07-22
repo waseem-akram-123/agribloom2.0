@@ -31,18 +31,18 @@ export function middleware(request: NextRequest) {
     path === p || path.startsWith(p + "/")
   );
 
-  // ✅ Block logged-in users from public pages
-  if (token && isPublicPath) {
+  // Prevent redirect loop for logged-in users
+  if (token && isPublicPath && path !== "/") {
     return NextResponse.redirect(new URL("/", request.url));
   }
 
-  // ✅ Block unauthenticated users from protected routes
-  if (!token && isProtectedPath) {
+  // Prevent redirect loop for unauthenticated users
+  if (!token && isProtectedPath && path !== "/login") {
     return NextResponse.redirect(new URL("/login", request.url));
   }
 
-  // ✅ For /admin/analysis, ensure token exists and flag for role-check in page
-  if (path === "/admin/analysis" && !token) {
+  // For /admin/analysis, ensure token exists and flag for role-check in page
+  if (path === "/admin/analysis" && !token && path !== "/login") {
     return NextResponse.redirect(new URL("/login", request.url));
   }
 
