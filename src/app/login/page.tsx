@@ -13,7 +13,6 @@ import axios from "axios";
 import { toast } from "react-hot-toast";
 
 export default function LoginPage() {
-  const router = useRouter();
 
   const [user, setUser] = useState({ email: "", password: "" });
   const [loading, setLoading] = useState(false);
