@@ -42,7 +42,7 @@ export function middleware(request: NextRequest) {
   }
 
   // For /admin/analysis, ensure token exists and flag for role-check in page
-  if (path === "/admin/analysis" && !token && path !== "/login") {
+  if (path === "/admin/analysis" && !token) {
     return NextResponse.redirect(new URL("/login", request.url));
   }
 
