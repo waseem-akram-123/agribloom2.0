@@ -34,9 +34,9 @@ export default function LoginPage() {
       const profileCompleted = res.data.profileCompleted;
 
       if (profileCompleted) {
-        router.push("/"); // or "/dashboard"
+        window.location.href = "/"; // or "/dashboard"
       } else {
-        router.push("/complete-profile");
+        window.location.href = "/complete-profile";
       }
     } catch (error: unknown) {
       let msg = "Login failed";
