@@ -1,7 +1,5 @@
 "use client";
 
-import { ChatWidget } from "@/components/ChatWidget";
-
 export default function ProtectedLayout({
   children,
 }: {
@@ -10,7 +8,6 @@ export default function ProtectedLayout({
   return (
     <>
       {children}
-      <ChatWidget />
     </>
   );
 }

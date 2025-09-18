@@ -1,46 +1,68 @@
 "use client";
 
 import Link from "next/link";
-import { Mail, PhoneCall, MapPin } from "lucide-react";
+import { Mail, PhoneCall, MapPin, Globe } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { useTranslation } from "@/hooks/useTranslation";
 
 export default function Footer() {
+  const { selectedLanguage, setSelectedLanguage } = useLanguage();
+  const { t } = useTranslation();
+  
+  const languages = [
+    { code: 'en', name: 'English', flag: '🇺🇸' },
+    { code: 'hi', name: 'हिन्दी', flag: '🇮🇳' },
+    { code: 'ta', name: 'தமிழ்', flag: '🇮🇳' },
+    { code: 'te', name: 'తెలుగు', flag: '🇮🇳' },
+    { code: 'bn', name: 'বাংলা', flag: '🇮🇳' },
+    { code: 'gu', name: 'ગુજરાતી', flag: '🇮🇳' },
+    { code: 'kn', name: 'ಕನ್ನಡ', flag: '🇮🇳' },
+    { code: 'ml', name: 'മലയാളം', flag: '🇮🇳' },
+    { code: 'mr', name: 'मराठी', flag: '🇮🇳' },
+    { code: 'pa', name: 'ਪੰਜਾਬੀ', flag: '🇮🇳' }
+  ];
+
+  const handleLanguageChange = (langCode: string) => {
+    setSelectedLanguage(langCode);
+    console.log(`Language changed to: ${langCode}`);
+  };
+
   return (
     <footer className="bg-[#f8f8f8] text-green-900 border-t border-gray-200">
-      <div className="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div className="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-5 gap-8">
         {/* Brand Info */}
         <div>
-          <h2 className="text-2xl font-bold mb-2 text-green-800">AgriBloom</h2>
+          <h2 className="text-2xl font-bold mb-2 text-green-800">{t('footer.agribloom')}</h2>
           <p className="text-sm text-gray-700 mb-4">
-            AgriBloom provides verified, research-backed farming insights to
-            empower Indian farmers and agriculture learners.
+            {t('footer.description')}
           </p>
           <p className="text-xs text-gray-500">
-            *This website is built for demonstration and educational purposes only.
+            {t('footer.demoNote')}
           </p>
         </div>
 
         {/* Explore Links */}
         <div>
-          <h3 className="text-lg font-semibold mb-3 text-green-800">Explore</h3>
+          <h3 className="text-lg font-semibold mb-3 text-green-800">{t('footer.explore')}</h3>
           <ul className="space-y-2 text-sm">
             <li>
               <Link href="/agrilens" className="hover:underline">
-                AgriLens
+                {t('navbar.agrilens')}
               </Link>
             </li>
             <li>
               <Link href="/insects" className="hover:underline">
-                Insect Management
+                {t('navbar.insect')} Management
               </Link>
             </li>
             <li>
               <Link href="/health" className="hover:underline">
-                Health Benefits
+                {t('navbar.healthBenefits')}
               </Link>
             </li>
             <li>
-              <Link href="/market-rates" className="hover:underline">
-                Market Rates
+              <Link href="/mandi-prices" className="hover:underline">
+                {t('navbar.demo')}
               </Link>
             </li>
           </ul>
@@ -49,7 +71,7 @@ export default function Footer() {
         {/* Resources Used */}
         <div>
           <h3 className="text-lg font-semibold mb-3 text-green-800">
-            Resources Used
+            {t('footer.resourcesUsed')}
           </h3>
           <ul className="space-y-2 text-sm text-gray-700">
             <li>✔ Govt. of India Agri Portals</li>
@@ -59,9 +81,55 @@ export default function Footer() {
           </ul>
         </div>
 
+        {/* Language Selection */}
+        <div>
+          <h3 className="text-lg font-semibold mb-3 text-green-800 flex items-center">
+            <Globe className="w-5 h-5 mr-2" />
+{t('footer.language')} / भाषा
+          </h3>
+          <div className="mb-2 text-xs text-green-600">
+            Current: {selectedLanguage.toUpperCase()}
+          </div>
+          <div className="space-y-2">
+            <div className="grid grid-cols-2 gap-1 text-sm">
+              {languages.slice(0, 6).map((lang) => (
+                <button
+                  key={lang.code}
+                  onClick={() => handleLanguageChange(lang.code)}
+                  className={`flex items-center space-x-1 px-2 py-1 rounded text-left hover:bg-green-100 transition-colors ${
+                    selectedLanguage === lang.code ? 'bg-green-200 text-green-800' : 'text-gray-700'
+                  }`}
+                >
+                  <span>{lang.flag}</span>
+                  <span className="text-xs">{lang.name}</span>
+                </button>
+              ))}
+            </div>
+            <details className="mt-2">
+              <summary className="text-xs text-gray-600 cursor-pointer hover:text-green-700">
+                More languages (4 more)
+              </summary>
+              <div className="grid grid-cols-2 gap-1 text-sm mt-1">
+                {languages.slice(6).map((lang) => (
+                  <button
+                    key={lang.code}
+                    onClick={() => handleLanguageChange(lang.code)}
+                    className={`flex items-center space-x-1 px-2 py-1 rounded text-left hover:bg-green-100 transition-colors ${
+                      selectedLanguage === lang.code ? 'bg-green-200 text-green-800' : 'text-gray-700'
+                    }`}
+                  >
+                    <span>{lang.flag}</span>
+                    <span className="text-xs">{lang.name}</span>
+                  </button>
+                ))}
+              </div>
+            </details>
+          </div>
+        </div>
+
         {/* Contact Info */}
         <div>
-          <h3 className="text-lg font-semibold mb-3 text-green-800">Contact</h3>
+          <h3 className="text-lg font-semibold mb-3 text-green-800">{t('footer.contact')}</h3>
           <div className="flex items-center text-sm text-gray-700 mb-2">
             <Mail className="w-4 h-4 mr-2" /> support@agribloom.in
           </div>
@@ -77,12 +145,10 @@ export default function Footer() {
       {/* Bottom Strip - darker */}
       <div className="bg-[#2d2d2d] text-center text-sm text-gray-300 py-4 px-6">
         <p>
-          © {new Date().getFullYear()} AgriBloom. All rights reserved. | Built
-          for demonstration purposes only.
+          {t('footer.copyright')}
         </p>
         <p className="mt-1">
-          Data sourced from certified agricultural bodies including ICAR, KVKs,
-          state agri portals, and government resources.
+          {t('footer.dataSource')}
         </p>
       </div>
     </footer>

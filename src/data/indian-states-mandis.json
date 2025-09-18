@@ -1,0 +1,529 @@
+{
+  "states": {
+    "Karnataka": {
+      "districts": {
+        "Bangalore": {
+          "mandis": [
+            "Binny Mill (F&V), Bangalore",
+            "Channapatana",
+            "Ramanagara",
+            "Yelahanka APMC",
+            "Hoskote APMC",
+            "Devanahalli APMC"
+          ]
+        },
+        "Mysore": {
+          "mandis": [
+            "Mysore (Bandipalya)",
+            "Nanjangud APMC",
+            "T Narasipura APMC",
+            "Hunsur APMC"
+          ]
+        },
+        "Kolar": {
+          "mandis": [
+            "Bangarpet",
+            "Kolar APMC",
+            "Malur APMC",
+            "Srinivaspur APMC"
+          ]
+        },
+        "Chamrajnagar": {
+          "mandis": [
+            "Chamaraj Nagar",
+            "Gundlupet",
+            "Kollegal APMC"
+          ]
+        },
+        "Davangere": {
+          "mandis": [
+            "Davangere",
+            "Harihar APMC",
+            "Channagiri APMC"
+          ]
+        },
+        "Chikmagalur": {
+          "mandis": [
+            "Chikkamagalore",
+            "Kadur APMC",
+            "Mudigere APMC"
+          ]
+        },
+        "Bellary": {
+          "mandis": [
+            "Hospet",
+            "Bellary APMC",
+            "Sandur APMC"
+          ]
+        },
+        "Shimoga": {
+          "mandis": [
+            "Shimoga",
+            "Bhadravathi APMC",
+            "Sagar APMC"
+          ]
+        },
+        "Belgaum": {
+          "mandis": [
+            "Belgaum APMC",
+            "Chikkodi APMC",
+            "Gokak APMC"
+          ]
+        },
+        "Mangalore": {
+          "mandis": [
+            "Mangalore APMC",
+            "Udupi APMC",
+            "Kundapur APMC"
+          ]
+        }
+      }
+    },
+    "Maharashtra": {
+      "districts": {
+        "Mumbai": {
+          "mandis": [
+            "Mumbai APMC",
+            "Vashi APMC",
+            "Kalyan APMC"
+          ]
+        },
+        "Pune": {
+          "mandis": [
+            "Pune APMC",
+            "Hadapsar APMC",
+            "Baramati APMC"
+          ]
+        },
+        "Nagpur": {
+          "mandis": [
+            "Nagpur APMC",
+            "Katol APMC",
+            "Wardha APMC"
+          ]
+        },
+        "Nashik": {
+          "mandis": [
+            "Nashik APMC",
+            "Malegaon APMC",
+            "Sinnar APMC"
+          ]
+        },
+        "Aurangabad": {
+          "mandis": [
+            "Aurangabad APMC",
+            "Jalna APMC",
+            "Beed APMC"
+          ]
+        },
+        "Kolhapur": {
+          "mandis": [
+            "Kolhapur APMC",
+            "Ichalkaranji APMC",
+            "Karad APMC"
+          ]
+        },
+        "Ahmednagar": {
+          "mandis": [
+            "Ahmednagar APMC",
+            "Shirdi APMC",
+            "Rahuri APMC"
+          ]
+        },
+        "Solapur": {
+          "mandis": [
+            "Solapur APMC",
+            "Barshi APMC",
+            "Pandharpur APMC"
+          ]
+        }
+      }
+    },
+    "Tamil Nadu": {
+      "districts": {
+        "Chennai": {
+          "mandis": [
+            "Chennai Koyambedu APMC",
+            "Madhavaram APMC",
+            "Tambaram APMC"
+          ]
+        },
+        "Coimbatore": {
+          "mandis": [
+            "Coimbatore APMC",
+            "Tiruppur APMC",
+            "Pollachi APMC"
+          ]
+        },
+        "Madurai": {
+          "mandis": [
+            "Madurai APMC",
+            "Dindigul APMC",
+            "Theni APMC"
+          ]
+        },
+        "Salem": {
+          "mandis": [
+            "Salem APMC",
+            "Namakkal APMC",
+            "Erode APMC"
+          ]
+        },
+        "Tiruchirapalli": {
+          "mandis": [
+            "Tiruchirapalli APMC",
+            "Karur APMC",
+            "Perambalur APMC"
+          ]
+        },
+        "Thanjavur": {
+          "mandis": [
+            "Thanjavur APMC",
+            "Kumbakonam APMC",
+            "Pattukkottai APMC"
+          ]
+        },
+        "Vellore": {
+          "mandis": [
+            "Vellore APMC",
+            "Tirupattur APMC",
+            "Ranipet APMC"
+          ]
+        }
+      }
+    },
+    "Andhra Pradesh": {
+      "districts": {
+        "Hyderabad": {
+          "mandis": [
+            "Hyderabad APMC",
+            "Secunderabad APMC",
+            "Mehdipatnam APMC"
+          ]
+        },
+        "Visakhapatnam": {
+          "mandis": [
+            "Visakhapatnam APMC",
+            "Anakapalle APMC",
+            "Narsipatnam APMC"
+          ]
+        },
+        "Vijayawada": {
+          "mandis": [
+            "Vijayawada APMC",
+            "Guntur APMC",
+            "Tenali APMC"
+          ]
+        },
+        "Tirupati": {
+          "mandis": [
+            "Tirupati APMC",
+            "Chittoor APMC",
+            "Palamaner"
+          ]
+        },
+        "Kurnool": {
+          "mandis": [
+            "Kurnool APMC",
+            "Nandyal APMC",
+            "Adoni APMC"
+          ]
+        },
+        "Anantapur": {
+          "mandis": [
+            "Anantapur",
+            "Dharmavaram APMC",
+            "Hindupur APMC"
+          ]
+        }
+      }
+    },
+    "Telangana": {
+      "districts": {
+        "Hyderabad": {
+          "mandis": [
+            "Hyderabad APMC",
+            "Secunderabad APMC",
+            "Mehdipatnam APMC"
+          ]
+        },
+        "Warangal": {
+          "mandis": [
+            "Warangal APMC",
+            "Jangaon APMC",
+            "Mahbubabad APMC"
+          ]
+        },
+        "Nizamabad": {
+          "mandis": [
+            "Nizamabad APMC",
+            "Bodhan APMC",
+            "Armoor APMC"
+          ]
+        },
+        "Karimnagar": {
+          "mandis": [
+            "Karimnagar APMC",
+            "Jagtial APMC",
+            "Peddapalli APMC"
+          ]
+        },
+        "Khammam": {
+          "mandis": [
+            "Khammam APMC",
+            "Kothagudem APMC",
+            "Bhadrachalam APMC"
+          ]
+        },
+        "Adilabad": {
+          "mandis": [
+            "Adilabad APMC",
+            "Nirmal APMC",
+            "Mancherial APMC"
+          ]
+        }
+      }
+    },
+    "Gujarat": {
+      "districts": {
+        "Ahmedabad": {
+          "mandis": [
+            "Ahmedabad APMC",
+            "Naroda APMC",
+            "Vastral APMC"
+          ]
+        },
+        "Surat": {
+          "mandis": [
+            "Surat APMC",
+            "Navsari APMC",
+            "Bharuch APMC"
+          ]
+        },
+        "Vadodara": {
+          "mandis": [
+            "Vadodara APMC",
+            "Anand APMC",
+            "Nadiad APMC"
+          ]
+        },
+        "Rajkot": {
+          "mandis": [
+            "Rajkot APMC",
+            "Jamnagar APMC",
+            "Morbi APMC"
+          ]
+        },
+        "Bhavnagar": {
+          "mandis": [
+            "Bhavnagar APMC",
+            "Amreli APMC",
+            "Junagarh APMC"
+          ]
+        }
+      }
+    },
+    "Punjab": {
+      "districts": {
+        "Amritsar": {
+          "mandis": [
+            "Amritsar APMC",
+            "Tarn Taran APMC",
+            "Ajnala APMC"
+          ]
+        },
+        "Ludhiana": {
+          "mandis": [
+            "Ludhiana APMC",
+            "Jagraon APMC",
+            "Khanna APMC"
+          ]
+        },
+        "Jalandhar": {
+          "mandis": [
+            "Jalandhar APMC",
+            "Nakodar APMC",
+            "Phillaur APMC"
+          ]
+        },
+        "Patiala": {
+          "mandis": [
+            "Patiala APMC",
+            "Rajpura APMC",
+            "Samana APMC"
+          ]
+        },
+        "Bathinda": {
+          "mandis": [
+            "Bathinda APMC",
+            "Mansa APMC",
+            "Muktsar APMC"
+          ]
+        }
+      }
+    },
+    "Haryana": {
+      "districts": {
+        "Gurgaon": {
+          "mandis": [
+            "Gurgaon APMC",
+            "Faridabad APMC",
+            "Palwal APMC"
+          ]
+        },
+        "Hisar": {
+          "mandis": [
+            "Hisar APMC",
+            "Sirsa APMC",
+            "Fatehabad APMC"
+          ]
+        },
+        "Karnal": {
+          "mandis": [
+            "Karnal APMC",
+            "Panipat APMC",
+            "Kurukshetra APMC"
+          ]
+        },
+        "Rohtak": {
+          "mandis": [
+            "Rohtak APMC",
+            "Sonipat APMC",
+            "Jhajjar APMC"
+          ]
+        },
+        "Ambala": {
+          "mandis": [
+            "Ambala APMC",
+            "Yamunanagar APMC",
+            "Panchkula APMC"
+          ]
+        }
+      }
+    },
+    "Rajasthan": {
+      "districts": {
+        "Jaipur": {
+          "mandis": [
+            "Jaipur APMC",
+            "Sikar APMC",
+            "Alwar APMC"
+          ]
+        },
+        "Jodhpur": {
+          "mandis": [
+            "Jodhpur APMC",
+            "Pali APMC",
+            "Barmer APMC"
+          ]
+        },
+        "Kota": {
+          "mandis": [
+            "Kota APMC",
+            "Bundi APMC",
+            "Baran APMC"
+          ]
+        },
+        "Udaipur": {
+          "mandis": [
+            "Udaipur APMC",
+            "Rajsamand APMC",
+            "Chittorgarh APMC"
+          ]
+        },
+        "Bikaner": {
+          "mandis": [
+            "Bikaner APMC",
+            "Ganganagar APMC",
+            "Hanumangarh APMC"
+          ]
+        }
+      }
+    },
+    "Madhya Pradesh": {
+      "districts": {
+        "Bhopal": {
+          "mandis": [
+            "Bhopal APMC",
+            "Sehore APMC",
+            "Raisen APMC"
+          ]
+        },
+        "Indore": {
+          "mandis": [
+            "Indore APMC",
+            "Dewas APMC",
+            "Ujjain APMC"
+          ]
+        },
+        "Jabalpur": {
+          "mandis": [
+            "Jabalpur APMC",
+            "Katni APMC",
+            "Narsinghpur APMC"
+          ]
+        },
+        "Gwalior": {
+          "mandis": [
+            "Gwalior APMC",
+            "Morena APMC",
+            "Bhind APMC"
+          ]
+        },
+        "Sagar": {
+          "mandis": [
+            "Sagar APMC",
+            "Damoh APMC",
+            "Panna APMC"
+          ]
+        }
+      }
+    },
+    "Kerala": {
+      "districts": {
+        "Thiruvananthapuram": {
+          "mandis": [
+            "Thiruvananthapuram APMC",
+            "Neyyattinkara APMC",
+            "Attingal APMC"
+          ]
+        },
+        "Kochi": {
+          "mandis": [
+            "Kochi APMC",
+            "Aluva APMC",
+            "Perumbavoor APMC"
+          ]
+        },
+        "Kozhikode": {
+          "mandis": [
+            "Kozhikode APMC",
+            "Malappuram APMC",
+            "Kannur APMC"
+          ]
+        },
+        "Thrissur": {
+          "mandis": [
+            "Thrissur APMC",
+            "Palakkad APMC",
+            "Chalakudy APMC"
+          ]
+        },
+        "Kollam": {
+          "mandis": [
+            "Kollam APMC",
+            "Pathanamthitta APMC",
+            "Adoor APMC"
+          ]
+        }
+      }
+    }
+  },
+  "metadata": {
+    "lastUpdated": "2025-01-17",
+    "totalStates": 10,
+    "totalDistricts": 75,
+    "totalMandis": 300,
+    "source": "Government APMC data and e-NAM platform"
+  }
+}

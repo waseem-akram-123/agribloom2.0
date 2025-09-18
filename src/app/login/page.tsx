@@ -10,8 +10,12 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { toast } from "react-hot-toast";
+import { useRouter, useSearchParams } from "next/navigation";
 
 export default function LoginPage() {
+  const router = useRouter();
+  const searchParams = useSearchParams();
+  const redirect = searchParams.get('redirect') || '/';
 
   const [user, setUser] = useState({ email: "", password: "" });
   const [loading, setLoading] = useState(false);
@@ -32,9 +36,9 @@ export default function LoginPage() {
       const profileCompleted = res.data.profileCompleted;
 
       if (profileCompleted) {
-        window.location.href = "/"; // or "/dashboard"
+        router.push(redirect);
       } else {
-        window.location.href = "/complete-profile";
+        router.push("/complete-profile");
       }
     } catch (error: unknown) {
       let msg = "Login failed";
