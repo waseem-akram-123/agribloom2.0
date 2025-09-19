@@ -10,63 +10,58 @@ import {
   Sprout,
   AlarmClock,
 } from "lucide-react";
-
-const features = [
-  {
-    icon: BookOpenCheck,
-    title: "AgriLens",
-    description:
-      "Detailed crop information: sunlight, water, seasons, flowering, harvesting, and scientific names.",
-  },
-  {
-    icon: Bug,
-    title: "Insect Management",
-    description:
-      "Detect pests early and follow effective management techniques to protect your crops.",
-  },
-  {
-    icon: Heart,
-    title: "Health Benefits",
-    description:
-      "Explore the nutritional and medicinal advantages of each fruit, vegetable, and crop.",
-  },
-  {
-    icon: Sprout,
-    title: "Medicinal & Poisonous Plants",
-    description:
-      "Identify herbal plants with healing benefits and know which ones are harmful or toxic.",
-  },
-  {
-    icon: Leaf,
-    title: "Soil & Fertilizer Guide",
-    description:
-      "Understand various soil types and fertilizers to boost yield and crop health.",
-  },
-  {
-    icon: IndianRupee,
-    title: "Market Rates",
-    description:
-      "Check real-time vegetable and fruit prices from regional Indian markets.",
-  },
-  {
-    icon: AlarmClock,
-    title: "Shelf Life",
-    description:
-      "Know how long harvested crops stay fresh and how to store them for longer shelf life.",
-  },
-  {
-    icon: FlaskConical,
-    title: "Farming Techniques",
-    description:
-      "Learn about hybridization, grafting, irrigation types, vertical farming, and more.",
-  },
-];
+import { useTranslation } from "@/hooks/useTranslation";
 
 export default function FeaturesSection() {
+  const { t } = useTranslation();
+
+  const features = [
+    {
+      icon: BookOpenCheck,
+      title: t('features.agrilens'),
+      description: t('features.agrilensDesc'),
+    },
+    {
+      icon: Bug,
+      title: t('features.insectManagement'),
+      description: t('features.insectDesc'),
+    },
+    {
+      icon: Heart,
+      title: t('features.healthBenefits'),
+      description: t('features.healthDesc'),
+    },
+    {
+      icon: Sprout,
+      title: t('features.medicinalPlants'),
+      description: t('features.medicinalDesc'),
+    },
+    {
+      icon: Leaf,
+      title: t('features.soilGuide'),
+      description: t('features.soilDesc'),
+    },
+    {
+      icon: IndianRupee,
+      title: t('features.marketRates'),
+      description: t('features.marketDesc'),
+    },
+    {
+      icon: AlarmClock,
+      title: t('features.shelfLife'),
+      description: t('features.shelfDesc'),
+    },
+    {
+      icon: FlaskConical,
+      title: t('features.farmingTechniques'),
+      description: t('features.farmingDesc'),
+    },
+  ];
+
   return (
     <section className="py-16 bg-white text-green-900 px-6 md:px-20">
       <h2 className="text-3xl md:text-4xl font-bold text-center mb-10">
-        What You Can Explore
+        {t('features.title')}
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         {features.map((feature, index) => (

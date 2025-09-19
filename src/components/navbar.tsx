@@ -6,6 +6,7 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import axios from "axios";
+import { useTranslation } from "@/hooks/useTranslation";
 
 
 import { Button } from "@/components/ui/button";
@@ -18,6 +19,11 @@ import {
   PieChart,
   TrendingUp,
   BarChart3,
+  Mail,
+  Cloud,
+  CloudRain,
+  AlertTriangle,
+  History,
 } from "lucide-react";
 
 export default function Navbar() {
@@ -25,6 +31,7 @@ export default function Navbar() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [username, setUsername] = useState("");
   const [loading, setLoading] = useState(true);
+  const { t } = useTranslation();
 
   const [showStudyDropdown, setShowStudyDropdown] = useState(false);
   const [showFarmerDropdown, setShowFarmerDropdown] = useState(false);
@@ -51,8 +58,11 @@ export default function Navbar() {
         setUsername(res.data.user?.username || "");
         setRole(res.data.user?.role || "");
       })
-      .catch(() => {
+      .catch((error) => {
+        // Silently handle auth errors - user might not be logged in
         setIsAuthenticated(false);
+        setUsername("");
+        setRole("");
       })
       .finally(() => setLoading(false));
   }, []);
@@ -120,26 +130,29 @@ export default function Navbar() {
           <Image
             src="/nature/logo.jpg"
             alt="AgriBloom Logo"
-            width={70}
-            height={70}
+            width={50}
+            height={50}
             className="rounded-full object-cover"
           />
-          <span className="text-2xl font-bold text-green-800">AgriBloom</span>
+          <div>
+            <span className="text-xl font-bold text-green-800">AgriBloom</span>
+            <p className="text-xs text-gray-600">Smart Farming Solutions</p>
+          </div>
         </div>
 
         {/* Navigation */}
         <div className="mt-4 md:mt-0 md:ml-auto w-full md:w-auto">
           <div className="flex flex-col md:flex-row items-start md:items-center md:space-x-6 space-y-2 md:space-y-0 text-base">
-            <HoveredLink href="/">Home</HoveredLink>
+            <HoveredLink href="/">{t('navbar.home')}</HoveredLink>
+            <HoveredLink href="/mandi-prices">{t('navbar.demo')}</HoveredLink>
 
             {isAuthenticated && (
               <>
-                <HoveredLink href="/agrilens">AgriLens</HoveredLink>
-                <HoveredLink href="/insect">Insect</HoveredLink>
+                <HoveredLink href="/agrilens">{t('navbar.agrilens')}</HoveredLink>
+                <HoveredLink href="/insect">{t('navbar.insect')}</HoveredLink>
                 <HoveredLink href="/healthandbenefits">
-                  Health Benefits
+                  {t('navbar.healthBenefits')}
                 </HoveredLink>
-                <HoveredLink href="/contactus">Contact Us</HoveredLink>
 
                 {/* ✅ Admin Dropdown */}
                 {role === "admin" && (
@@ -231,7 +244,7 @@ export default function Navbar() {
                         : "text-gray-700"
                     } hover:text-green-700`}
                   >
-                    Farmer
+                    {t('navbar.farmer')}
                     <ChevronDown
                       className={`h-4 w-4 transition-transform ${
                         showFarmerDropdown ? "rotate-180" : ""
@@ -282,6 +295,16 @@ export default function Navbar() {
                             </div>
                             <p className="font-medium text-gray-800">Trends</p>
                           </Link>
+                          <Link
+                            href="/farmer/weather"
+                            className="flex items-center gap-3 p-2 rounded-md hover:bg-green-50 transition-colors"
+                            onClick={() => setShowFarmerDropdown(false)}
+                          >
+                            <div className="bg-blue-100 p-2 rounded-full">
+                              <Cloud className="h-4 w-4 text-blue-600" />
+                            </div>
+                            <p className="font-medium text-gray-800">Weather</p>
+                          </Link>
                         </div>
                       </motion.div>
                     )}
@@ -301,7 +324,7 @@ export default function Navbar() {
                         : "text-gray-700"
                     } hover:text-green-700`}
                   >
-                    Study
+                    {t('navbar.study')}
                     <ChevronDown
                       className={`h-4 w-4 transition-transform ${
                         showStudyDropdown ? "rotate-180" : ""
@@ -446,6 +469,18 @@ export default function Navbar() {
                             </div>
                             <span className="font-medium text-gray-700">
                               Profile Settings
+                            </span>
+                          </Link>
+                          <Link
+                            href="/contactus"
+                            className="flex items-center gap-3 p-2 rounded-md hover:bg-green-50 transition-colors"
+                            onClick={() => setShowUserDropdown(false)}
+                          >
+                            <div className="bg-green-100 p-2 rounded-full">
+                              <Mail className="h-4 w-4 text-green-600" />
+                            </div>
+                            <span className="font-medium text-gray-700">
+                              Contact Us
                             </span>
                           </Link>
                           <div className="border-t border-gray-100 my-1"></div>

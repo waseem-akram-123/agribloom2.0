@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import { Button } from "./ui/button";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { useTranslation } from "@/hooks/useTranslation";
 
 const imagePaths = [
   "/nature/hero.jpg",
@@ -15,6 +16,7 @@ const imagePaths = [
 
 const HeroSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const { t } = useTranslation();
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -29,22 +31,21 @@ const HeroSection = () => {
       {/* Text Column */}
       <div className="md:w-1/2 text-center md:text-left">
         <h1 className="text-4xl md:text-6xl font-bold text-green-800 leading-tight">
-          Nurture Your Crops <br /> With Smart Farming
+          {t('hero.title')}
         </h1>
 
         {/* 🌟 Tagline */}
         <p className="text-xl text-green-700 mt-3 italic font-medium">
-          Where Farming Meets Knowledge
+          {t('hero.tagline')}
         </p>
 
         <p className="text-lg text-gray-700 mt-4">
-          AgriBloom helps you monitor pest attacks, manage your farm, and grow
-          more efficiently.
+          {t('hero.description')}
         </p>
 
         <Link href="/agrilens">
           <Button className="mt-6 bg-green-600 hover:bg-green-700 text-white">
-            Get Started
+            {t('hero.getStarted')}
           </Button>
         </Link>
       </div>

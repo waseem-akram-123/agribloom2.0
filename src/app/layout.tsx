@@ -3,6 +3,7 @@ import "./globals.css";
 
 import ConditionalNavbar from "./ConditionalNavbar";
 import { Toaster } from "react-hot-toast"; // ✅ import this
+import { LanguageProvider } from "@/contexts/LanguageContext";
 import { ChatWidget } from "@/components/ChatWidget";
 
 export const metadata: Metadata = {
@@ -18,10 +19,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-white text-black">
-        <ConditionalNavbar />
-        <div className="min-h-screen bg-[#F1FAF1]">{children}</div>
-        <Toaster position="top-center" reverseOrder={false} /> {/* ✅ add this */}
-        <ChatWidget />
+        <LanguageProvider>
+          <ConditionalNavbar />
+          <div className="min-h-screen bg-[#F1FAF1]">{children}</div>
+          <Toaster position="top-center" reverseOrder={false} /> {/* ✅ add this */}
+          <ChatWidget />
+        </LanguageProvider>
       </body>
     </html>
   );

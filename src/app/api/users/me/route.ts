@@ -7,11 +7,31 @@ export async function GET(request: NextRequest) {
   try {
     await connectToDB();
 
+    // Check if token exists first
+    const token = request.cookies.get("token")?.value;
+    if (!token) {
+      return new NextResponse(JSON.stringify({ authenticated: false }), {
+        status: 200, // Return 200 instead of 401 for missing token
+        headers: {
+          "Cache-Control": "no-store",
+          "Pragma": "no-cache",
+          "Expires": "0",
+        },
+      });
+    }
+
     const decoded = getDataFromToken(request);
     const user = await User.findById(decoded.id).select("username email role");
 
     if (!user) {
-      return new NextResponse(JSON.stringify({ authenticated: false }), { status: 404 });
+      return new NextResponse(JSON.stringify({ authenticated: false }), { 
+        status: 200, // Return 200 instead of 404
+        headers: {
+          "Cache-Control": "no-store",
+          "Pragma": "no-cache",
+          "Expires": "0",
+        },
+      });
     }
 
     return new NextResponse(
@@ -34,9 +54,9 @@ export async function GET(request: NextRequest) {
       }
     );
   } catch (err) {
-    console.error(err);
+    console.error("Auth error:", err);
     return new NextResponse(JSON.stringify({ authenticated: false }), {
-      status: 401,
+      status: 200, // Return 200 instead of 401 for any auth errors
       headers: {
         "Cache-Control": "no-store",
         "Pragma": "no-cache",
