@@ -8,7 +8,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import axios from "axios";
 import { useTranslation } from "@/hooks/useTranslation";
 
-
 import { Button } from "@/components/ui/button";
 import {
   LogOut,
@@ -24,6 +23,7 @@ import {
   CloudRain,
   AlertTriangle,
   History,
+  Heart,
 } from "lucide-react";
 
 export default function Navbar() {
@@ -36,14 +36,14 @@ export default function Navbar() {
   const [showStudyDropdown, setShowStudyDropdown] = useState(false);
   const [showFarmerDropdown, setShowFarmerDropdown] = useState(false);
   const [showUserDropdown, setShowUserDropdown] = useState(false);
-  const [showAdminDropdown, setShowAdminDropdown] = useState(false); // ✅ Admin dropdown
+  const [showAdminDropdown, setShowAdminDropdown] = useState(false);
 
   const [role, setRole] = useState("");
 
   const studyRef = useRef<HTMLDivElement>(null);
   const farmerRef = useRef<HTMLDivElement>(null);
   const userRef = useRef<HTMLDivElement>(null);
-  const adminRef = useRef<HTMLDivElement>(null); // ✅ Admin ref
+  const adminRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     axios
@@ -59,7 +59,6 @@ export default function Navbar() {
         setRole(res.data.user?.role || "");
       })
       .catch((error) => {
-        // Silently handle auth errors - user might not be logged in
         setIsAuthenticated(false);
         setUsername("");
         setRole("");
@@ -143,18 +142,22 @@ export default function Navbar() {
         {/* Navigation */}
         <div className="mt-4 md:mt-0 md:ml-auto w-full md:w-auto">
           <div className="flex flex-col md:flex-row items-start md:items-center md:space-x-6 space-y-2 md:space-y-0 text-base">
-            <HoveredLink href="/">{t('navbar.home')}</HoveredLink>
-            <HoveredLink href="/mandi-prices">{t('navbar.demo')}</HoveredLink>
+            <HoveredLink href="/">{t("navbar.home")}</HoveredLink>
 
             {isAuthenticated && (
               <>
-                <HoveredLink href="/agrilens">{t('navbar.agrilens')}</HoveredLink>
-                <HoveredLink href="/insect">{t('navbar.insect')}</HoveredLink>
-                <HoveredLink href="/healthandbenefits">
-                  {t('navbar.healthBenefits')}
+                <HoveredLink href="/agrilens">
+                  {t("navbar.agrilens")}
                 </HoveredLink>
+                <HoveredLink href="/mandi-prices">
+                  {t("navbar.demo")}
+                </HoveredLink>
+                <HoveredLink href="/insect">{t("navbar.insect")}</HoveredLink>
+                {/* <HoveredLink href="/healthandbenefits">
+                  {t("navbar.healthBenefits")}
+                </HoveredLink> */}
 
-                {/* ✅ Admin Dropdown */}
+                {/* Admin Dropdown */}
                 {role === "admin" && (
                   <div className="relative" ref={adminRef}>
                     <button
@@ -244,7 +247,7 @@ export default function Navbar() {
                         : "text-gray-700"
                     } hover:text-green-700`}
                   >
-                    {t('navbar.farmer')}
+                    {t("navbar.farmer")}
                     <ChevronDown
                       className={`h-4 w-4 transition-transform ${
                         showFarmerDropdown ? "rotate-180" : ""
@@ -324,7 +327,7 @@ export default function Navbar() {
                         : "text-gray-700"
                     } hover:text-green-700`}
                   >
-                    {t('navbar.study')}
+                    {t("navbar.study")}
                     <ChevronDown
                       className={`h-4 w-4 transition-transform ${
                         showStudyDropdown ? "rotate-180" : ""
@@ -341,6 +344,23 @@ export default function Navbar() {
                         className="absolute left-0 mt-2 bg-white p-3 rounded-lg shadow-xl z-50 min-w-[220px] border border-green-100"
                       >
                         <div className="flex flex-col gap-2">
+                          <Link
+                            href="/healthandbenefits"
+                            className="flex items-center gap-3 p-2 rounded-md hover:bg-green-50 transition-colors"
+                            onClick={() => setShowStudyDropdown(false)}
+                          >
+                            <div className="bg-green-100 p-2 rounded-full">
+                              <Heart className="h-4 w-4 text-green-600" />
+                            </div>
+                            <div>
+                              <p className="font-medium text-gray-800">
+                                Nutrition data
+                              </p>
+                              <p className="text-xs text-gray-500">
+                                Learn about different soil types
+                              </p>
+                            </div>
+                          </Link>
                           <Link
                             href="/soil"
                             className="flex items-center gap-3 p-2 rounded-md hover:bg-green-50 transition-colors"

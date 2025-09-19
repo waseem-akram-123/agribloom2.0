@@ -9,12 +9,14 @@ interface WeatherData {
     rain: number;
     condition: string;
   };
-  alert: string;
+  alert: string[];  // Changed from string to string[] since alert is an array
+  location?: string;
 }
 
 export default function WeatherComponent() {
   const [weather, setWeather] = useState<WeatherData | null>(null);
   const [loading, setLoading] = useState(false);
+  const [translating, setTranslating] = useState(false);
   const { t } = useTranslation();
   const [alertText, setAlertText] = useState("");
   const [showTranslation, setShowTranslation] = useState(false);
@@ -48,19 +50,50 @@ export default function WeatherComponent() {
 
         // Translate the alert into Hindi
         try {
+          setTranslating(true);
+          // Ensure data.alert is always treated as an array
+          const alerts = Array.isArray(data.alert) ? data.alert : [data.alert];
+          const textToTranslate = alerts.join('. ');
+          
+          console.log('Translating:', textToTranslate); // Debug log
+          
           const tRes = await fetch("/api/translate", {
             method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ text: data.alert, targetLang: "hi" }),
+            headers: { 
+              "Content-Type": "application/json",
+              "Accept": "application/json"
+            },
+            body: JSON.stringify({ 
+              text: textToTranslate,
+              targetLang: "hi" 
+            })
           });
 
-          if (tRes.ok) {
-            const tData = await tRes.json();
-            setAlertText(tData.translated);
+          console.log('Translation response status:', tRes.status); // Debug log
+
+          if (!tRes.ok) {
+            const errorText = await tRes.text();
+            console.error('Translation response:', errorText); // Debug log
+            throw new Error(`Translation failed: ${tRes.statusText} (${errorText})`);
           }
+
+          const tData = await tRes.json();
+          console.log('Translation data:', tData); // Debug log
+          
+          if (tData.error) {
+            throw new Error(tData.error);
+          }
+          
+          setAlertText(tData.translated || textToTranslate);
+          setShowTranslation(true); // Auto-show translation when successful
         } catch (error) {
           console.error('Translation failed:', error);
-          setAlertText(data.alert);
+          // If translation fails, use the original text
+          const originalText = Array.isArray(data.alert) ? data.alert.join('. ') : data.alert;
+          setAlertText(originalText);
+          setShowTranslation(false);
+        } finally {
+          setTranslating(false);
         }
 
         setLoading(false);
@@ -150,18 +183,29 @@ export default function WeatherComponent() {
 
           {/* Farmer Alert */}
           <div className="mt-6 p-4 bg-yellow-50 border border-yellow-200 rounded-lg">
-            <h3 className="font-bold text-yellow-800 mb-2">🚨 Farmer Alert</h3>
-            <p className="text-sm text-yellow-700">
-              {showTranslation && alertText ? alertText : weather.alert}
-            </p>
-            {alertText && (
+            <div className="flex justify-between items-start">
+              <h3 className="font-bold text-yellow-800 mb-2">🚨 Farmer Alert</h3>
               <button
                 onClick={toggleTranslation}
-                className="mt-2 text-xs bg-yellow-200 hover:bg-yellow-300 px-3 py-1 rounded transition-colors"
+                disabled={translating}
+                className={`text-xs px-3 py-1 rounded transition-colors ${
+                  translating 
+                    ? 'bg-gray-200 text-gray-500' 
+                    : 'bg-yellow-200 hover:bg-yellow-300'
+                }`}
               >
-                {showTranslation ? "Show English" : "हिंदी में देखें"}
+                {translating ? "Translating..." : showTranslation ? "Show English" : "हिंदी में देखें"}
               </button>
-            )}
+            </div>
+            <p className="text-sm text-yellow-700">
+              {translating ? (
+                <span className="text-gray-500">Translating...</span>
+              ) : showTranslation && alertText ? (
+                alertText
+              ) : (
+                Array.isArray(weather.alert) ? weather.alert.join('. ') : weather.alert
+              )}
+            </p>
           </div>
         </div>
       )}

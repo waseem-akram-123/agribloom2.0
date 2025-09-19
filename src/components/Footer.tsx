@@ -4,10 +4,23 @@ import Link from "next/link";
 import { Mail, PhoneCall, MapPin, Globe } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { useTranslation } from "@/hooks/useTranslation";
+import { useState, useEffect } from "react";
+import axios from "axios";
 
 export default function Footer() {
   const { selectedLanguage, setSelectedLanguage } = useLanguage();
   const { t } = useTranslation();
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+
+  useEffect(() => {
+    axios.get("/api/users/me")
+      .then((res) => {
+        setIsAuthenticated(res.data.authenticated);
+      })
+      .catch(() => {
+        setIsAuthenticated(false);
+      });
+  }, []);
   
   const languages = [
     { code: 'en', name: 'English', flag: '🇺🇸' },
@@ -45,26 +58,30 @@ export default function Footer() {
         <div>
           <h3 className="text-lg font-semibold mb-3 text-green-800">{t('footer.explore')}</h3>
           <ul className="space-y-2 text-sm">
-            <li>
-              <Link href="/agrilens" className="hover:underline">
-                {t('navbar.agrilens')}
-              </Link>
-            </li>
-            <li>
-              <Link href="/insects" className="hover:underline">
-                {t('navbar.insect')} Management
-              </Link>
-            </li>
-            <li>
-              <Link href="/health" className="hover:underline">
-                {t('navbar.healthBenefits')}
-              </Link>
-            </li>
-            <li>
-              <Link href="/mandi-prices" className="hover:underline">
-                {t('navbar.demo')}
-              </Link>
-            </li>
+            {isAuthenticated && (
+              <>
+                <li>
+                  <Link href="/agrilens" className="hover:underline">
+                    {t('navbar.agrilens')}
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/insects" className="hover:underline">
+                    {t('navbar.insect')} Management
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/health" className="hover:underline">
+                    {t('navbar.healthBenefits')}
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/mandi-prices" className="hover:underline">
+                    {t('navbar.demo')}
+                  </Link>
+                </li>
+              </>
+            )}
           </ul>
         </div>
 
