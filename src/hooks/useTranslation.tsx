@@ -1,24 +1,41 @@
 "use client";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import translations from "@/data/translations.json";
-
-type TranslationKey = keyof typeof translations.en;
 
 export function useTranslation() {
   const { selectedLanguage } = useLanguage();
   const [translationCache, setTranslationCache] = useState<Record<string, string>>({});
 
+  type TranslationObject = {
+    [key: string]: string | TranslationObject;
+  };
+
+  const getNestedValue = (obj: TranslationObject, path: string[]): string | undefined => {
+    let current: string | TranslationObject | undefined = obj;
+    
+    for (const key of path) {
+      if (typeof current !== 'object') return undefined;
+      current = current[key];
+    }
+    
+    return typeof current === 'string' ? current : undefined;
+  };
+
   // Get static translation from JSON file
   const getStaticTranslation = (key: string): string => {
     const keys = key.split('.');
-    let value: any = translations[selectedLanguage as keyof typeof translations];
     
-    for (const k of keys) {
-      value = value?.[k];
-    }
+    // Try selected language first
+    const translatedValue = getNestedValue(
+      translations[selectedLanguage as keyof typeof translations] as TranslationObject,
+      keys
+    );
+    if (translatedValue) return translatedValue;
     
-    return value || translations.en[key as keyof typeof translations.en] || key;
+    // Fallback to English
+    const englishValue = getNestedValue(translations.en as TranslationObject, keys);
+    return englishValue || key;
   };
 
   // Get dynamic translation using Google Translate API

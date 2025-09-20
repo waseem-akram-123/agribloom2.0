@@ -1,7 +1,7 @@
-import { NextRequest, NextResponse } from 'next/server';
+import { NextResponse } from 'next/server';
 import { getMandiMetadata } from '@/lib/csvDataLoader';
 
-export async function GET(request: NextRequest) {
+export async function GET() {
   try {
     console.log('Fetching mandis metadata...');
     
@@ -82,17 +82,26 @@ async function tryGovernmentMandisAPI() {
     };
   }
 
+  interface MandiRecord {
+    state: string;
+    district: string;
+    commodity?: string;  // Made optional since we don't always need it for the lists
+    market?: string;
+    market_name?: string;
+    [key: string]: string | undefined;
+  }
+
   // Extract unique values
-  const uniqueStates = [...new Set(data.records.map((r: any) => r.state).filter(Boolean))].sort();
-  const uniqueDistricts = [...new Set(data.records.map((r: any) => r.district).filter(Boolean))].sort();
-  const uniqueCommodities = [...new Set(data.records.map((r: any) => r.commodity).filter(Boolean))].sort();
-  const uniqueMarkets = [...new Set(data.records.map((r: any) => r.market || r.market_name).filter(Boolean))].sort();
+  const uniqueStates = [...new Set(data.records.map((r: MandiRecord) => r.state).filter(Boolean))].sort();
+  const uniqueDistricts = [...new Set(data.records.map((r: MandiRecord) => r.district).filter(Boolean))].sort();
+  const uniqueCommodities = [...new Set(data.records.map((r: MandiRecord) => r.commodity).filter(Boolean))].sort();
+  const uniqueMarkets = [...new Set(data.records.map((r: MandiRecord) => r.market || r.market_name).filter(Boolean))].sort();
   
   // Group mandis by state and district
-  const mandisByState: { [key: string]: any[] } = {};
-  const mandisByDistrict: { [key: string]: any[] } = {};
+  const mandisByState: { [key: string]: MandiRecord[] } = {};
+  const mandisByDistrict: { [key: string]: MandiRecord[] } = {};
   
-  data.records.forEach((record: any) => {
+  data.records.forEach((record: MandiRecord) => {
     const state = record.state;
     const district = record.district;
     

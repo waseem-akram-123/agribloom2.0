@@ -37,7 +37,8 @@ export async function POST(request: NextRequest) {
     }
 
     const data = await response.json();
-    const translatedText = data[0].map((item: any[]) => item[0]).join('');
+    type TranslationItem = [string, string, null, number];
+    const translatedText = data[0].map((item: TranslationItem) => item[0]).join('');
 
     return NextResponse.json({
       original: text,

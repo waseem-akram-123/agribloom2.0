@@ -20,9 +20,6 @@ import {
   BarChart3,
   Mail,
   Cloud,
-  CloudRain,
-  AlertTriangle,
-  History,
   Heart,
 } from "lucide-react";
 
@@ -58,7 +55,7 @@ export default function Navbar() {
         setUsername(res.data.user?.username || "");
         setRole(res.data.user?.role || "");
       })
-      .catch((error) => {
+      .catch(() => {
         setIsAuthenticated(false);
         setUsername("");
         setRole("");

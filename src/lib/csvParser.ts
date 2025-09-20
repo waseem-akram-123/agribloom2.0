@@ -35,18 +35,48 @@ export function parseMandiCSV(csvContent: string): MandiPriceRecord[] {
       }
     });
 
-    return records.map((record: any) => ({
-      market: record.market || record.market_name || record.mandi || record.Market || 'Unknown Market',
-      commodity: record.commodity || record.crop || record.Commodity || 'Unknown Commodity',
-      state: record.state || record.State || 'Unknown State',
-      district: record.district || record.District || 'Unknown District',
-      min_price: record.min_price || record.minPrice || record.minimum_price || record.Min_x0020_Price || 0,
-      max_price: record.max_price || record.maxPrice || record.maximum_price || record.Max_x0020_Price || 0,
-      modal_price: record.modal_price || record.modalPrice || record.price || record.average_price || record.Modal_x0020_Price || 0,
-      arrival_date: record.arrival_date || record.date || record.arrivalDate || record.Arrival_Date || new Date().toISOString().split('T')[0],
-      arrival_quantity: record.arrival_quantity || record.quantity || record.arrival_quantity || 0,
-      variety: record.variety || record.type || record.Variety || ''
-    }));
+    interface RawRecord {
+      [key: string]: string | number | undefined;
+    }
+    
+    return (records as RawRecord[]).map((record): MandiPriceRecord => {
+      // Helper function to safely convert string to number
+      const toNumber = (value: string | number | undefined): number => {
+        if (typeof value === 'number') return value;
+        if (!value) return 0;
+        const num = parseFloat(value.toString().replace(/[^\d.-]/g, ''));
+        return isNaN(num) ? 0 : num;
+      };
+
+      // Helper function to get first defined value from multiple possible keys
+      const getFirstDefined = (...keys: string[]): string => {
+        for (const key of keys) {
+          const value = record[key];
+          if (value !== undefined && value !== null && value !== '') {
+            return value.toString();
+          }
+        }
+        return '';
+      };
+
+      // Get today's date in YYYY-MM-DD format for default arrival date
+      const defaultDate = new Date().toISOString().split('T')[0];
+
+      const mandiRecord: MandiPriceRecord = {
+        market: getFirstDefined('market', 'market_name', 'mandi', 'Market') || 'Unknown Market',
+        commodity: getFirstDefined('commodity', 'crop', 'Commodity') || 'Unknown Commodity',
+        state: getFirstDefined('state', 'State') || 'Unknown State',
+        district: getFirstDefined('district', 'District') || 'Unknown District',
+        min_price: toNumber(record.min_price || record.minPrice || record.minimum_price || record.Min_x0020_Price),
+        max_price: toNumber(record.max_price || record.maxPrice || record.maximum_price || record.Max_x0020_Price),
+        modal_price: toNumber(record.modal_price || record.modalPrice || record.price || record.average_price || record.Modal_x0020_Price),
+        arrival_date: getFirstDefined('arrival_date', 'date', 'arrivalDate', 'Arrival_Date') || defaultDate,
+        arrival_quantity: toNumber(record.arrival_quantity || record.quantity),
+        variety: getFirstDefined('variety', 'type', 'Variety')
+      };
+
+      return mandiRecord;
+    });
   } catch (error) {
     console.error('CSV parsing error:', error);
     throw new Error('Failed to parse CSV data');

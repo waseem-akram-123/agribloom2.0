@@ -1,7 +1,40 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { getMandiPrices } from '@/lib/csvDataLoader';
+import { getMandiPrices, PriceData } from '@/lib/csvDataLoader';
 
-export async function POST(request: NextRequest) {
+interface MandiResponse {
+  prices: PriceData[];
+  commodity: string;
+  state: string;
+  district?: string;
+  message: string;
+  suggestions?: {
+    workingCombination?: string;
+    availableStates?: number;
+    availableCommodities?: number;
+  };
+}
+
+interface MandiRecord {
+  commodity?: string;
+  state?: string;
+  district?: string;
+  market?: string;
+  market_name?: string;
+  min_price?: string | number;
+  minPrice?: string | number;
+  max_price?: string | number;
+  maxPrice?: string | number;
+  modal_price?: string | number;
+  modalPrice?: string | number;
+  price?: string | number;
+  arrival_date?: string;
+  date?: string;
+  arrivalDate?: string;
+  [key: string]: string | number | undefined;
+}
+
+
+export async function POST(request: NextRequest): Promise<NextResponse<MandiResponse>> {
   try {
     let commodity = 'Tomato';
     let state = 'Karnataka';
@@ -34,7 +67,7 @@ export async function POST(request: NextRequest) {
     try {
       const governmentResult = await tryGovernmentAPI(commodity, state, district);
       
-      if (governmentResult.prices && governmentResult.prices.length > 0) {
+      if (governmentResult?.prices && governmentResult.prices.length > 0) {
         console.log('✅ Government API successful as fallback');
         return NextResponse.json(governmentResult);
       }
@@ -48,10 +81,14 @@ export async function POST(request: NextRequest) {
 
   } catch (error) {
     console.error('Mandi API error:', error);
-    return NextResponse.json(
-      { error: 'Mandi price fetch failed' }, 
-      { status: 500 }
-    );
+    return NextResponse.json({
+      prices: [],
+      commodity: '',
+      state: '',
+      district: '',
+      message: 'Mandi price fetch failed',
+      error: 'Internal server error'
+    }, { status: 500 });
   }
 }
 
@@ -87,18 +124,21 @@ async function tryGovernmentAPI(commodity: string, state: string, district: stri
   }
   
   // Filter records by commodity, state, and district if we have them
-  if (records.length > 0) {
-    records = records.filter((record: any) => {
+  if (records.length > 0) {    
+    records = records.filter((record: MandiRecord) => {
       let matches = true;
       
-      if (commodity) {
-        matches = matches && record.commodity && record.commodity.toLowerCase().includes(commodity.toLowerCase());
+      if (typeof commodity === 'string' && commodity) {
+        const recordCommodity = String(record.commodity || '');
+        matches = matches && recordCommodity.toLowerCase().includes(commodity.toLowerCase());
       }
-      if (state) {
-        matches = matches && record.state && record.state.toLowerCase().includes(state.toLowerCase());
+      if (typeof state === 'string' && state) {
+        const recordState = String(record.state || '');
+        matches = matches && recordState.toLowerCase().includes(state.toLowerCase());
       }
-      if (district) {
-        matches = matches && record.district && record.district.toLowerCase().includes(district.toLowerCase());
+      if (typeof district === 'string' && district) {
+        const recordDistrict = String(record.district || '');
+        matches = matches && recordDistrict.toLowerCase().includes(district.toLowerCase());
       }
       
       return matches;
@@ -120,11 +160,19 @@ async function tryGovernmentAPI(commodity: string, state: string, district: stri
     };
   }
 
-  const prices = records.map((record: any) => ({
+  // Helper function to parse price safely
+  const parsePrice = (value: string | number | undefined): number => {
+    if (typeof value === 'number') return value;
+    if (!value) return 0;
+    const num = parseFloat(String(value).replace(/[^\d.-]/g, ''));
+    return isNaN(num) ? 0 : num;
+  };
+
+  const prices = records.map((record: MandiRecord) => ({
     market: record.market || record.market_name || 'Unknown Market',
-    min: Math.round((parseInt(record.min_price) || parseInt(record.minPrice) || 0) / 10),
-    max: Math.round((parseInt(record.max_price) || parseInt(record.maxPrice) || 0) / 10),
-    modal: Math.round((parseInt(record.modal_price) || parseInt(record.modalPrice) || parseInt(record.price) || 0) / 10),
+    min: Math.round(parsePrice(record.min_price || record.minPrice) / 10),
+    max: Math.round(parsePrice(record.max_price || record.maxPrice) / 10),
+    modal: Math.round(parsePrice(record.modal_price || record.modalPrice || record.price) / 10),
     date: record.arrival_date || record.date || record.arrivalDate || new Date().toISOString().split('T')[0]
   }));
 

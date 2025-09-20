@@ -2,9 +2,15 @@
 
 import { useEffect, useState } from "react";
 
+type ChatbaseFunction = {
+  (command: "getState"): "initialized" | undefined;
+  (command: string, ...args: unknown[]): void;
+  q?: unknown[];
+};
+
 declare global {
   interface Window {
-    chatbase: any;
+    chatbase: ChatbaseFunction;
   }
 }
 
@@ -14,19 +20,23 @@ export function ChatWidget() {
   useEffect(() => {
     // Initialize Chatbase
     if (!window.chatbase || window.chatbase("getState") !== "initialized") {
-      window.chatbase = (...args: any[]) => {
+      const chatbaseFunc = (...args: unknown[]) => {
         if (!window.chatbase.q) {
           window.chatbase.q = [];
         }
         window.chatbase.q.push(args);
       };
-
-      window.chatbase = new Proxy(window.chatbase, {
-        get(target, prop) {
+      
+      window.chatbase = new Proxy(chatbaseFunc as ChatbaseFunction, {
+        get(target, prop: string | symbol) {
           if (prop === "q") {
             return target.q;
           }
-          return (...args: any[]) => target(prop, ...args);
+          return (...args: unknown[]) => {
+            if (typeof prop === 'string') {
+              return target(prop, ...args);
+            }
+          };
         },
       });
 

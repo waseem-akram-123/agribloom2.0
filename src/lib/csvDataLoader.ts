@@ -57,24 +57,39 @@ function loadSampleData(): MandiPriceRecord[] {
   }
 }
 
+export interface PriceData {
+  market: string;
+  min: number;
+  max: number;
+  modal: number;
+  date: string;
+}
+
 export async function getMandiPrices(
   commodity?: string, 
   state?: string, 
   district?: string
 ): Promise<{
-  prices: any[];
+  prices: PriceData[];
   commodity: string;
   state: string;
   district: string;
   message: string;
-  suggestions?: any;
+  suggestions?: {
+    commodities?: string[];
+    states?: string[];
+    districts?: string[];
+    workingCombination?: string;
+    availableStates?: number;
+    availableCommodities?: number;
+  };
 }> {
   try {
     const allData = await loadMandiCSVData();
     
     if (allData.length === 0) {
       return {
-        prices: [],
+        prices: [] as PriceData[],
         commodity: commodity || '',
         state: state || '',
         district: district || '',
@@ -104,7 +119,7 @@ export async function getMandiPrices(
       suggestionMessage += `\n• Commodities: ${uniqueValues.commodities.slice(0, 5).join(', ')}${uniqueValues.commodities.length > 5 ? ` and ${uniqueValues.commodities.length - 5} more` : ''}`;
       
       return {
-        prices: [],
+        prices: [] as PriceData[],
         commodity: commodity || '',
         state: state || '',
         district: district || '',
@@ -117,13 +132,13 @@ export async function getMandiPrices(
       };
     }
 
-    // Convert to API format
+    // Map to the expected PriceData format
     const prices = filteredData.map(record => ({
-      market: record.market,
+      market: record.market || '',
       min: Math.round(record.min_price / 10), // Convert to realistic prices
       max: Math.round(record.max_price / 10),
       modal: Math.round(record.modal_price / 10),
-      date: record.arrival_date
+      date: record.arrival_date || ''
     }));
 
     return {

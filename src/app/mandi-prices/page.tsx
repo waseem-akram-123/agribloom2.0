@@ -11,22 +11,22 @@ export default function MandiPricesPage() {
   const router = useRouter();
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [loading, setLoading] = useState(true);
-  const [userRole, setUserRole] = useState<string>("");
 
   useEffect(() => {
     const checkAuth = async () => {
       try {
+        setLoading(true);
         const response = await axios.get("/api/users/me");
         if (response.data.authenticated) {
-          setIsAuthenticated(true);
-          const userRole = response.data.user?.role || "";
-          setUserRole(userRole);
+          const role = response.data.user?.role || "";
           
           // Check if user is a farmer or admin
-          if (!["farmer", "admin"].includes(userRole)) {
+          if (!["farmer", "admin"].includes(role)) {
             router.push("/login?redirect=/mandi-prices");
             return;
           }
+          
+          setIsAuthenticated(true);
         } else {
           router.push("/login?redirect=/mandi-prices");
         }
@@ -39,7 +39,7 @@ export default function MandiPricesPage() {
     };
 
     checkAuth();
-  }, [router]);
+  }, [router]); // Remove userRole dependency
 
   if (loading) {
     return (

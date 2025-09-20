@@ -23,7 +23,14 @@ interface MandiResponse {
   prices: PriceData[];
   commodity: string;
   state: string;
+  district?: string;
   message: string;
+  suggestions?: {
+    commodities?: string[];
+    states?: string[];
+    districts?: string[];
+    workingCombination?: string;
+  };
 }
 
 export default function MandiPricesComponent() {
@@ -60,7 +67,7 @@ export default function MandiPricesComponent() {
           const statesList = data.states || [];
           const districtsList = data.districts || [];
           const commoditiesList = data.commodities || [];
-          const marketsList = data.markets || [];
+
           const districtsByStateData = data.districtsByState || {};
           
           setCommodities(commoditiesList);
@@ -106,40 +113,63 @@ export default function MandiPricesComponent() {
 
   const fetchPrices = async () => {
     setLoading(true);
+    setPrices([]);
+    setResponseData(null);
+    setTranslatedAdvice("");
 
     try {
+      console.log('Fetching prices with:', {
+        commodity: selectedCommodity,
+        state: selectedState,
+        district: selectedDistrict,
+      });
+
       const res = await fetch("/api/mandi", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({
-              commodity: selectedCommodity,
-              state: selectedState,
-              district: selectedDistrict === "all-districts" ? undefined : selectedDistrict
-            }),
+        body: JSON.stringify({
+          commodity: selectedCommodity,
+          state: selectedState,
+          district: selectedDistrict === "all-districts" ? undefined : selectedDistrict
+        }),
       });
 
+      const data = await res.json();
+      console.log('Received price data:', data);
+
       if (!res.ok) {
-        throw new Error('Failed to fetch mandi prices');
+        throw new Error(`Failed to fetch mandi prices: ${data.error || 'Unknown error'}`);
       }
 
-      const data: MandiResponse = await res.json();
+      // Validate the response data structure
+      if (!data || !Array.isArray(data.prices)) {
+        console.error('Invalid response format:', data);
+        throw new Error('Invalid price data format received');
+      }
+
       setPrices(data.prices);
       setResponseData(data);
 
       // Generate farmer advice and translate it
       if (data.prices.length > 0) {
         const advice = generateFarmerAdvice(data.prices, data.commodity);
+        console.log('Generated advice:', advice);
         
         // Translate using the language context
         const translated = await translateText(advice);
         setTranslatedAdvice(translated);
-      } else {
-        // Clear previous advice when no results
-        setTranslatedAdvice("");
       }
 
     } catch (error) {
       console.error('Mandi fetch error:', error);
+      const errorMessage = error instanceof Error ? error.message : 'Unknown error occurred';
+      setResponseData({
+        prices: [],
+        commodity: selectedCommodity,
+        state: selectedState,
+        district: selectedDistrict,
+        message: `Error fetching prices: ${errorMessage}`
+      });
     } finally {
       setLoading(false);
     }

@@ -88,7 +88,7 @@ export function validateCSVFormat(csvContent: string): { valid: boolean; errors:
     
     return { valid: errors.length === 0, errors };
     
-  } catch (error) {
+  } catch {
     errors.push('Invalid CSV format');
     return { valid: false, errors };
   }
